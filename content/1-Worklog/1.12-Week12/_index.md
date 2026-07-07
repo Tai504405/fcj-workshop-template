@@ -6,11 +6,11 @@ chapter: false
 pre: " <b> 1.12. </b> "
 ---
 
-### Week 12 Objectives:
+### Focus & Objectives of Week 12:
 
 - Complete the internship report for the supervising lecturer and mentors at the internship organization.
 
-### Tasks to be implemented this week:
+### Detailed Weekly Action Items:
 
 | Day | Task                       | Start Date | End Date   | References |
 | --- | -------------------------- | ---------- | ---------- | ---------- |

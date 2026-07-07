@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1.10. </b> "
 ---
 
-### Mục tiêu tuần 10:
+### Định hướng & Mục tiêu Tuần 10:
 
 - Thiết kế và triển khai hạ tầng mạng (VPC, Subnet, Security Group, NAT Gateway, IGW)
   cho project `GlobalMart` trên AWS.
@@ -16,9 +16,9 @@ pre: " <b> 1.10. </b> "
 - Thiết lập `Application Load Balancer` (internet-facing và internal)
   và triển khai `ECS Cluster` với `Fargate` cho cả 2 service.
 
-### Các công việc cần triển khai trong tuần này:
+### Nhiệm vụ thực hiện chi tiết:
 
-| Thứ | Công việc                                                                                                                                                                                                                                                                                                                                                                                                                                        | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| Thứ tự | Nội dung thực hiện | Bắt đầu | Kết thúc | Tài liệu tham khảo |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | --------------- | -------------- |
 | 2   | - Thiết kế kiến trúc tổng thể hệ thống `GlobalMart` trên AWS <br> - Tạo `VPC` (`globalmart-vpc`, CIDR `10.0.0.0/16`) <br>&emsp; + Tạo `Public subnet`, `Private subnet A` (ECS), `Private subnet B` (RDS) <br>&emsp; + Tạo `Internet Gateway (IGW)` và `NAT Gateway` <br>&emsp; + Cấu hình `Route Table` cho từng subnet                                                                                                                         | 22/06/2026   | 22/06/2026      |                |
 | 3   | - Tạo các `Security Group` phân tách traffic theo từng tầng: <br>&emsp; + `sg-alb-public` cho ALB internet-facing <br>&emsp; + `sg-ecs-frontend` cho ECS Frontend task <br>&emsp; + `sg-ecs-backend` cho ECS Backend task <br>&emsp; + `sg-alb-internal` cho ALB internal <br>&emsp; + `sg-rds` cho RDS MySQL <br> - Tạo `RDS for MySQL` (Single-AZ, `db.t3.micro`) trong `Private subnet B`                                                     | 23/06/2026   | 23/06/2026      |                |
@@ -26,7 +26,7 @@ pre: " <b> 1.10. </b> "
 | 5   | - Tạo `Application Load Balancer` internet-facing (Public subnet) <br>&emsp; + Tạo `Target Group tg-frontend` (type IP, port 80) <br>&emsp; + Cấu hình Listener HTTP:80 → forward `tg-frontend` <br> - Tạo `Application Load Balancer` internal (Private subnet A) <br>&emsp; + Tạo `Target Group tg-backend` (type IP, port 8080) <br>&emsp; + Cấu hình Health check path `/actuator/health`                                                    | 25/06/2026   | 25/06/2026      |                |
 | 6   | - Tạo `ECS Cluster` (`globalmart-cluster`, Fargate) <br> - Tạo `Task Definition` cho Frontend và Backend <br>&emsp; + Cấu hình CPU, Memory, Container port, Environment variables, CloudWatch Logs <br> - Tạo `ECS Service Frontend` gắn `ALB internet-facing` → `tg-frontend` <br> - Tạo `ECS Service Backend` gắn `ALB internal` → `tg-backend` <br> - Xử lý các lỗi phát sinh: Service-Linked Role, Health check grace period, Security Group | 26/06/2026   | 26/06/2026      |                |
 
-### Kết quả đạt được tuần 10:
+### Kết quả thu hoạch sau Tuần 10:
 
 - Thiết kế và triển khai thành công hạ tầng mạng trên AWS:
   - `VPC globalmart-vpc` với CIDR `10.0.0.0/16`.

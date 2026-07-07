@@ -5,15 +5,15 @@ weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-### Week 2 Objectives:
+### Focus & Objectives of Week 2:
 
-* Complete Module 2 and strengthen core AWS networking knowledge (VPC, subnets, routing, and security controls).
+* Successfully finished Module 2 and strengthen core AWS networking knowledge (VPC, subnets, routing, and security controls).
 * Understand network security and observability mechanisms in VPC (Security Group, NACL, VPC Flow Logs).
 * Understand connectivity patterns for AWS and hybrid environments (VPN, Direct Connect) and distinguish ELB load balancer types.
 * Complete the planned labs: Lab 3 (VPC), Lab 10 (Route 53), Lab 19 (VPC Peering), Lab 20 (Transit Gateway), Lab 58 (System Manager - Session Manager).
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
+### Detailed Weekly Action Items:
+| No. | Task Description | Start | Completion | Reference Links |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
 | 2   | - Review and organize Module 2 based on an AWS network design flow <br>&emsp; + VPC overview and network isolation <br>&emsp; + Public/private subnet design and AZ considerations <br>&emsp; + Route tables and routing behavior <br>&emsp; + Security Group (stateful) and inbound/outbound control <br>&emsp; + Internet Gateway for public subnets <br>&emsp; + NAT Gateway + Elastic IP for outbound Internet access from private subnets                                                                                             | 27/04/2026 | 27/04/2026      | https://youtu.be/O9Ac_vGHquM?si=fym2d8H5rZwqmaPe <br> https://000003.awsstudygroup.com |
 | 3   | - Extended study of Module 2: security, observability, and connectivity patterns in VPC <br>&emsp; + VPC firewall layers: Security Group (stateful, ENI-level, allow-only) vs Network ACL/NACL (stateless, subnet-level, allow/deny) <br>&emsp; + Network monitoring: VPC Flow Logs (accepted/rejected traffic for troubleshooting) <br>&emsp; + VPC connectivity: VPC Peering (no transitive routing, no CIDR overlap) vs Transit Gateway (hub-and-spoke for multi-VPC/on-prem) <br>&emsp; + Elastic Network Interface (ENI) use cases <br>&emsp; + VPC Endpoint for private access to AWS services without relying on Internet/NAT                                            | 28/04/2026 | 28/04/2026      | https://youtu.be/BPuD1l2hEQ4?si=e8W3LjDBQowBDSHW <br> https://000003.awsstudygroup.com |
@@ -22,7 +22,7 @@ pre: " <b> 1.2. </b> "
 | 6   | - **Hands-on labs:** <br>&emsp; + Lab 10: Route 53 <br>&emsp; + Lab 19: VPC Peering <br>&emsp; + Lab 20: Transit Gateway <br>&emsp; + **Lab58:** Working with Amazon System Manager - Session Manager (create connections to public/private instances in VPC) <br>&emsp; + Week 2 recap                                                                                         | 01/05/2026 | 01/05/2026      | https://000010.awsstudygroup.com/ <br> https://000019.awsstudygroup.com/ <br> https://000020.awsstudygroup.com/<br> https://000058.awsstudygroup.com/ |
 
 
-### Week 2 Achievements:
+### Key Accomplishments - Week 2:
 
 * Organized Module 2 knowledge using an AWS networking design perspective:
   * VPC for network isolation

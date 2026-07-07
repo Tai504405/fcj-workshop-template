@@ -6,30 +6,30 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-This page summarizes the 12-week internship worklog, from learning AWS fundamentals to analyzing, building, and deploying the `GlobalMart` project on AWS.
+This page aggregates the 12-week internship worklog, tracing the path from acquiring core AWS Cloud competencies to planning, designing, and fully implementing the `GlobalMart` production-ready architecture.
 
-The weekly work summary is as follows:
+Weekly task summaries:
 
-- **Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/) - Studied cloud fundamentals, basic AWS services, IAM, Budgets, and the Well-Architected Framework.
+- **Week 1:** [Introduction to AWS & Core Cloud Concepts](1.1-week1/) - Explored foundational cloud concepts, essential AWS services, IAM controls, Cost Budgets, and the Well-Architected Framework.
 
-- **Week 2:** [Studying AWS Networking and practicing network labs](1.2-week2/) - Learned VPC, subnets, route tables, security groups, NACLs, hybrid networking, load balancing, and practiced Route 53, VPC Peering, Transit Gateway, and Session Manager.
+- **Week 2:** [AWS Networking Infrastructure & Labs](1.2-week2/) - Covered VPC components, subnets, routing tables, security groups, NACLs, hybrid setups, and load balancers. Completed labs for Route 53, VPC Peering, Transit Gateway, and AWS Systems Manager.
 
-- **Week 3:** [Studying Compute services and deploying core compute labs](1.3-week3/) - Learned EC2, EBS, Auto Scaling, EFS, Lightsail, CloudWatch, MGN, and completed hands-on labs related to compute and monitoring.
+- **Week 3:** [Compute Services & Infrastructure Deployment](1.3-week3/) - Investigated Amazon EC2, EBS/EFS storage, Auto Scaling Groups, Amazon Lightsail, CloudWatch monitoring, and AWS MGN migrations.
 
-- **Week 4:** [Studying Storage, Backup, and Disaster Recovery](1.4-week4/) - Studied Amazon S3, Snow Family, Storage Gateway, backup and recovery strategies, and practiced AWS Backup, VM Import/Export, and File Storage Gateway.
+- **Week 4:** [Storage Systems, Backup, and Disaster Recovery](1.4-week4/) - Studied Amazon S3, Snow Family appliances, Storage Gateway, and backup/recovery patterns. Practiced AWS Backup, VM Import/Export, and File Storage Gateway.
 
-- **Week 5:** [Studying Security, IAM, and identity management services](1.5-week5/) - Learned the Shared Responsibility Model, IAM, Cognito, Organizations, Identity Center, KMS, Security Hub, and completed labs on permissions, tagging, Identity Center, and KMS.
+- **Week 5:** [Security Controls, IAM, and Identity Management](1.5-week5/) - Mastered the Shared Responsibility Model, Cognito user management, AWS Organizations, IAM Identity Center, KMS encryption keys, and Security Hub compliance.
 
-- **Week 6:** [Studying Databases and AWS data services](1.6-week6/) - Reviewed database fundamentals, studied Amazon RDS, Aurora, Redshift, ElastiCache, DMS, SCT, and practiced deploying RDS.
+- **Week 6:** [Cloud Databases & Managed Data Services](1.6-week6/) - Deepened understanding of database concepts, worked with RDS, Aurora, Redshift, ElastiCache caching, and data migrations using DMS and SCT.
 
-- **Week 7:** [Studying Data Lake, Analytics, and data visualization](1.7-week7/) - Learned DynamoDB, AWS Glue, Athena, QuickSight, serverless data pipelines, and completed analytics-focused hands-on labs.
+- **Week 7:** [Analytics, Data Lakes, and Visualization](1.7-week7/) - Studied NoSQL with DynamoDB, ETL flows with AWS Glue, SQL queries via Athena, and custom business dashboards in QuickSight.
 
-- **Week 8:** [Analyzing requirements and designing the final project architecture](1.8-week8/) - Defined the overall `GlobalMart` architecture including CI/CD, containerization, ECS Fargate, RDS, backup and recovery, and monitoring.
+- **Week 8:** [Requirements Assessment & Architecture Design](1.8-week8/) - Reviewed specifications and mapped out the blueprint for the `GlobalMart` system, including container orchestration with ECS Fargate, CI/CD pathways, RDS failovers, and monitoring alerts.
 
-- **Week 9:** [Initializing and developing the GlobalMart application](1.9-week9/) - Set up the frontend and backend codebases, built the React UI, developed Spring Boot APIs, integrated application data flow, and prepared the production CI/CD foundation.
+- **Week 9:** [Initialization & Codebase Development of GlobalMart](1.9-week9/) - Generated the project repositories for React frontend and Spring Boot backend APIs, established database connections, and set up the local development loop.
 
-- **Week 10:** [Deploying GlobalMart infrastructure on AWS](1.10-week10/) - Created the VPC, subnets, security groups, RDS, ECR, ALBs, target groups, ECS cluster, task definitions, and ECS services for frontend and backend.
+- **Week 10:** [Deploying GlobalMart Architecture on AWS Fargate](1.10-week10/) - Provisions network structures (VPC, Subnets, SG) and compute services including ECR repos, RDS instance, ALB targets, ECS Cluster resources, Task Definitions, and active ECS Services.
 
-- **Week 11:** [Completing connectivity, CI/CD, backup, and monitoring](1.11-week11/) - Implemented API Gateway + VPC Link, updated frontend-to-private-backend connectivity, set up GitHub Actions CI/CD, exported RDS backups to S3, and configured CloudWatch and SNS.
+- **Week 11:** [Integration, Automated CI/CD, Backup, and Alarms](1.11-week11/) - Structured API Gateway with private VPC Links, designed CI/CD pipelines via GitHub Actions, configured automated S3 database backups, and created CloudWatch alarms with SNS notifications.
 
-- **Week 12:** [Completing the internship report](1.12-week12/) - Consolidated results, reviewed the documentation, and finalized the internship report before the end of the program.
+- **Week 12:** [Final Synthesis & Internship Report Completion](1.12-week12/) - Consolidated results, performed documentation audits, and finalized the end-of-internship presentation materials.

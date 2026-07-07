@@ -6,16 +6,16 @@ chapter: false
 pre: " <b> 1.10. </b> "
 ---
 
-### Week 10 Objective:
+### Focus & Objectives of Week 10:
 
 - Design and deploy networking infrastructure (VPC, Subnet, Security Group, NAT Gateway, IGW) for the `GlobalMart` project on AWS.
 - Deploy `RDS for MySQL` (Single-AZ) in a private subnet.
 - Package `Frontend` and `Backend` into Docker images and push them to `Amazon ECR`.
 - Set up `Application Load Balancer` (internet-facing and internal) and deploy an `ECS Cluster` with `Fargate` for both services.
 
-### Weekly Schedule:
+### Detailed Weekly Action Items:
 
-| Day | Tasks                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Start Date | Completion Date | References |
+| No. | Task Description | Start | Completion | Reference Links |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ---------- |
 | 2   | - Design the overall `GlobalMart` architecture on AWS <br> - Create `VPC` (`globalmart-vpc`, CIDR `10.0.0.0/16`) <br>&emsp; + Create `Public subnet`, `Private subnet A` (ECS), `Private subnet B` (RDS) <br>&emsp; + Create `Internet Gateway (IGW)` and `NAT Gateway` <br>&emsp; + Configure `Route Table` for each subnet                                                                                                                                  | 22/06/2026 | 22/06/2026      |            |
 | 3   | - Create `Security Group` rules for each layer: <br>&emsp; + `sg-alb-public` for internet-facing ALB <br>&emsp; + `sg-ecs-frontend` for ECS Frontend task <br>&emsp; + `sg-ecs-backend` for ECS Backend task <br>&emsp; + `sg-alb-internal` for internal ALB <br>&emsp; + `sg-rds` for RDS MySQL <br> - Create `RDS for MySQL` (Single-AZ, `db.t3.micro`) in `Private subnet B`                                                                               | 23/06/2026 | 23/06/2026      |            |
@@ -23,7 +23,7 @@ pre: " <b> 1.10. </b> "
 | 5   | - Create internet-facing `Application Load Balancer` (Public subnet) <br>&emsp; + Create `Target Group tg-frontend` (type IP, port 80) <br>&emsp; + Configure Listener HTTP:80 → forward to `tg-frontend` <br> - Create internal `Application Load Balancer` (Private subnet A) <br>&emsp; + Create `Target Group tg-backend` (type IP, port 8080) <br>&emsp; + Configure Health check path `/actuator/health`                                                | 25/06/2026 | 25/06/2026      |            |
 | 6   | - Create `ECS Cluster` (`globalmart-cluster`, Fargate) <br> - Create `Task Definition` for Frontend and Backend <br>&emsp; + Configure CPU, Memory, Container port, Environment variables, CloudWatch Logs <br> - Create `ECS Service Frontend` attached to internet-facing ALB → `tg-frontend` <br> - Create `ECS Service Backend` attached to internal ALB → `tg-backend` <br> - Fix issues: Service-Linked Role, Health check grace period, Security Group | 26/06/2026 | 26/06/2026      |            |
 
-### Results:
+### Key Accomplishments:
 
 - Successfully designed and deployed AWS networking infrastructure:
   - `VPC globalmart-vpc` with CIDR `10.0.0.0/16`.

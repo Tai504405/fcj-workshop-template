@@ -5,13 +5,13 @@ weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-### Week 6 Objectives:
-* Complete Module 6 about AWS databases, master basic Database concepts and core AWS database services.
+### Focus & Objectives of Week 6:
+* Successfully finished Module 6 about AWS databases, master basic Database concepts and core AWS database services.
 * Understand and practice Amazon RDS, Amazon Aurora, Amazon Redshift, Amazon ElastiCache, DMS, SCT.
 * Distinguish between OLTP and OLAP, RDBMS and NoSQL.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
+### Detailed Weekly Action Items:
+| No. | Task Description | Start | Completion | Reference Links |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
 | 2   | - Review basic Database concepts <br>&emsp; + Database overview, role and applications <br>&emsp; + Core RDBMS components (Primary Key, Foreign Key, Normalization) <br>&emsp; + Performance optimization (Index, Partition, Execution Plan) <br>&emsp; + Data and transaction management (Database Log, Buffer) <br>&emsp; + Data model comparison (RDBMS vs NoSQL) <br>&emsp; + OLTP vs OLAP | 26/05/2026 | 26/05/2026      | https://youtu.be/UvdiRW34aNI?si=-ZYrH0_xUDVXZQWO |
 | 3   | - Study Amazon RDS and Amazon Aurora <br>&emsp; + Definition and goals of Amazon RDS <br>&emsp; + Key RDS features (Multi-AZ, Read Replicas, automated backups, Storage Autoscaling) <br>&emsp; + Features and differences of Amazon Aurora <br>&emsp; + Advanced Aurora features (Backtrack, Global Database, Cloning, Multi-master) | 27/05/2026 | 27/05/2026      | https://youtu.be/qbrobQZrokY?si=rSOmp51429nCGHeQ |
@@ -20,7 +20,7 @@ pre: " <b> 1.6. </b> "
 | 6   | - **Lab43 (Not completed due to errors): Schema Conversion and Database Migration** <br>&emsp; + Introduction to AWS Schema Conversion Tool (SCT) <br>&emsp; + Introduction to AWS Database Migration Service (DMS) <br>&emsp; + Recap all Module 6 content | 30/05/2026 | 30/05/2026      | https://000043.awsstudygroup.com/ |
 
 
-### Week 6 Achievements:
+### Key Accomplishments - Week 6:
 * Completed Module 6 and mastered all knowledge about AWS databases:
   * Reviewed and mastered basic Database concepts.
   * Understood core RDBMS components and how to optimize performance.

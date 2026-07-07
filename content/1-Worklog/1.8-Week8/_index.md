@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1.8. </b> "
 ---
 
-### Week 8 Objectives:
+### Focus & Objectives of Week 8:
 
 - Finalize the overall architecture model for the final project to prepare for the actual deployment phase.
 - Clearly decompose the main components of the system including CI/CD, containerization, application runtime, database, backup, and monitoring.
@@ -22,7 +22,7 @@ pre: " <b> 1.8. </b> "
 | 5   | - Design the **Database, Recovery & Backup** block <br>&emsp; + Select Amazon RDS for MySQL as the database for the system <br>&emsp; + Determine DB placement in private subnets and the connection method from the backend <br>&emsp; + Supplement RDS Snapshot, backup bucket, and snapshot export plans to support backup/recovery                                                                                         | 11/06/2026 | 11/06/2026 | -         |
 | 6   | - Design the **Monitoring & Observability** block and finalize the overall diagram <br>&emsp; + Define CloudWatch Logs, CloudWatch Metrics, and CloudWatch Alarms for the system <br>&emsp; + Identify SNS to send alerts via Email/SMS <br>&emsp; + Review all connections between CI/CD, ECS, RDS, backup, and monitoring <br>&emsp; + Finalize the architecture model to prepare for the final project implementation phase | 12/06/2026 | 12/06/2026 | -         |
 
-### Week 8 Achievements:
+### Key Accomplishments - Week 8:
 
 - Finalized the overall architecture model for the final project on AWS:
   - Defined the **Build & Containerization Flow** block with GitHub, CodePipeline, CodeBuild, CodeDeploy, ECR, and Artifact Bucket.

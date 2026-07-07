@@ -5,14 +5,14 @@ weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-### Week 4 Objectives:
+### Focus & Objectives of Week 4:
 
-* Complete Module 4 and master all knowledge about AWS storage services (S3, Snow Family, Storage Gateway, Disaster Recovery).
+* Successfully finished Module 4 and master all knowledge about AWS storage services (S3, Snow Family, Storage Gateway, Disaster Recovery).
 * Understand in detail S3 (Object Storage, bucket/object, REST API, Access Point, Static Website Hosting, CORS, Versioning, VPC Endpoint, Storage Classes, Object Lifecycle Management).
 * Master Snow Family, Storage Gateway (File/Volume/Tape Gateway) and Disaster Recovery (RTO/RPO, strategies Backup & Restore, Pilot Light, Low Capacity, Full Capacity).
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
+### Detailed Weekly Action Items:
+| No. | Task Description | Start | Completion | Reference Links |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
 | 2   | - Study Amazon S3 theory: Object Storage, bucket/object, REST API (GET, PUT), storage structure and operation mechanisms <br>&emsp; + Study S3 features: Access Point, Static Website Hosting, CORS, Versioning, VPC Endpoint <br>&emsp; + Study S3 storage classes (Standard, Standard-IA, Intelligent-Tiering, One Zone-IA, Glacier) and Object Lifecycle Management to optimize costs                                                                                             | 11/05/2026 | 11/05/2026      | https://youtu.be/_yunukwcAwc?si=poUK5WYhHGfiKbn5 <br> https://youtu.be/mPBjB6Ltl_Q?si=WCTj5ubOenpXb65 |
 | 3   | - Study Snow Family (Snowball, Snowball Edge, Snowmobile) and large-scale data transfer use cases <br>&emsp; + Study AWS Storage Gateway: File Gateway, Volume Gateway, Tape Gateway in Hybrid Storage models <br>&emsp; + Study Disaster Recovery: RTO/RPO concepts and strategies (Backup & Restore, Pilot Light, Low Capacity, Full Capacity)                                                                                         | 12/05/2026 | 12/05/2026      | https://youtu.be/YXn8Q_Hpsu4?si=8u2aAr0Dn8BQgewR |
@@ -21,7 +21,7 @@ pre: " <b> 1.4. </b> "
 | 6   | - **Lab 57 (Couldn't do CloudFront due to permission limits):** Getting started with Amazon S3 (static website hosting, object management, access configuration) <br>- Recap all Module 4 content                                                                                         | 15/05/2026 | 15/05/2026      | https://000057.awsstudygroup.com |
 
 
-### Week 4 Achievements:
+### Key Accomplishments - Week 4:
 
 * Completed Module 4 and mastered all knowledge about AWS storage services:
   * Amazon S3: Object Storage, bucket/object, REST API, Access Point, Static Website Hosting, CORS, Versioning, VPC Endpoint, storage classes and Object Lifecycle Management.

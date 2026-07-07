@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1.9. </b> "
 ---
 
-### Week 9 Objectives:
+### Focus & Objectives of Week 9:
 
 - Build the `GlobalMart` project with the frontend using `React` and the backend using `Java Spring Boot`.
 - Complete core e-commerce system functionalities including registration, login, product management, category management, and an admin dashboard.
@@ -22,7 +22,7 @@ pre: " <b> 1.9. </b> "
 | 5   | - Complete the main functionalities of the system <br>&emsp; + Integrate data workflow between frontend and backend <br>&emsp; + Add features including `login`, `register`, `product`, and `category` <br>&emsp; + Build and update the `admin dashboard` for system administration                                                                                                                                            | 18/06/2026 | 18/06/2026 |           |
 | 6   | - Prepare the `production CI/CD` foundation for the project <br>&emsp; + Add configuration files including `Dockerfile`, `buildspec.yml`, `appspec.yml`, and `taskdef.json` <br>&emsp; + Define integration directions for `AWS CodePipeline`, `CodeBuild`, `CodeDeploy`, `ECR/EC2`, `CloudWatch`, and `SNS` for the next deployment phase <br>&emsp; + Summarize project progress and review the overall source code structure | 19/06/2026 | 19/06/2026 |           |
 
-### Week 9 Achievements:
+### Key Accomplishments - Week 9:
 
 - Built the `GlobalMart` project with a clear separation between frontend and backend:
   - Frontend uses `React`, `Vite`, and `TypeScript`.

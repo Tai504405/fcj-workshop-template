@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 1.11. </b> "
 ---
 
-### Mục tiêu tuần 11:
+### Định hướng & Mục tiêu Tuần 11:
 
 - Giải quyết bài toán kết nối `Frontend (React SPA)` với `Backend` ẩn trong private subnet
   thông qua `API Gateway` và `VPC Link`.
@@ -16,9 +16,9 @@ pre: " <b> 1.11. </b> "
   tự động qua email/SMS.
 - Thiết lập `Recovery & Backup` với `RDS Snapshot` và export ra `S3`.
 
-### Các công việc cần triển khai trong tuần này:
+### Nhiệm vụ thực hiện chi tiết:
 
-| Thứ | Công việc                                                                                                                                                                                                                                                                                                                                                                                                                                            | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| Thứ tự | Nội dung thực hiện | Bắt đầu | Kết thúc | Tài liệu tham khảo |
 | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------- |
 | 2   | - Phân tích bài toán kết nối `React SPA` (chạy trên browser) với Backend ẩn trong private subnet <br> - Chọn giải pháp `API Gateway + VPC Link` thay cho expose trực tiếp <br> - Tạo `VPC Link` (`vpclink-globalmart`) kết nối vào `ALB internal` <br> - Tạo `HTTP API Gateway` (`globalmart-api-gateway`) với Private resource integration                                                                                                          | 29/06/2026   | 29/06/2026      |                |
 | 3   | - Cấu hình `Route` trong API Gateway: `ANY /{proxy+}` → Private integration <br> - Deploy API Gateway ra stage (`$default` hoặc `prod`) <br> - Test kết nối: `curl <invoke-url>/actuator/health` trả về `{"status":"UP"}` <br> - Cập nhật `REACT_APP_API_URL` trong Frontend trỏ đúng Invoke URL <br> - Build lại Frontend image, push ECR, deploy lại ECS Service Frontend                                                                          | 30/06/2026   | 30/06/2026      |                |
@@ -26,7 +26,7 @@ pre: " <b> 1.11. </b> "
 | 5   | - Triển khai `S3 Buckets`: <br>&emsp; + `globalmart-backup-bucket` lưu RDS snapshot export <br> - Cấu hình `Bucket Policy` cho phép RDS export service ghi vào Backup Bucket <br> - Tạo `IAM Role` cho RDS export task <br> - Thực hiện export `RDS Snapshot` ra S3 để minh họa luồng Recovery & Backup                                                                                                                                              | 02/07/2026   | 02/07/2026      |                |
 | 6   | - Triển khai `Monitoring & Observability`: <br>&emsp; + Xác nhận `CloudWatch Logs` nhận log từ ECS Frontend và Backend <br>&emsp; + Tạo `CloudWatch Alarms`: CPU > 80%, ALB 5XX errors > 5 trong 5 phút <br>&emsp; + Tạo `SNS Topic` (`globalmart-alerts`) và subscription Email/SMS <br>&emsp; + Gắn Alarm Action → SNS Topic → test nhận email cảnh báo <br> - Hoàn thiện và cập nhật sơ đồ kiến trúc tổng thể phản ánh đúng thực tế đã triển khai | 03/07/2026   | 03/07/2026      |                |
 
-### Kết quả đạt được tuần 11:
+### Kết quả thu hoạch sau Tuần 11:
 
 - Giải quyết thành công bài toán kết nối `React SPA` với Backend trong private subnet:
   - Triển khai `API Gateway (HTTP API)` + `VPC Link` làm cầu nối từ Internet vào
