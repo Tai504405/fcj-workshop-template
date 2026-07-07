@@ -6,31 +6,24 @@ chapter: false
 pre: " <b> 1.6. </b> "
 ---
 
-### Định hướng & Mục tiêu Tuần 6:
+### Mục tiêu tuần 6:
 
-- Đã hoàn tất học phần Module 6 về cơ sở dữ liệu trên AWS, nắm được các khái niệm cơ bản về Database, các dịch vụ cơ sở dữ liệu chính của AWS.
-- Hiểu và thực hành Amazon RDS, Amazon Aurora, Amazon Redshift, Amazon ElastiCache, DMS, SCT.
-- Phân biệt được OLTP và OLAP, RDBMS và NoSQL.
+* Tìm hiểu các cơ chế phân tích dữ liệu, Data Lake và Caching trên AWS.
+* Nghiên cứu NoSQL database DynamoDB, Data Warehouse Redshift và ElastiCache.
+* Sử dụng các công cụ chuyển đổi dữ liệu AWS DMS và Schema Conversion Tool (SCT).
+* Học về AWS Glue (ETL), Athena (truy vấn không máy chủ) và QuickSight (trực quan hóa).
 
 ### Nhiệm vụ thực hiện chi tiết:
-
-| Thứ tự | Nội dung thực hiện | Bắt đầu | Kết thúc | Tài liệu tham khảo |
-| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ------------------------------------------------ |
-| 2   | - Ôn tập các khái niệm cơ bản về Database <br>&emsp; + Tổng quan về Database, vai trò và ứng dụng <br>&emsp; + Các thành phần cốt lõi của RDBMS (Primary Key, Foreign Key, Normalization) <br>&emsp; + Tối ưu hóa hiệu năng (Index, Partition, Execution Plan) <br>&emsp; + Quản lý dữ liệu và giao dịch (Database Log, Buffer) <br>&emsp; + Phân biệt mô hình dữ liệu (RDBMS vs NoSQL) <br>&emsp; + OLTP vs OLAP | 25/05/2026   | 25/05/2026      | https://youtu.be/UvdiRW34aNI?si=-ZYrH0_xUDVXZQWO |
-| 3   | - Nghiên cứu về Amazon RDS và Amazon Aurora <br>&emsp; + Định nghĩa và mục tiêu của Amazon RDS <br>&emsp; + Các tính năng chính của RDS (Multi-AZ, Read Replicas, tự động sao lưu, Storage Autoscaling) <br>&emsp; + Đặc điểm và khác biệt của Amazon Aurora <br>&emsp; + Tính năng nâng cao của Aurora (Backtrack, Global Database, Cloning, Multi-master)                                                              | 26/05/2026   | 26/05/2026      | https://youtu.be/qbrobQZrokY?si=rSOmp51429nCGHeQ |
-| 4   | - Nghiên cứu về Amazon Redshift và Amazon ElastiCache <br>&emsp; + Amazon Redshift: Data Warehouse, kiến trúc MPP, columnar storage, các tính năng tối ưu chi phí <br>&emsp; + Amazon ElastiCache: dịch vụ caching, hỗ trợ Redis và Memcached <br>&emsp; + Giới thiệu DMS và SCT                                                                                                                                         | 27/05/2026   | 27/05/2026      | https://youtu.be/UvdiRW34aNI?si=2PaDwqh7ka21Bv_6 |
-| 5   | - **Lab5: Giới thiệu Amazon Relational Database Service (Amazon RDS)** <br>&emsp; + Tạo và cấu hình RDS instance <br>&emsp; + Tìm hiểu các tính năng RDS (Multi-AZ, Read Replicas, Snapshots)                                                                                                                                                                                                                     | 28/05/2026   | 28/05/2026      | https://000005.awsstudygroup.com/J               |
-| 6   | - **Lab43 (Chưa hoàn thành do lỗi): Chuyển đổi lược đồ và di dời CSDL** <br>&emsp; + Giới thiệu AWS Schema Conversion Tool (SCT) <br>&emsp; + Giới thiệu AWS Database Migration Service (DMS) <br>&emsp; + Tổng kết toàn bộ nội dung Module 6                                                                                                                                                                     | 29/05/2026   | 29/05/2026      | https://000043.awsstudygroup.com/                |
+| Thứ tự | Nội dung công việc | Bắt đầu | Kết thúc | Tài liệu tham khảo |
+| --- | --- | --- | --- | --- |
+| 2 | Tìm hiểu Amazon DynamoDB (NoSQL), Amazon Redshift (data warehouse) và cơ chế lưu cache với ElastiCache. | 25/05/2026 | 25/05/2026 | https://000008.awsstudygroup.com |
+| 3 | Nghiên cứu dịch vụ di chuyển database AWS DMS và công cụ chuyển đổi cấu trúc schema SCT. | 26/05/2026 | 26/05/2026 | https://aws.amazon.com/dms/ |
+| 4 | Tìm hiểu pipeline dữ liệu: thu thập, xử lý qua AWS Glue và truy vấn bằng Amazon Athena. | 27/05/2026 | 27/05/2026 | https://000011.awsstudygroup.com |
+| 5 | Thực hành xây dựng biểu đồ báo cáo trực quan hóa dữ liệu bằng Amazon QuickSight. | 28/05/2026 | 28/05/2026 | https://000011.awsstudygroup.com |
+| 6 | Hoàn thành bài thực hành phân tích dữ liệu serverless. Tổng kết Tuần 6. | 29/05/2026 | 29/05/2026 | https://000011.awsstudygroup.com |
 
 ### Kết quả thu hoạch sau Tuần 6:
 
-- Đã hoàn tất học phần Module 6 và nắm được toàn bộ kiến thức về cơ sở dữ liệu trên AWS:
-  - Ôn tập và nắm vững các khái niệm cơ bản về Database.
-  - Nắm được các thành phần cốt lõi của RDBMS và cách tối ưu hóa hiệu năng.
-  - Phân biệt được RDBMS và NoSQL, OLTP và OLAP.
-  - Hiểu và nắm được Amazon RDS và các tính năng chính.
-  - Nắm được đặc điểm và khác biệt của Amazon Aurora và tính năng nâng cao.
-  - Hiểu về Amazon Redshift (Data Warehouse, MPP architecture) và Amazon ElastiCache.
-  - Giới thiệu DMS và SCT.
-- Luyện tập thực hành Lab5: Giới thiệu Amazon RDS thành công.
-- Đọc hiểu nội dung Lab43 nhưng chưa hoàn thành do lỗi.
+* Hiểu rõ thiết kế database NoSQL hiệu năng cao với DynamoDB.
+* Biết cách sử dụng Glue để trích xuất dữ liệu, định nghĩa schema và dùng Athena truy vấn trực tiếp từ S3.
+* Tự xây dựng dashboard trực quan hóa chỉ số dữ liệu trên QuickSight.

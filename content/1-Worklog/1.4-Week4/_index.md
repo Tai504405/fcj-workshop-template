@@ -5,33 +5,25 @@ weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
+
 ### Focus & Objectives of Week 4:
 
-* Successfully finished Module 4 and master all knowledge about AWS storage services (S3, Snow Family, Storage Gateway, Disaster Recovery).
-* Understand in detail S3 (Object Storage, bucket/object, REST API, Access Point, Static Website Hosting, CORS, Versioning, VPC Endpoint, Storage Classes, Object Lifecycle Management).
-* Master Snow Family, Storage Gateway (File/Volume/Tape Gateway) and Disaster Recovery (RTO/RPO, strategies Backup & Restore, Pilot Light, Low Capacity, Full Capacity).
+* Understand primary object storage services (Amazon S3).
+* Explore AWS relational database solutions including Amazon RDS and Aurora.
+* Deploy storage buckets and restrict public access with bucket policies.
+* Study unified backup plans and strategies with AWS Backup.
 
 ### Detailed Weekly Action Items:
 | No. | Task Description | Start | Completion | Reference Links |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Study Amazon S3 theory: Object Storage, bucket/object, REST API (GET, PUT), storage structure and operation mechanisms <br>&emsp; + Study S3 features: Access Point, Static Website Hosting, CORS, Versioning, VPC Endpoint <br>&emsp; + Study S3 storage classes (Standard, Standard-IA, Intelligent-Tiering, One Zone-IA, Glacier) and Object Lifecycle Management to optimize costs                                                                                             | 11/05/2026 | 11/05/2026      | https://youtu.be/_yunukwcAwc?si=poUK5WYhHGfiKbn5 <br> https://youtu.be/mPBjB6Ltl_Q?si=WCTj5ubOenpXb65 |
-| 3   | - Study Snow Family (Snowball, Snowball Edge, Snowmobile) and large-scale data transfer use cases <br>&emsp; + Study AWS Storage Gateway: File Gateway, Volume Gateway, Tape Gateway in Hybrid Storage models <br>&emsp; + Study Disaster Recovery: RTO/RPO concepts and strategies (Backup & Restore, Pilot Light, Low Capacity, Full Capacity)                                                                                         | 12/05/2026 | 12/05/2026      | https://youtu.be/YXn8Q_Hpsu4?si=8u2aAr0Dn8BQgewR |
-| 4   | - **Lab 13:** Deploy AWS Backup for your system (backup plan for EBS/RDS/DynamoDB/EFS, data restore, automation + SNS notifications) <br>- **Lab 14:** VM Import/Export (import VM into EC2, backup VM into EC2)                                                                                         | 13/05/2026 | 13/05/2026      | https://000013.awsstudygroup.com <br> https://000014.awsstudygroup.com |
-| 5   | - **Lab 24:** Deploy File Storage Gateway (create Storage Gateway, File Shares, connect On-premise) <br>- **Lab 25 (Lab outdated so not completed):** Read about FSx (review FSx architecture, file servers, storage, VPC, networking, data replication)                                                                                         | 14/05/2026 | 14/05/2026      | https://000024.awsstudygroup.com <br> https://000025.awsstudygroup.com|
-| 6   | - **Lab 57 (Couldn't do CloudFront due to permission limits):** Getting started with Amazon S3 (static website hosting, object management, access configuration) <br>- Recap all Module 4 content                                                                                         | 15/05/2026 | 15/05/2026      | https://000057.awsstudygroup.com |
-
+| --- | --- | --- | --- | --- |
+| 2 | Learn Amazon S3 classes, object versioning, and Lifecycle Policies. | 11/05/2026 | 11/05/2026 | https://000005.awsstudygroup.com |
+| 3 | Explore relational databases: Amazon RDS and high-performance Aurora. | 12/05/2026 | 12/05/2026 | https://000008.awsstudygroup.com |
+| 4 | Practice S3 configuration, access control list (ACL) rules, and objects management. | 13/05/2026 | 13/05/2026 | https://000005.awsstudygroup.com |
+| 5 | Deploy an RDS MySQL engine in isolated database subnets. | 14/05/2026 | 14/05/2026 | https://000008.awsstudygroup.com |
+| 6 | Configure automated, policy-driven backups using AWS Backup. Review Week 4. | 15/05/2026 | 15/05/2026 | https://aws.amazon.com/backup/ |
 
 ### Key Accomplishments - Week 4:
 
-* Completed Module 4 and mastered all knowledge about AWS storage services:
-  * Amazon S3: Object Storage, bucket/object, REST API, Access Point, Static Website Hosting, CORS, Versioning, VPC Endpoint, storage classes and Object Lifecycle Management.
-  * Snow Family (Snowball, Snowball Edge, Snowmobile) and large-scale data transfer use cases.
-  * AWS Storage Gateway: File Gateway, Volume Gateway, Tape Gateway (Hybrid Storage).
-  * Disaster Recovery on AWS: RTO/RPO concepts and strategies (Backup & Restore, Pilot Light, Low Capacity, Full Capacity).
-* Understood and distinguished S3 storage classes and how to optimize costs with Lifecycle Management.
-* Mastered S3 access control and deployment features (Access Point, VPC Endpoint, Static Website, CORS, Versioning).
-* Completed all hands-on labs per Module 4:
-  * **Lab 13**: Deploy AWS Backup for your system (backup plan for EBS/RDS/DynamoDB/EFS, data restore, automation + SNS notifications).
-  * **Lab 14**: VM Import/Export (import VM into EC2, backup VM into EC2).
-  * **Lab 24**: Deploy File Storage Gateway (create Storage Gateway, File Shares, connect On-premise).
-  * **Lab 57**: Getting started with Amazon S3 (static website hosting, object management, access configuration).
+* Managed object lifecycles and storage tiering efficiently inside S3.
+* Launched a secure RDS database with private routing.
+* Created centralized backup schedules to safeguard application volumes.

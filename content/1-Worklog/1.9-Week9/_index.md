@@ -8,36 +8,22 @@ pre: " <b> 1.9. </b> "
 
 ### Focus & Objectives of Week 9:
 
-- Build the `GlobalMart` project with the frontend using `React` and the backend using `Java Spring Boot`.
-- Complete core e-commerce system functionalities including registration, login, product management, category management, and an admin dashboard.
-- Prepare the foundation for deploying `production CI/CD` for the project on AWS.
+* Package web applications into standard, immutable Docker container images.
+* Optimize Docker images utilizing multi-stage build patterns.
+* Provision container storage repositories in Amazon Elastic Container Registry (ECR).
+* Execute local image push procedures to secure cloud repositories on ECR.
 
-### Tasks to be Deployed This Week:
-
-| Day | Tasks                                                                                                                                                                                                                                                                                                                                                                                                                           | Start Date | End Date   | Reference |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------- | --------- |
-| 2   | - Initialize the `GlobalMart` project and organize the source code structure <br>&emsp; + Separate into 2 main parts: `globalmart-app` for frontend and `globalmart-api` for backend <br>&emsp; + Set up the development environment for `React/Vite` on the frontend and `Spring Boot` on the backend <br>&emsp; + Configure concurrent execution of frontend and backend from the root directory using `npm run dev`          | 15/06/2026 | 15/06/2026 |           |
-| 3   | - Develop the frontend using `React` and `TypeScript` <br>&emsp; + Build the basic user interface for the e-commerce website <br>&emsp; + Design pages for login, registration, and product display <br>&emsp; + Connect the frontend to the backend API to prepare for business logic processing                                                                                                                               | 16/06/2026 | 16/06/2026 |           |
-| 4   | - Develop the backend using `Java Spring Boot` <br>&emsp; + Build APIs for user login and registration <br>&emsp; + Build functionalities for product and category management <br>&emsp; + Connect the backend to `MongoDB Atlas` for application data storage                                                                                                                                                                  | 17/06/2026 | 17/06/2026 |           |
-| 5   | - Complete the main functionalities of the system <br>&emsp; + Integrate data workflow between frontend and backend <br>&emsp; + Add features including `login`, `register`, `product`, and `category` <br>&emsp; + Build and update the `admin dashboard` for system administration                                                                                                                                            | 18/06/2026 | 18/06/2026 |           |
-| 6   | - Prepare the `production CI/CD` foundation for the project <br>&emsp; + Add configuration files including `Dockerfile`, `buildspec.yml`, `appspec.yml`, and `taskdef.json` <br>&emsp; + Define integration directions for `AWS CodePipeline`, `CodeBuild`, `CodeDeploy`, `ECR/EC2`, `CloudWatch`, and `SNS` for the next deployment phase <br>&emsp; + Summarize project progress and review the overall source code structure | 19/06/2026 | 19/06/2026 |           |
+### Detailed Weekly Action Items:
+| No. | Task Description | Start | Completion | Reference Links |
+| --- | --- | --- | --- | --- |
+| 2 | Study Docker concepts and write a Dockerfile for the React SPA served via Nginx. | 15/06/2026 | 15/06/2026 | Docker Documentation |
+| 3 | Write a multi-stage Dockerfile for the Spring Boot backend jar service. | 16/06/2026 | 16/06/2026 | Docker Documentation |
+| 4 | Create ECR repositories for globalmart-frontend and globalmart-backend on AWS. | 17/06/2026 | 17/06/2026 | https://aws.amazon.com/ecr/ |
+| 5 | Log in to ECR using AWS CLI and push built images to remote ECR registry. | 18/06/2026 | 18/06/2026 | https://aws.amazon.com/ecr/ |
+| 6 | Audit ECR console registries for push verification and tag validation. Review Week 9. | 19/06/2026 | 19/06/2026 | https://aws.amazon.com/ecr/ |
 
 ### Key Accomplishments - Week 9:
 
-- Built the `GlobalMart` project with a clear separation between frontend and backend:
-  - Frontend uses `React`, `Vite`, and `TypeScript`.
-  - Backend uses `Java Spring Boot`.
-  - The source code is organized into 2 main directories: `globalmart-app` and `globalmart-api`.
-- Completed the core functionalities of the e-commerce system:
-  - Account registration.
-  - System login.
-  - Product management.
-  - Category management.
-  - Added an `admin dashboard`.
-- Connected the backend to `MongoDB Atlas` to store and manage application data.
-- Established a convenient way to run the project in the development environment:
-  - Run frontend and backend concurrently using `npm run dev`.
-  - Run frontend or backend separately depending on testing needs.
-- Prepared the foundation for deploying `production CI/CD` for the project:
-  - Added configuration files such as `Dockerfile`, `buildspec.yml`, `appspec.yml`, and `taskdef.json`.
-  - Defined the integration direction with AWS services such as `CodePipeline`, `CodeBuild`, `CodeDeploy`, `CloudWatch`, and `SNS`.
+* Successfully built small-footprint Docker images using multi-stage compilation.
+* Initialized cloud container registries on Amazon ECR.
+* Pushed verified application images with proper tags to AWS ECR.
