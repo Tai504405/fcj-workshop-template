@@ -1,102 +1,133 @@
 ---
 title: "Blog 2"
-date: 2026-06-17
+date: 2026-06-28
 weight: 2
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
+# Xây dựng RAG đa phòng ban với Amazon Bedrock Knowledge Bases và Fine-Grained Access Control
 
-# Giảm gian lận SMS OTP với Vonage network-powered solutions và Amazon Cognito
+Mình vừa đọc một bài khá hay trên AWS Blog về cách xây dựng hệ thống GenAI nội bộ cho doanh nghiệp, nơi nhiều phòng ban cùng sử dụng một Knowledge Base nhưng vẫn đảm bảo mỗi người chỉ được xem đúng dữ liệu được cấp quyền.
 
-## Vấn đề: OTP fraud và rớt người dùng ở bước xác thực
+Đây là một bài toán rất thực tế khi triển khai AI Assistant trong doanh nghiệp.
 
-Xác thực người dùng (user authentication) là một trong những điểm bị nhắm đến nhiều nhất trong bảo mật ứng dụng. Khi gian lận được “công nghiệp hoá” nhờ generative AI, chi phí tội phạm mạng được dự báo có thể đạt **$23 nghìn tỷ** vào năm 2027 (**+175%** so với 2022). **20%** gian lận được cho là đến từ **synthetic identity** và các khai thác liên quan đến authentication, với account takeover (ATO) tăng **141%** kể từ 2021.
+## Bài toán
 
-SMS One-time passcodes (OTPs) tạo friction: chỉ ~**80% conversion**, nghĩa là **1/5 người dùng hợp lệ rơi rớt** ở bước verify. Ngoài ra còn có chi phí vận hành (support/helpdesk tickets) liên quan đến password recovery và OTP-based verification.
+Giả sử công ty có nhiều phòng ban:
+- Finance
+- Engineering
+- Executive
 
----
+Mỗi bộ phận đều lưu trữ tài liệu riêng:
+- Báo cáo tài chính
+- Tài liệu kiến trúc hệ thống
+- Incident Report
+- Chiến lược kinh doanh
+- M&A Planning
 
-## Tổng quan giải pháp: Vonage network-powered solutions + Cognito `CUSTOM_AUTH`
+Tuy nhiên khi triển khai AI Chatbot nội bộ bằng RAG (Retrieval-Augmented Generation), một vấn đề lớn xuất hiện:
+**Làm sao để AI trả lời đúng thông tin nhưng không làm lộ dữ liệu giữa các phòng ban?**
 
-Giải pháp tích hợp Vonage với Amazon Cognito thông qua flow `CUSTOM_AUTH` để:
-
-- Dùng tín hiệu rủi ro từ nhà mạng (real-time) trước khi gửi OTP
-- Ưu tiên **Silent Authentication** (zero-tap), giảm “friction tax”
-- Fallback tự động sang SMS/RCS/Voice/WhatsApp/email khi cần
-- Chặn các hành vi abuse kênh verify như SMS pumping/AIT
-
-“Network-powered” nghĩa là tín hiệu đến từ **real-time data trực tiếp từ mobile network operators (MNOs)**. Điều này quan trọng vì với SIM swap–driven ATO, “recently” có thể chỉ là vài phút/giờ; database tĩnh cập nhật theo tuần thường phát hiện quá trễ.
-
----
-
-## Các thành phần chính (3 trụ cột)
-
-### 1) Identity Insights (pre-verification)
-
-Chạy trước khi initiate kênh verification để ra quyết định policy:
-
-- `format`, `network_type`: lọc số invalid/VoIP/landline/premium-rate numbers
-- `sim_swap`: phát hiện SIM swap trong look-back window
-- `subscriber_match`: đối chiếu thông tin subscriber với KYC records của nhà mạng
-
-Kết quả có thể là step-up challenge, hard block hoặc silent logging — trước khi gửi OTP.
-
-### 2) Verify (Silent Authentication + fallback)
-
-Ưu tiên **Silent Authentication** (proof of possession = cellular data session). Nếu không khả dụng, hệ thống fallback sang SMS/RCS/Voice/WhatsApp/email một cách minh bạch với người dùng.
-
-### 3) Fraud Defender (bảo vệ kênh verify)
-
-Theo dõi và chặn abuse như SMS pumping và artificially inflated traffic (AIT) trước khi chi phí phát sinh lớn.
+Ví dụ:
+- Nhân viên Engineering không được xem báo cáo tài chính.
+- Finance không được xem tài liệu M&A.
+- Executive có thể xem nhiều loại tài liệu hơn.
 
 ---
 
-## Kiến trúc với Amazon Cognito
+## Kiến trúc Ingestion Pipeline
 
-Tích hợp dùng Amazon Cognito `CUSTOM_AUTH` với 3 Lambda triggers:
+Để đưa tài liệu vào Knowledge Base, AWS đề xuất một pipeline serverless khá thú vị.
 
-- Define Auth Challenge (orchestrator)
-- Create Auth Challenge (gọi Vonage APIs)
-- Verify Auth Challenge (validate)
+Luồng hoạt động:
+1. Tài liệu được upload lên Amazon S3.
+2. S3 phát sinh sự kiện tới Amazon EventBridge.
+3. EventBridge gửi message vào Amazon SQS.
+4. AWS Lambda xử lý metadata.
+5. Metadata được gắn vào tài liệu.
+6. EventBridge Schedule kích hoạt Lambda Ingest định kỳ.
+7. Lambda đưa dữ liệu vào Amazon Bedrock Knowledge Bases.
+8. Embedding được lưu trong Amazon S3 Vectors.
 
-![Tong quan risk-adaptive sign-in](/images/3-BlogsTranslated/blog2/ARCHBLOG-1533-1.png)
+Một số dịch vụ AWS xuất hiện trong kiến trúc:
+- Amazon S3
+- Amazon EventBridge
+- Amazon SQS
+- AWS Lambda
+- Amazon Bedrock Knowledge Bases
+- Amazon S3 Vectors
+- Amazon CloudWatch
 
----
-
-## Authentication flow (happy path)
-
-1. Client gọi `InitiateAuth` với `CUSTOM_AUTH`, truyền phone number.
-2. Cognito issue `CUSTOM_CHALLENGE`.
-3. Create Auth Challenge gọi Identity Insights; nếu pass thì initiate Verify Silent Auth và trả `check_url`.
-4. Client mở `check_url` qua cellular data; nhà mạng xác minh và trả verification code.
-5. Client gọi `RespondToAuthChallenge` kèm code.
-6. Verify Auth Challenge validate với Vonage; nếu thành công thì Cognito issue tokens.
-
-![User login happy path sequence](/images/3-BlogsTranslated/blog2/ARCHBLOG-1533-2.png)
-
----
-
-## Lưu ý triển khai (AWS)
-
-- Lưu Vonage credentials trong AWS Secrets Manager
-- IAM least privilege cho Lambda roles
-- CloudWatch Logs cho từng Lambda trigger
-- CloudTrail cho audit trails và AWS WAF rate-limiting chống brute-force
-- Enforce TLS 1.2+ (encryption in transit)
+Điểm mình thích ở kiến trúc này là toàn bộ quá trình ingestion được thiết kế theo hướng event-driven và serverless, giúp giảm chi phí vận hành.
 
 ---
 
-## Production outcomes (ví dụ)
+## Kiến trúc truy vấn dữ liệu
 
-Lydia Solutions ghi nhận:
+Sau khi dữ liệu được index vào Knowledge Base, người dùng sẽ tương tác thông qua ứng dụng web.
 
-- Giảm đến **50% latency** so với dịch vụ xác thực trước đó
-- Kết quả phổ biến ở nhiều triển khai: cải thiện conversion **2–8.5%** so với SMS-only và latency giảm **50–75%**
+Luồng xử lý:
+1. Người dùng truy cập ứng dụng.
+2. Amazon CloudFront phân phối nội dung.
+3. Amazon Cognito xác thực người dùng.
+4. AWS WAF bảo vệ ứng dụng khỏi các cuộc tấn công phổ biến.
+5. Amazon API Gateway tiếp nhận request.
+6. Lambda Authorizer kiểm tra quyền truy cập.
+7. Amazon Verified Permissions đánh giá chính sách phân quyền.
+8. AWS Lambda Middleware xử lý nghiệp vụ.
+9. Amazon Bedrock Knowledge Bases thực hiện truy vấn dữ liệu.
+10. Kết quả được trả về cho người dùng.
 
 ---
 
-## Kết luận rút ra cho báo cáo thực tập
+## Điểm đáng chú ý nhất: Fine-Grained Access Control
 
-- Dùng risk signals để quyết định khi nào cần friction (step-up) vs silent verification.
-- Ưu tiên network-level proof (Silent Auth) để giảm các vector tấn công OTP.
-- Xem verification cost như một metric song hành giữa security và business (conversion + SMS pumping).
+Điều mình thấy hay nhất trong kiến trúc này là việc kết hợp:
+- Amazon Cognito
+- Lambda Authorizer
+- Amazon Verified Permissions
+
+để tạo cơ chế phân quyền chi tiết.
+
+Thay vì chỉ kiểm tra:
+- User có đăng nhập hay không?
+
+hệ thống còn kiểm tra:
+- User thuộc phòng ban nào?
+- Có được xem tài liệu này không?
+- Có được truy vấn dữ liệu này không?
+
+Điều này giúp triển khai RAG trong môi trường doanh nghiệp an toàn hơn rất nhiều.
+
+---
+
+## Kiến thức mình học được
+
+Qua bài viết này mình thấy rằng khi xây dựng hệ thống GenAI cho doanh nghiệp, phần khó nhất không phải là LLM hay Prompt Engineering.
+
+Thách thức thực sự nằm ở:
+- Quản lý dữ liệu
+- Metadata
+- Phân quyền truy cập
+- Bảo mật thông tin nội bộ
+
+AWS đang giải quyết bài toán này bằng cách kết hợp:
+- Amazon Bedrock Knowledge Bases
+- Amazon S3 Vectors
+- Amazon Cognito
+- Amazon Verified Permissions
+
+để tạo ra một nền tảng RAG vừa mở rộng tốt vừa đảm bảo bảo mật.
+
+---
+
+## Kết luận
+
+Nếu đang tìm hiểu về GenAI trên AWS, đây là một case study rất đáng tham khảo vì nó không chỉ nói về AI mà còn cho thấy cách xây dựng một hệ thống RAG hoàn chỉnh theo hướng production-ready.
+
+Đặc biệt, mình thấy phần kết hợp giữa Amazon Bedrock Knowledge Bases và Amazon Verified Permissions là một hướng tiếp cận rất phù hợp cho các doanh nghiệp có nhiều phòng ban và yêu cầu phân quyền dữ liệu chặt chẽ.
+
+Bài viết gốc: https://aws.amazon.com/vi/blogs/architecture/secure-multi-tenant-rag-with-amazon-bedrock-and-verified-permissions/
+![Blog2](/images/3-Blog/blog2-1.jpg)
+![Blog2](/images/3-Blog/blog2-2.jpg)
+![Blog2](/images/3-Blog/blog2-3.jpg)

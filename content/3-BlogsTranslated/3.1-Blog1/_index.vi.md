@@ -1,91 +1,124 @@
 ---
 title: "Blog 1"
-date: 2026-04-21
+date: 2026-06-16
 weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
-# Amazon Bedrock AgentCore: Policy & Evaluations để triển khai AI agent đáng tin cậy
+# Từ Cache Theo Giờ Đến Real-Time Pricing: Samsung Giải Quyết Bài Toán Đồng Bộ Giá Với AWS Lambda Response Streaming
 
-Sau khi đọc một bài AWS News Blog về các cập nhật mới của **Amazon Bedrock AgentCore**, mình tập trung vào những ý mà mình thấy sát thực tế nhất khi đưa AI agent vào production: cần có **policy** để giới hạn hành động/tool call, và cần có **evaluations** để theo dõi chất lượng liên tục theo thời gian.
+Trong thương mại điện tử, giá sản phẩm là một trong những dữ liệu quan trọng nhất. Chỉ cần giá hiển thị trên trang sản phẩm khác với giá tại bước thanh toán, trải nghiệm khách hàng có thể bị ảnh hưởng nghiêm trọng.
 
-**Các mốc cập nhật**
-- Cập nhật **03/03/2026**: Policy trong AgentCore đã Generally Available.
-- Cập nhật **31/03/2026**: AgentCore Evaluations đã Generally Available.
+Gần đây mình đọc được một bài chia sẻ khá thú vị từ AWS Architecture Blog về cách Samsung cải tiến hệ thống định giá trên Samsung.com bằng AWS Lambda Response Streaming và Amazon CloudFront.
 
----
-
-## Vấn đề khi scale AI agent
-
-Khi agent ngày càng tự động và có quyền gọi nhiều tools, rủi ro cũng tăng:
-- Agent có thể truy cập dữ liệu nhạy cảm không đúng cách.
-- Agent có thể thực hiện hành động vượt quyền.
-- Quality có thể bị drift theo thời gian khi prompt/tool/data thay đổi.
-
-AgentCore bổ sung guardrails và measurement để giải quyết các vấn đề này.
+Đây là một case study rất hay về việc lựa chọn kiến trúc phù hợp thay vì chỉ tập trung vào tối ưu hiệu năng.
 
 ---
 
-## Những tính năng mới nổi bật
+## Bài toán
 
-### 1) Policy trong AgentCore (đặt ranh giới cho tool call)
+Samsung.com là kênh bán hàng trực tiếp của Samsung, cung cấp nhiều dòng sản phẩm như điện thoại, TV, thiết bị gia dụng và phụ kiện.
 
-Policy intercept và kiểm tra các **tool call ở AgentCore Gateway** trước khi chạy. Nhờ đó, tổ chức có thể định nghĩa:
-- Agent được phép dùng tool nào (API, AWS Lambda, MCP server, dịch vụ bên thứ ba).
-- Được phép làm gì với tool đó.
-- Trong điều kiện nào (ví dụ dựa trên claim/role trong JWT và điều kiện trên tham số input của tool).
+Trong các sự kiện lớn như Black Friday, một trang danh sách sản phẩm có thể phải hiển thị giá của hơn 30 SKU khác nhau cùng lúc.
 
-Policy có thể áp dụng nhất quán cho nhiều agent, độc lập với framework hay model.
+Mỗi sản phẩm lại có nhiều biến thể:
+- Màu sắc
+- Phiên bản bộ nhớ
+- Chương trình khuyến mãi
+- Ưu đãi theo khu vực
 
-### 2) AgentCore Evaluations (theo dõi chất lượng theo thời gian thực)
-
-AgentCore Evaluations đánh giá chất lượng dựa trên hành vi thực tế:
-- Built-in evaluators (ví dụ correctness, helpfulness, safety, goal success rate, context relevance, tool selection accuracy).
-- Custom evaluators theo yêu cầu nghiệp vụ.
-
-Kết quả hiển thị trong **Amazon CloudWatch** cùng observability signals (logs/metrics/traces) để thiết lập cảnh báo khi chất lượng giảm.
-
-### 3) AgentCore Memory (episodic long-term memory)
-
-Chiến lược memory dài hạn dạng “episodic” giúp agent học từ trải nghiệm: ghi lại các episode (ngữ cảnh, hành động, kết quả) và tái sử dụng bài học cho các tình huống tương tự.
-
-### 4) AgentCore Runtime (bidirectional streaming)
-
-Hỗ trợ hội thoại tự nhiên hơn (đặc biệt voice agent) với khả năng người dùng ngắt lời và agent thích ứng ngay, không cần chờ hết lượt.
+Điều này khiến việc truy vấn giá theo thời gian thực trở thành một thách thức lớn.
 
 ---
 
-## Policy hoạt động như thế nào (tóm tắt theo dạng báo cáo)
+## Kiến trúc cũ và vấn đề phát sinh
 
-1. Tạo **policy engine** trên AgentCore console và gắn với một hoặc nhiều gateway.
-2. Chọn chế độ:
-   - Enforce (permit/deny tool call)
-   - Log-only (test rule trước khi bật production)
-3. Viết policy bằng mô tả ngôn ngữ tự nhiên hoặc bằng **Cedar** để phân quyền chi tiết.
+Trong kiến trúc cũ, Samsung sử dụng một lớp Data Aggregation nằm giữa Pricing Engine và CloudFront.
 
-Ví dụ ý tưởng policy: chỉ role `refund-agent` được gọi refund tool và chỉ khi `amount < 200`.
+Một Cron Job sẽ chạy mỗi giờ để:
+1. Lấy toàn bộ dữ liệu sản phẩm từ Pricing Engine.
+2. Tính toán trước các tổ hợp giá có thể xảy ra.
+3. Lưu kết quả vào cache để phục vụ người dùng.
+
+Mô hình này giúp tăng tốc độ đọc dữ liệu nhưng lại tạo ra hai vấn đề lớn.
+
+### 1. Permutation Explosion
+Khi số lượng sản phẩm và biến thể tăng lên, số lượng tổ hợp giá tăng theo cấp số nhân.
+
+Ví dụ: 30 sản phẩm × nhiều phiên bản × nhiều chương trình khuyến mãi có thể tạo ra hàng nghìn hoặc hàng chục nghìn bản ghi cần được tính toán trước.
+
+Kết quả là hệ thống tiêu tốn nhiều tài nguyên lưu trữ và xử lý cho những dữ liệu có thể không bao giờ được người dùng truy cập.
+
+### 2. Synchronization Lag
+Đây là vấn đề nghiêm trọng hơn.
+
+Vì Cron Job chỉ chạy mỗi giờ một lần nên dữ liệu trong cache có thể chậm hơn dữ liệu thực tế tới 60 phút.
+
+Nếu một chương trình Flash Sale bắt đầu lúc 10:05 thì khách hàng vẫn có thể nhìn thấy giá cũ cho đến khi Cron Job tiếp theo chạy vào 11:00.
+
+Hệ quả:
+- Giá hiển thị không chính xác
+- Khách hàng bất ngờ khi thanh toán
+- Mất niềm tin vào hệ thống
+- Ảnh hưởng doanh thu
 
 ---
 
-## Evaluations hoạt động như thế nào (tóm tắt theo dạng báo cáo)
+## Giải pháp mới với AWS Lambda Response Streaming
 
-1. Tạo online evaluation trong AgentCore console.
-2. Chọn nguồn dữ liệu:
-   - AgentCore agent endpoint, hoặc
-   - CloudWatch log group (agent ngoài AgentCore)
-3. Chọn evaluator (built-in/custom), cấu hình sampling rate và filter.
-4. Theo dõi trong CloudWatch, tạo alarm và automation khi cần.
+Thay vì tiếp tục tối ưu cache, Samsung quyết định loại bỏ hoàn toàn tầng Data Aggregation.
+
+Kiến trúc mới được xây dựng dựa trên nguyên tắc: **Luôn lấy dữ liệu từ nguồn chính (Source of Truth) tại thời điểm người dùng gửi yêu cầu.**
+
+Quy trình hoạt động:
+1. Người dùng gửi yêu cầu lấy giá sản phẩm.
+2. Amazon CloudFront kiểm tra cache tại Edge Location.
+3. Nếu cache miss, request được chuyển đến AWS Lambda.
+4. Lambda thực hiện fan-out và gửi song song nhiều request tới Pricing Engine.
+5. Kết quả được stream ngay về phía người dùng khi có dữ liệu trả về.
+6. CloudFront tiếp tục cache kết quả trong thời gian ngắn để tối ưu hiệu năng.
 
 ---
 
-## Ghi chú về vùng khả dụng
+## Vì sao AWS Lambda Response Streaming phù hợp?
 
-AgentCore (bao gồm Policy preview) có ở: US East (N. Virginia), US West (Oregon), Asia Pacific (Mumbai, Singapore, Sydney, Tokyo), Europe (Frankfurt, Ireland). AgentCore Evaluations preview có ở: US East (N. Virginia), US West (Oregon), Asia Pacific (Sydney), Europe (Frankfurt).
+Thông thường, Lambda sẽ đợi xử lý xong toàn bộ dữ liệu rồi mới trả về response. Điều này làm tăng thời gian chờ khi cần tổng hợp dữ liệu từ nhiều nguồn khác nhau.
+
+Với Lambda Response Streaming:
+- Dữ liệu được gửi về ngay khi có kết quả
+- Giảm Time To First Byte (TTFB)
+- Người dùng nhận được phản hồi sớm hơn
+- Không cần xây dựng thêm lớp cache trung gian phức tạp
+
+Đây là điểm khác biệt quan trọng giúp Samsung vừa đảm bảo hiệu năng vừa giữ được tính chính xác của dữ liệu giá.
 
 ---
 
-## Kết luận rút ra cho báo cáo thực tập
+## Những dịch vụ AWS xuất hiện trong kiến trúc
 
-- Nên có lớp policy “ngoài vòng suy luận” của agent để kiểm soát tool call.
-- Nên theo dõi chất lượng liên tục (production) thay vì chỉ test trước khi deploy.
-- Kết hợp observability + evaluation metrics để phát hiện quality regression sớm và phản ứng nhanh.
+- Amazon CloudFront
+- AWS Lambda
+- Lambda Response Streaming
+- Lambda Function URL
+- Provisioned Concurrency
+
+Mặc dù số lượng dịch vụ không nhiều, nhưng cách kết hợp các dịch vụ này đã giúp giải quyết một bài toán thực tế ở quy mô rất lớn.
+
+---
+
+## Bài học mình rút ra từ case study này
+
+Điều thú vị nhất không nằm ở Lambda Response Streaming mà nằm ở tư duy kiến trúc.
+
+Cache thường được xem là giải pháp cho các vấn đề hiệu năng. Tuy nhiên, trong những bài toán mà tính chính xác của dữ liệu quan trọng hơn tốc độ truy xuất, cache đôi khi lại trở thành nguyên nhân gây ra lỗi nghiệp vụ.
+
+Case study của Samsung cho thấy rằng:
+- Không phải lúc nào thêm cache cũng là hướng đi đúng.
+- Source of Truth cần được ưu tiên trong các hệ thống liên quan đến giá bán.
+- Serverless có thể giải quyết hiệu quả các bài toán tổng hợp dữ liệu theo thời gian thực.
+- Một kiến trúc đơn giản hơn đôi khi lại mang lại kết quả tốt hơn một hệ thống nhiều tầng trung gian.
+
+Bài viết gốc: https://aws.amazon.com/vi/blogs/architecture/how-samsung-achieved-real-time-pricing-with-aws-lambda-response-streaming/
+
+![Kiến trúc cũ của Samsung gây ra vấn đề trễ đồng bộ](/images/3-Blog/1.jpg)
+![Kiến trúc mới sử dụng AWS Lambda Response Streaming của Samsung](/images/3-Blog/2.jpg)

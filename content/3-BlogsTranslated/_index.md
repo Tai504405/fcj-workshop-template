@@ -1,27 +1,23 @@
 ---
 title: "Translated Blogs"
-date: 2024-01-01
+date: 2026-06-16
 weight: 3
 chapter: false
 pre: " <b> 3. </b> "
 ---
 
-This section lists and introduces the blogs you have translated.
+This section will list and introduce the blogs you have translated. For example:
 
-###  [Blog 1 - Amazon Bedrock AgentCore adds quality evaluations and policy controls for deploying trusted AI agents](3.1-Blog1/)
-This blog summarizes key updates in **Amazon Bedrock AgentCore** and focuses on two production-ready pillars when deploying AI agents: **policy controls** (governance/guardrails) and **quality evaluations** (continuous monitoring over time).
+###  [Blog 1 - From Hourly Caching to Real-Time Pricing: How Samsung Solved Price Synchronization with AWS Lambda Response Streaming](3.1-Blog1/)
+This blog introduces a fascinating case study from the AWS Architecture Blog on how Samsung improved the pricing system on Samsung.com to solve the real-time data synchronization challenge. You will learn about the limitations of the legacy architecture using an hourly Cron Job cache (such as permutation explosion of product variants and up to a 60-minute synchronization lag), why Samsung decided to completely eliminate this intermediate aggregation layer to switch to a Serverless model, and how combining Amazon CloudFront with AWS Lambda Response Streaming helps reduce Time To First Byte (TTFB), ensuring accurate prices directly from the Source of Truth while maintaining performance at a massive scale.
 
-###  [Blog 2 - Reducing SMS OTP fraud with Vonage network-powered solutions and Amazon Cognito](3.2-Blog2/)
-This blog explains how **Vonage network-powered solutions** integrate with **Amazon Cognito** via the `CUSTOM_AUTH` flow to strengthen identity verification while reducing the friction of SMS OTP. It covers **Identity Insights**, **Verify (Silent Authentication + fallback)**, and **Fraud Defender**, along with reference architecture and the authentication “happy path”.
+### [Blog 2 - Building Multi-Department RAG with Amazon Bedrock Knowledge Bases and Fine-Grained Access Control](3.2-Blog2/)
+This blog introduces how to build a production-ready, secure, and multi-tenant Retrieval-Augmented Generation (RAG) system for enterprises using AWS serverless architecture. You will learn how to solve the critical challenge of data isolation and data leakage among different departments (Finance, Engineering, Executive) sharing a single Knowledge Base. 
 
-###  [Blog 3 - Cyber resilience on AWS: A reference approach for recovery from ransomware and destructive events](3.3-Blog3/)
-This blog summarizes a reference approach for cyber recovery on AWS: separating trust boundaries across a Production account, a Recovery account (AWS Backup logically air-gapped vault + MPA), and an Isolated Recovery Environment (IRE); building a validation pipeline to prove backups are safe to use; selecting a safe recovery point; running a parallelizable recovery workflow; and applying the **Rebuild–Restore–Rotate** framework.
+The article guides you through an event-driven Ingestion Pipeline (utilizing Amazon S3, EventBridge, SQS, and Lambda to enrich metadata) and a secure Query Pipeline. The core highlight of this architecture is the implementation of **Fine-Grained Access Control (FGAC)** by combining **Amazon Cognito**, **Lambda Authorizers**, and **Amazon Verified Permissions (AVP)**. This ensures that the AI assistant only retrieves and answers based on the specific documents the requesting user is strictly authorized to see, making GenAI adoption safe and compliant with enterprise security standards.
 
-###  [Blog 4 - Introducing open-source skills for AWS SDK best practices](3.4-Blog4/)
-This blog introduces the open-source AWS SDK Skills in the **Agent Toolkit for AWS**. It explains why agents often generate plausible but incorrect SDK code, what a skill package contains, which mistakes skills help prevent (compile errors, inefficiency, subtle bugs), how AWS measures impact, and how to install skills like `aws-sdk-swift-usage`, `aws-sdk-js-v3-usage`, and `aws-sdk-python-usage`.
+###  [Blog 3 - Can You Log In Without OTP SMS with Amazon Cognito?](3.3-Blog3/)
+This blog introduces an interesting case study from the AWS Architecture Blog about combining Amazon Cognito with Vonage to reduce OTP fraud and improve mobile login experience. You will learn about the current risks of OTP SMS (SIM Swap Attack, SMS Interception, Social Engineering, SMS Pumping Fraud, user input errors, and undelivered OTPs), why 20% of users drop off during OTP verification, and how to solve this with a multi-layer security approach.
 
-###  [Blog 5 - Better Together: Amazon EKS Auto Mode and Istio Ambient Mesh](3.5-Blog5/)
-This blog explains how Amazon EKS Auto Mode (compute lifecycle automation) and Istio Ambient Mesh (mTLS and policy enforcement without default sidecars) work together for microservices. It covers key components (Bottlerocket, built-in system components, Karpenter scaling; istio-cni, ztunnel, waypoints, HBONE), L4 vs L7 traffic flows, and a hands-on implementation outline using Terraform, Helm, and Kiali.
+The article guides you through the architecture using Amazon Cognito CUSTOM_AUTH, Vonage Identity Insights, Silent Authentication, and Fraud Defender to create a passwordless, risk-based authentication system that lets users log in in under 5 seconds without manual OTP input, while significantly reducing fraud and improving user experience.
 
-###  [Blog 6 - AWS: Why agentic AI marks an inflection point for enterprise modernization](3.6-Blog6/)
-This blog explains why AWS sees **agentic AI** as a major turning point for enterprise modernization. It covers the three-layer architecture behind **AWS Transform** (specialized agents, orchestration, natural-language collaboration), the new economics of modernization (5x to 80x acceleration), and customer results from Experian, CSL, BMW Group, and Air Canada.

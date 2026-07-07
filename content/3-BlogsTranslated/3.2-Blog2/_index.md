@@ -1,102 +1,134 @@
 ---
 title: "Blog 2"
-date: 2026-06-17
+date: 2026-06-28
 weight: 2
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
+# Building Multi-Department RAG with Amazon Bedrock Knowledge Bases and Fine-Grained Access Control
 
-# Reducing SMS OTP fraud with Vonage network-powered solutions and Amazon Cognito
+I just read a really interesting article on the AWS Blog about building an internal enterprise GenAI system, where multiple departments share a single Knowledge Base while still ensuring each person only sees the data they're authorized to access.
 
-## Problem statement: OTP fraud and conversion loss
+This is a very practical problem when deploying an AI Assistant in an enterprise.
 
-User authentication is a frequent target in application security. With the industrialization of fraud by generative AI, cybercrime costs are projected to reach **$23 trillion** in 2027 (**+175%** from 2022). **20%** of fraud is attributed to synthetic identity and authentication exploits, with account takeover (ATO) surging **141%** since 2021.
+## The Problem
 
-SMS One-time passcodes (OTPs) add friction: only ~**80% conversion** on authentication flows, meaning **1 in 5 legitimate users drops off** at verification. They also increase operational cost through support tickets (password recovery and OTP issues).
+Suppose a company has multiple departments:
+- Finance
+- Engineering
+- Executive
 
----
+Each department stores its own documents:
+- Financial reports
+- System architecture documents
+- Incident Reports
+- Business strategies
+- M&A Planning
 
-## Solution overview: Vonage network-powered solutions + Cognito `CUSTOM_AUTH`
+However, when deploying an internal AI Chatbot using RAG (Retrieval-Augmented Generation), a major problem arises:
+**How can AI answer with correct information without leaking data between departments?**
 
-Vonage network-powered solutions integrate with Amazon Cognito via the `CUSTOM_AUTH` flow to provide:
-
-- Real-time operator signals (risk) before OTP is sent
-- **Silent Authentication** (zero-tap) as the primary verification method
-- Built-in failover to SMS/RCS/Voice/WhatsApp/email when needed
-- Protection against verification-channel abuse (SMS pumping / AIT)
-
-“Network-powered” means signals come from **real-time data sourced directly from mobile network operators (MNOs)**, closing the gap where static databases are updated too late (minutes/hours matter for SIM swap–driven ATO).
-
----
-
-## Key components (three pillars)
-
-### 1) Identity Insights (pre-verification)
-
-Runs before verification channels are initiated to drive risk policy decisions:
-
-- `format`, `network_type`: filter invalid, VoIP/landline/premium-rate numbers
-- `sim_swap`: detect SIM swaps within a look-back window
-- `subscriber_match`: compare identity against operator KYC records
-
-Outcome: step-up challenge, hard block, or silent logging — before sending OTP.
-
-### 2) Verify (Silent Authentication + fallback)
-
-Primary method is **Silent Authentication** (proof of possession = cellular data session). If unavailable, it falls back to SMS/RCS/Voice/WhatsApp/email transparently.
-
-### 3) Fraud Defender (channel protection)
-
-Monitors and blocks abusive traffic such as SMS pumping and artificially inflated traffic (AIT) before cost accumulates.
+For example:
+- Engineering employees cannot see financial reports.
+- Finance cannot see M&A documents.
+- Executive can see more types of documents.
 
 ---
 
-## Architecture with Amazon Cognito
+## Ingestion Pipeline Architecture
 
-The integration uses Amazon Cognito `CUSTOM_AUTH` with three Lambda triggers:
+To get documents into the Knowledge Base, AWS proposes a quite interesting serverless pipeline.
 
-- Define Auth Challenge (orchestrator)
-- Create Auth Challenge (calls Vonage APIs)
-- Verify Auth Challenge (validates response)
+Workflow:
+1. Documents are uploaded to Amazon S3.
+2. S3 generates an event to Amazon EventBridge.
+3. EventBridge sends a message to Amazon SQS.
+4. AWS Lambda processes metadata.
+5. Metadata is attached to the document.
+6. EventBridge Schedule triggers Lambda Ingest periodically.
+7. Lambda ingests data into Amazon Bedrock Knowledge Bases.
+8. Embeddings are stored in Amazon S3 Vectors.
 
-![Risk-adaptive customer sign-in overview](/images/3-BlogsTranslated/blog2/ARCHBLOG-1533-1.png)
+Some AWS services in this architecture:
+- Amazon S3
+- Amazon EventBridge
+- Amazon SQS
+- AWS Lambda
+- Amazon Bedrock Knowledge Bases
+- Amazon S3 Vectors
+- Amazon CloudWatch
 
----
-
-## Authentication flow (happy path)
-
-1. Client calls `InitiateAuth` with `CUSTOM_AUTH`, passing the phone number.
-2. Cognito issues a `CUSTOM_CHALLENGE`.
-3. Create Auth Challenge calls Identity Insights; if pass, initiates Verify Silent Auth and returns `check_url`.
-4. Client opens `check_url` over cellular data; operator verifies and returns a verification code.
-5. Client calls `RespondToAuthChallenge` with the code.
-6. Verify Auth Challenge validates with Vonage; on success, Cognito issues tokens.
-
-![User login happy path sequence](/images/3-BlogsTranslated/blog2/ARCHBLOG-1533-2.png)
-
----
-
-## Implementation considerations (AWS)
-
-- Store Vonage credentials in AWS Secrets Manager
-- IAM least privilege for Lambda roles
-- CloudWatch Logs for each Lambda trigger
-- CloudTrail for audit trails, and AWS WAF rate-limiting for brute-force protection
-- Enforce TLS 1.2+ (encryption in transit)
+What I like about this architecture is that the entire ingestion process is designed in an event-driven and serverless manner, helping reduce operational costs.
 
 ---
 
-## Production outcomes (example)
+## Query Architecture
 
-Lydia Solutions reported:
+After data is indexed into the Knowledge Base, users will interact via a web application.
 
-- Up to **50% lower latency** vs previous authentication services
-- Common outcomes across deployments: **+2–8.5% conversion** vs SMS-only, and **50–75%** latency reduction
+Processing flow:
+1. User accesses the application.
+2. Amazon CloudFront delivers content.
+3. Amazon Cognito authenticates the user.
+4. AWS WAF protects the application from common attacks.
+5. Amazon API Gateway receives the request.
+6. Lambda Authorizer checks access permissions.
+7. Amazon Verified Permissions evaluates access policies.
+8. AWS Lambda Middleware handles business logic.
+9. Amazon Bedrock Knowledge Bases performs data queries.
+10. Results are returned to the user.
 
 ---
 
-## Takeaways for an internship report
+## Most Notable Point: Fine-Grained Access Control
 
-- Use risk signals to decide when to apply friction (step-up) vs silent verification.
-- Favor network-level proofs (Silent Auth) to reduce OTP exploit vectors.
-- Treat verification cost as a security and business metric (conversion + SMS pumping).
+The best thing I see in this architecture is the combination of:
+- Amazon Cognito
+- Lambda Authorizer
+- Amazon Verified Permissions
+
+to create a detailed permission mechanism.
+
+Instead of just checking:
+- Is the user logged in?
+
+the system also checks:
+- Which department does the user belong to?
+- Are they allowed to view this document?
+- Are they allowed to query this data?
+
+This helps deploy RAG much more safely in an enterprise environment.
+
+---
+
+## What I Learned
+
+Through this article, I see that when building a GenAI system for an enterprise, the hardest part isn't LLM or Prompt Engineering.
+
+The real challenge lies in:
+- Data management
+- Metadata
+- Access permission control
+- Internal information security
+
+AWS is solving this problem by combining:
+- Amazon Bedrock Knowledge Bases
+- Amazon S3 Vectors
+- Amazon Cognito
+- Amazon Verified Permissions
+
+to create a RAG platform that's both scalable and secure.
+
+---
+
+## Conclusion
+
+If you're learning about GenAI on AWS, this is a very worthwhile case study because it doesn't just talk about AI, it also shows how to build a complete production-ready RAG system.
+
+Especially, I see the combination between Amazon Bedrock Knowledge Bases and Amazon Verified Permissions as a very suitable approach for enterprises with many departments and strict data permission requirements.
+
+Original post: https://aws.amazon.com/vi/blogs/architecture/secure-multi-tenant-rag-with-amazon-bedrock-and-verified-permissions/
+
+![Blog2](/images/3-Blog/blog2-1.jpg)
+![Blog2](/images/3-Blog/blog2-2.jpg)
+![Blog2](/images/3-Blog/blog2-3.jpg)

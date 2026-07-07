@@ -1,20 +1,22 @@
 ---
 title: "Các bài blogs đã dịch"
-date: 2024-01-01
+date: 2026-06-16
 weight: 3
 chapter: false
 pre: " <b> 3. </b> "
 ---
 
-###  [Blog 1 - Amazon Bedrock AgentCore: policy controls và quality evaluations cho trusted AI agents](3.1-Blog1/)
-Blog này tóm tắt các cập nhật mới của **Amazon Bedrock AgentCore** và tập trung vào 2 mảng quan trọng khi đưa AI agents vào production: **policy controls** (governance/guardrails) để giới hạn hành động/tool call, và **quality evaluations** (continuous monitoring) để theo dõi chất lượng theo thời gian.
-###  [Blog 2 - Giảm gian lận SMS OTP với Vonage network-powered solutions và Amazon Cognito](3.2-Blog2/)
-Blog này trình bày cách kết hợp **Vonage network-powered solutions** với **Amazon Cognito** thông qua flow `CUSTOM_AUTH` để tăng độ tin cậy của xác thực người dùng và giảm “friction tax” của SMS OTP. Nội dung bao gồm 3 trụ cột **Identity Insights**, **Verify (Silent Authentication + fallback)** và **Fraud Defender**, kèm kiến trúc triển khai với Lambda triggers và luồng authentication “happy path”.
-###  [Blog 3 - Cyber resilience on AWS: Reference approach để recovery khỏi ransomware và destructive events](3.3-Blog3/)
-Blog này trình bày một reference approach để thiết kế khả năng **cyber recovery** trên AWS: tách trust boundaries giữa **Production account**, **Recovery account** (AWS Backup logically air-gapped vault + MPA) và **Isolated Recovery Environment (IRE)**; xây dựng **validation pipeline** để kiểm tra backup có “safe to use”; cách chọn recovery point an toàn; workflow recovery theo các stage chạy song song; và framework **Rebuild–Restore–Rotate** để quyết định thứ gì rebuild từ IaC, thứ gì restore từ backup và thứ gì phải rotate/re-issue.
-###  [Blog 4 - Introducing open-source skills cho AWS SDK best practices](3.4-Blog4/)
-Blog này giới thiệu bộ AWS SDK Skills trong dự án open-source **Agent Toolkit for AWS**. Nội dung tập trung vào: vì sao AI agents hay viết code AWS SDK “có vẻ đúng” nhưng sai chi tiết; một skill gồm những gì (`SKILL.md`, `references/`, `scripts/`); các lỗi phổ biến skills giúp tránh (không compile, kém hiệu năng/tốn chi phí, bug khó thấy); cách AWS đo lường hiệu quả; và cách cài các skills như `aws-sdk-swift-usage`, `aws-sdk-js-v3-usage`, `aws-sdk-python-usage`.
-###  [Blog 5 - Better Together: Amazon EKS Auto Mode và Istio Ambient Mesh](3.5-Blog5/)
-Blog này trình bày cách kết hợp **Amazon EKS Auto Mode** (tự động hoá compute layer: provisioning/scaling/patching) với **Istio Ambient Mesh** (automatic mTLS và policy enforcement mà không bắt buộc sidecar cho mọi pod). Nội dung bao gồm các thành phần chính (Bottlerocket, built-in system components, Karpenter; istio-cni, ztunnel, waypoint, HBONE), sự khác nhau giữa L4 và L7 flows, và outline thực hành deploy bằng Terraform/Helm, kèm kiểm tra mTLS qua Kiali.
-###  [Blog 6 - AWS: Vì sao agentic AI là bước ngoặt cho enterprise modernization](3.6-Blog6/)
-Blog này phân tích vì sao AWS xem **agentic AI** là bước ngoặt lớn của enterprise modernization. Nội dung tập trung vào mô hình 3 lớp của **AWS Transform** (specialized agents, orchestration, natural-language collaboration), bài toán kinh tế mới của modernization (tăng tốc từ 5x đến 80x), và các kết quả thực tế từ Experian, CSL, BMW Group và Air Canada.
+Tại đây sẽ là phần liệt kê, giới thiệu các blogs mà các bạn đã dịch. Ví dụ:
+
+###  [Blog 1 - Từ Cache Theo Giờ Đến Real-Time Pricing: Samsung Giải Quyết Bài Toán Đồng Bộ Giá Với AWS Lambda Response Streaming](3.1-Blog1/)
+Bài viết này chia sẻ một case study thú vị từ AWS Architecture Blog về cách Samsung cải tiến hệ thống định giá trên Samsung.com để giải quyết bài toán đồng bộ dữ liệu theo thời gian thực. Bạn sẽ hiểu được những hạn chế của kiến trúc cũ sử dụng bộ nhớ cache qua Cron Job (như bùng nổ tổ hợp biến thể sản phẩm và độ trễ đồng bộ lên tới 60 phút), lý do vì sao Samsung quyết định loại bỏ hoàn toàn tầng trung gian này để chuyển sang mô hình Serverless, và cách kết hợp giữa Amazon CloudFront với AWS Lambda Response Streaming giúp giảm Time To First Byte (TTFB), đảm bảo hiển thị giá chính xác từ Source of Truth mà vẫn tối ưu được hiệu năng ở quy mô lớn.
+
+###  [Blog 2 - Xây dựng RAG đa phòng ban với Amazon Bedrock Knowledge Bases và Fine-Grained Access Control](3.2-Blog2/)
+Blog này giới thiệu cách xây dựng hệ thống Retrieval-Augmented Generation (RAG) an toàn, multi-tenant và sẵn sàng cho production cho doanh nghiệp bằng kiến trúc serverless của AWS. Bạn sẽ học cách giải quyết thách thức quan trọng về cách ly dữ liệu và rủi ro rơi rớt dữ liệu giữa các phòng ban khác nhau (Finance, Engineering, Executive) khi cùng chia sẻ một Knowledge Base.
+
+Bài viết hướng dẫn bạn qua Ingestion Pipeline theo hướng event-driven (sử dụng Amazon S3, EventBridge, SQS và Lambda để làm giàu metadata) và Query Pipeline an toàn. Điểm nhấn cốt lõi của kiến trúc này là việc triển khai **Fine-Grained Access Control (FGAC)** bằng cách kết hợp **Amazon Cognito**, **Lambda Authorizers** và **Amazon Verified Permissions (AVP)**. Điều này đảm bảo AI assistant chỉ truy xuất và trả lời dựa trên các tài liệu cụ thể mà người dùng yêu cầu được cấp quyền xem một cách nghiêm ngặt, giúp việc áp dụng GenAI trở nên an toàn và tuân thủ các tiêu chuẩn bảo mật doanh nghiệp.
+
+###  [Blog 3 - Amazon Cognito Có Thể Đăng Nhập Không Cần OTP SMS?](3.3-Blog3/)
+Blog này chia sẻ một bài viết khá thú vị trên AWS Architecture Blog về cách kết hợp Amazon Cognito với Vonage để giảm gian lận OTP và cải thiện trải nghiệm đăng nhập trên thiết bị di động. Bạn sẽ tìm hiểu về các rủi ro hiện tại của OTP SMS (SIM Swap Attack, SMS Interception, Social Engineering, SMS Pumping Fraud, người dùng nhập sai OTP, OTP không gửi tới thiết bị), lý do vì sao khoảng 20% người dùng bỏ cuộc trong bước xác thực OTP, và cách giải quyết bài toán này bằng cách tiếp cận ba lớp bảo vệ.
+
+Bài viết hướng dẫn bạn qua kiến trúc sử dụng Amazon Cognito CUSTOM_AUTH, Vonage Identity Insights, Silent Authentication và Fraud Defender để tạo hệ thống xác thực không cần mật khẩu, dựa trên rủi ro giúp người dùng đăng nhập trong dưới 5 giây mà không cần nhập OTP thủ công, đồng thời giảm đáng kể gian lận và cải thiện trải nghiệm người dùng.
