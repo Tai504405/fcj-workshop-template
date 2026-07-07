@@ -28,9 +28,9 @@ During my internship, I participated in 4 community events organized by First Cl
 ### [Event 2](4.2-Event2/)
 &emsp;**Event Name:** FCJ Community Day - Stop Procrastinating, Start Building
 
-&emsp;**Date & Time:** Friday, May 30, 2026, 09:00 - 12:00
+&emsp;**Date & Time:** Saturday, May 30, 2026, 09:00 - 12:00
 
-&emsp;**Location:** AWS Vietnam Office, Ho Chi Minh City
+&emsp;**Location:** Bitexco Financial Tower, Ho Chi Minh City
 
 &emsp;**Role:** Attendee
 
@@ -45,9 +45,9 @@ During my internship, I participated in 4 community events organized by First Cl
 ### [Event 3](4.3-Event3/)
 &emsp;**Event Name:** FCJ Community Day - From Zero to Cloud Hero
 
-&emsp;**Date & Time:** Friday, June 6, 2026, 09:00 - 12:00
+&emsp;**Date & Time:** Saturday, June 6, 2026, 09:00 - 12:00
 
-&emsp;**Location:** AWS Vietnam Office, Ho Chi Minh City
+&emsp;**Location:** Bitexco Financial Tower, Ho Chi Minh City
 
 &emsp;**Role:** Attendee
 
@@ -64,7 +64,8 @@ During my internship, I participated in 4 community events organized by First Cl
 
 &emsp;**Date & Time:** Saturday, June 27, 2026, 09:00 - 12:00
 
-&emsp;**Location:** Bitexco Financial Tower, Ho Chi Minh City
+&emsp;**Location:** [Online](https://www.youtube.com/watch?v=G8-WlI7f6dE)
+
 
 &emsp;**Role:** Attendee
 

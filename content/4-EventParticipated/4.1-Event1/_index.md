@@ -6,14 +6,13 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Summary Report: "FCAJ Community Day - Conference Call"
+# Summary Report: “FCAJ Community Day - Conference Call”
 
 ### Event Information
 
 - **Event Name**: FCAJ Community Day - Conference Call
 - **Date & Time**: Saturday, May 23, 2026, 09:00 - 12:00
 - **Location**: Bitexco Financial Tower, Ho Chi Minh City
-- **Note**: Viewing area on the 36th floor for invited guests to watch the livestream from the main event on the 26th floor; guests on the 36th floor had the opportunity to participate in 10 lucky draw sessions.
 
 ### Speakers
 
@@ -40,7 +39,7 @@ pre: " <b> 4.1. </b> "
 ### Key Highlights
 
 #### Context Is Everything: Making AI Actually Work for You
-- Why AI fails without context & what "context" really means
+- Why AI fails without context & what “context” really means
 - From prompts to memory: how AI is evolving (Second AI Brain concept)
 - How better context leads to better results (practical mindset & tips)
 - Career insights & how students can start building with AI + Q&A
@@ -52,7 +51,7 @@ pre: " <b> 4.1. </b> "
 - Building Under Pressure – 36-Hour Development Sprint
 - Challenges, Failures & Turning Points
 - UTMorpho – Product Overview & Demo
-- Key Learnings & What's Next
+- Key Learnings & What’s Next
 
 #### From Edge To Origin: CloudFront as Your Foundation
 - Amazon CloudFront for every workload
@@ -136,7 +135,6 @@ Attending **FCAJ Community Day - Conference Call** was a very fun and valuable e
 - The case study about multi-agent systems for startup credit scoring showed me how to apply AI to real-world problems.
 
 #### Some event photos
-![Photo 1 at FCAJ Community Day](/images/4-EventParticipated/4.1-Event1/event-day1-1.jpg)
-![Photo 2 at FCAJ Community Day](/images/4-EventParticipated/4.1-Event1/event-day1-2.jpg)
+![Photo 1 at FCAJ Community Day](/images/4-EventParticipated/4.1-Event1/event1.png)
 
 > Overall, the event not only provided technical knowledge but also helped me expand my understanding of AI, AWS services, and building products under time constraints, while creating opportunities to connect with the FCAJ community.

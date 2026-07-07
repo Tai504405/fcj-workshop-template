@@ -11,9 +11,8 @@ pre: " <b> 4.3. </b> "
 ### Thông Tin Sự Kiện
 
 - **Tên sự kiện**: FCJ Community Day - From Zero to Cloud Hero
-- **Thời gian**: Thứ Sáu, 6 tháng 6 năm 2026, 09:00 - 12:00
-- **Địa điểm**: Văn phòng AWS Việt Nam, Thành phố Hồ Chí Minh
-- **Ghi chú**: Sự kiện tổ chức tại phòng nhỏ với màn hình tivi, phù hợp cho nhóm học viên FCJ với không khí thân thiện và gần gũi hơn
+- **Thời gian**: Thứ Bảy, 6 tháng 6 năm 2026, 09:00 - 12:00
+- **Địa điểm**: Bitexco Financial Tower, Thành phố Hồ Chí Minh
 
 ### Danh Sách Diễn Giả
 

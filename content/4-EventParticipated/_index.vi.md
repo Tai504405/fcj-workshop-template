@@ -28,9 +28,9 @@ Trong quá trình thực tập, tôi đã tham gia 4 event do cộng đồng Fir
 ### [Event 2](4.2-Event2/)
 &emsp;**Tên sự kiện:** FCJ Community Day - Stop Procrastinating, Start Building
 
-&emsp;**Thời gian:** Thứ Sáu, 30 tháng 5 năm 2026, 09:00 - 12:00
+&emsp;**Thời gian:** Thứ Bảy, 30 tháng 5 năm 2026, 09:00 - 12:00
 
-&emsp;**Địa điểm:** Văn phòng AWS Việt Nam, Thành phố Hồ Chí Minh
+&emsp;**Địa điểm:** Bitexco Financial Tower, Thành phố Hồ Chí Minh
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự
 
@@ -45,9 +45,9 @@ Trong quá trình thực tập, tôi đã tham gia 4 event do cộng đồng Fir
 ### [Event 3](4.3-Event3/)
 &emsp;**Tên sự kiện:** FCJ Community Day - From Zero to Cloud Hero
 
-&emsp;**Thời gian:** Thứ Sáu, 6 tháng 6 năm 2026, 09:00 - 12:00
+&emsp;**Thời gian:** Thứ Bảy, 6 tháng 6 năm 2026, 09:00 - 12:00
 
-&emsp;**Địa điểm:** Văn phòng AWS Việt Nam, Thành phố Hồ Chí Minh
+&emsp;**Địa điểm:** Bitexco Financial Tower, Thành phố Hồ Chí Minh
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự
 
@@ -64,7 +64,7 @@ Trong quá trình thực tập, tôi đã tham gia 4 event do cộng đồng Fir
 
 &emsp;**Thời gian:** Thứ Bảy, 27 tháng 6 năm 2026, 09:00 - 12:00
 
-&emsp;**Địa điểm:** Bitexco Financial Tower, Thành phố Hồ Chí Minh
+&emsp;**Địa điểm:** [Online](https://www.youtube.com/watch?v=G8-WlI7f6dE)
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự
 

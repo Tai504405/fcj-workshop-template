@@ -11,9 +11,8 @@ pre: " <b> 4.3. </b> "
 ### Event Information
 
 - **Event Name**: FCJ Community Day - From Zero to Cloud Hero
-- **Date & Time**: Friday, June 6, 2026, 09:00 - 12:00
-- **Location**: AWS Vietnam Office, Ho Chi Minh City
-- **Note**: Held in a smaller room setting with a TV monitor, providing an intimate and interactive atmosphere for FCJ community members.
+- **Date & Time**: Saturday, June 6, 2026, 09:00 - 12:00
+- **Location**: Bitexco Financial Tower, Ho Chi Minh City
 
 ### Speakers
 

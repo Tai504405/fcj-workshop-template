@@ -11,8 +11,8 @@ pre: " <b> 4.2. </b> "
 ### Thông Tin Sự Kiện
 
 - **Tên sự kiện**: FCJ Community Day - Stop Procrastinating, Start Building
-- **Thời gian**: Thứ Sáu, 30 tháng 5 năm 2026, 09:00 - 12:00
-- **Địa điểm**: Văn phòng AWS Việt Nam, Thành phố Hồ Chí Minh
+- **Thời gian**: Thứ Bảy, 30 tháng 5 năm 2026, 09:00 - 12:00
+- **Địa điểm**: Bitexco Financial Tower, Thành phố Hồ Chí Minh
 
 ### Danh Sách Diễn Giả
 

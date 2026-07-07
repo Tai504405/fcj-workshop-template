@@ -11,9 +11,8 @@ pre: " <b> 4.2. </b> "
 ### Event Information
 
 - **Event Name**: FCJ Community Day - Stop Procrastinating, Start Building
-- **Date & Time**: Friday, May 30, 2026, 09:00 - 12:00
-- **Location**: AWS Vietnam Office, Ho Chi Minh City
-- **Note**: Held in a classroom-style setting with a projector screen; open to FCJ community members and student attendees.
+- **Date & Time**: Saturday, May 30, 2026, 09:00 - 12:00
+- **Location**: Bitexco Financial Tower, Ho Chi Minh City
 
 ### Speakers
 
