@@ -10,11 +10,11 @@ chapter: false
 
 
 ### Student Information:
-&emsp; **Full Name:** Nguyen Huynh Quang Minh
+&emsp; **Full Name:** Bui Tri Tai
 
-&emsp; **Phone Number:** 0779567822
+&emsp; **Phone Number:** 0358908917
 
-&emsp; **Email:** quangminh211204@gmail.com
+&emsp; **Email:** ductruongsong32@gmail.com
 
 &emsp; **University:** Ho Chi Minh City University of Technology (HUTECH)
 

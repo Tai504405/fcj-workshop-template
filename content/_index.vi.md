@@ -7,11 +7,11 @@ chapter: false
 
 # Báo cáo thực tập
 ### Thông tin sinh viên:
-&emsp; **Họ và tên:** Nguyễn Huỳnh Quang Minh
+&emsp; **Họ và tên:** Bùi Trí Tài
 
-&emsp; **Số điện thoại:** 0779567822
+&emsp; **Số điện thoại:** 0358908917
 
-&emsp; **Email:** quangminh211204@gmail.com
+&emsp; **Email:** ductruongsong32@gmail.com
 
 &emsp; **Trường:** Đại học Công nghệ TP.HCM
 
