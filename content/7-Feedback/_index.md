@@ -6,35 +6,40 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-During my time in the **First Cloud AI Journey (FCAJ)** program, I had the opportunity to learn in a dynamic environment with clear direction and strong encouragement to actively explore new knowledge. This section summarizes my personal feedback, evaluation, and suggestions after completing the internship journey.
+After completing my internship at **First Cloud AI Journey (FCAJ)**, I deeply appreciate the opportunity to learn within a passionate community with a structured roadmap. Below are my personal reflections, assessments, and recommendations to help improve the program for future cohorts.
 
-### Overall Evaluation
+### General Feedback & Assessments
 
-**1. Working Environment**  
-The learning and working environment in FCAJ is very friendly, open, and easy to adapt to. Throughout the internship, I always felt supported by mentors, the admin team, and other participants in the program. This helped me become more confident in asking questions, trying new things, and approaching new topics related to AWS, cloud, and real-world projects.
+**1. Internship Environment**  
+The environment at FCAJ is highly flexible, dynamic, and open. Encouraging interns to independently tackle complex cloud concepts (such as VPC configurations and API Gateway integration via VPC Link) helps us develop strong self-reliance. The active community channels make it easy to exchange knowledge and reduce pressure when adopting new tools.
 
-**2. Support from Mentor / Team Admin**  
-The mentors were very supportive, not only in explaining technical topics but also in guiding me on how to self-study, search for materials, and approach problems in a more practical way. The admin team also did a great job organizing schedules, materials, announcements, and community activities. I especially appreciated that the mentors encouraged me to think independently and implement solutions on my own before giving the final answer.
+**2. Mentor & Admin Support**  
+Mentors acted as guides rather than simply providing direct answers. Whenever I faced challenges with CORS configurations or setting up target groups for ECS Fargate, the mentors guided me on how to isolate the errors and analyze CloudWatch logs to find root causes. The admin team provided excellent support by organizing online technical workshops and updating notices on time, keeping interns on the right track.
 
-**3. Relevance of Work to Academic Major**  
-The work and learning content in the program were well aligned with my information technology background. Besides reinforcing my foundational knowledge, the program also introduced me to practical topics such as AWS services, system design, security, DevOps, and the mindset required to build a project in an enterprise-oriented environment.
+**3. Relevance to Academic Major**  
+The internship scope closely matches modern Information Technology trends, especially Cloud Engineering and DevOps. Building a full-stack application (React - Spring Boot), containerizing it with Docker, deploying to ECS Fargate, and setting up a CI/CD pipeline helped me consolidate and systematize the software development methodologies I learned at university.
 
-**4. Learning & Skill Development Opportunities**  
-This is the aspect I value the most in the program. I improved not only my technical knowledge but also my self-learning ability, research skills, technical writing, reporting, teamwork, and professional communication. The workshops, events, and project activities helped me clearly see the gap between academic knowledge and real business requirements.
+**4. Skill Development (Technical & Soft Skills)**  
+This has been the highlight of my experience. Beyond technical labs, compiling detailed architectural comparison reports (Worklogs) and writing clean technical documentation greatly improved my writing and presentation skills. Listening to speakers at online community events also broadened my perspective on current market trends and job requirements.
 
-**5. Company Culture & Team Spirit**  
-The community spirit in FCAJ is very positive. Everyone is willing to share knowledge and support each other during labs, worklogs, and report completion. I felt that this was not just an internship program, but also a collaborative learning environment where interns are encouraged to participate, contribute, and grow together.
+**5. Community Culture**  
+FCAJ has successfully fostered a strong knowledge-sharing culture. Cohort members actively discuss and support one another through group chat channels when facing container deployment errors or lab security setup hurdles.
 
-**6. Internship Policies / Benefits**  
-One major strength of the program is that interns are given access to many academic and practical activities such as workshops, community events, labs, and project building. This provides strong value in both knowledge and real-world exposure. If possible, the program could include a clearer staged roadmap so that interns can track their own progress more easily.
+**6. Facilities & Resource Support**  
+The program went above and beyond by providing AWS Sandbox accounts for interns to practice labs without worrying about costs. This gave us the confidence to experiment with advanced services like Route 53, Application Load Balancers, and NAT Gateways.
 
-### Additional Questions
-- What I found **most satisfying** during the internship was the opportunity to learn through practice. I was able to explore many AWS services, complete labs, attend workshops and community events, and gradually become familiar with how real projects are approached.
-- What I think the program **could improve** for future interns is adding short evaluation milestones for each phase so interns can better understand their current level, identify gaps, and focus on the right skills for improvement.
-- If I were recommending this to a friend, I would **definitely suggest joining** because it is a very suitable environment for anyone who wants to get started with cloud, AWS, and a more practical style of learning.
+---
 
-### Suggestions & Expectations
-- I hope the program can provide a short weekly checklist or roadmap so interns can track their progress and goals more clearly.
-- I would also like to see more direct review sessions or knowledge-sharing meetings between teams so participants can learn more from each other.
-- I would be very happy to continue participating in similar activities in the future, especially real projects, advanced workshops, and AWS/AI community programs.
-- Additional comment: FCAJ is a very good environment for students to begin their cloud journey. I truly appreciate the support from the mentors and the team, and I hope the program will continue growing to support even more students in the future.
+### Survey Responses
+
+- **What I am most satisfied with:** The opportunity to get hands-on experience on the AWS Console and write real configurations for the `GlobalMart` project. Building Docker images, pushing them to ECR, and operating ECS Services built real confidence in my technical capabilities.
+- **Areas for improvement:** I suggest introducing short "1-on-1 Review" sessions mid-internship so that mentors can evaluate individual progress and highlight specific areas of technical weakness for interns to address before the final project phase.
+- **Recommendation:** I will definitely recommend this program to junior students, especially those aiming to pursue careers in Cloud, System, or DevOps engineering.
+
+---
+
+### Recommendations and Future Suggestions
+
+- **AWS Certification Roadmap:** I hope the program can integrate or share preparation guides for international certifications (such as AWS Certified Cloud Practitioner or Solutions Architect Associate), as these are highly beneficial for fresh graduates.
+- **Cross-Group Sharing Sessions:** I suggest hosting brief technical presentations where different teams share their final project architectures, allowing interns to learn different design approaches for similar problems.
+- **Deep-Dive Reference Materials:** It would be highly beneficial to add tutorials on Infrastructure as Code (IaC) tools like Terraform or AWS CloudFormation to better prepare students for modern DevOps roles.

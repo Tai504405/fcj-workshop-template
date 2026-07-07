@@ -6,32 +6,29 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-During my internship journey in the **First Cloud AI Journey (FCAJ)** program, I had the opportunity to learn, practice, and gradually apply academic knowledge in a more practical working environment. Throughout the internship period, I not only studied AWS theory but also completed many hands-on labs, joined workshops and community events, wrote weekly worklogs, and contributed to the final project.  
+Throughout my challenging internship journey at **First Cloud AI Journey (FCAJ)**, I have gained many valuable practical lessons. The program went beyond providing foundational knowledge of AWS cloud infrastructure by pushing me to dive into simulated real-world projects, research technical documentation independently, construct the `GlobalMart` capstone project, and continuously optimize systems.
 
-Through these activities, I improved many important skills such as studying technical materials, deploying services on AWS, thinking about system design, writing reports, collaborating with teammates, and communicating in a more professional environment. This journey helped me better understand both my current strengths and the areas I still need to improve.  
+Reflecting on the past 12 weeks, I have made visible progress in both my technical capabilities and problem-solving mindset. Below is my objective self-assessment based on key competency criteria:
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
+| No. | Criteria | Description | Good | Fair | Average |
+| :--- | :--- | :--- | :---: | :---: | :---: |
+| 1 | **Technical Knowledge & Skills** | Understanding AWS architectures, real system deployment, work quality | ☐ | ☐ | ✅ |
+| 2 | **Learning Agility** | Speed in adopting new technologies (Docker, CI/CD, ECS, API Gateway) | ☐ | ✅ | ☐ |
+| 3 | **Proactiveness** | Independent research of docs, debugging system issues before asking | ☐ | ☐ | ✅ |
+| 4 | **Responsibility** | Ensuring task timelines are met and submitting weekly worklogs on time | ✅ | ☐ | ☐ |
+| 5 | **Discipline** | Sticking to schedules, complying with lab account security rules | ✅ | ☐ | ☐ |
+| 6 | **Growth Mindset** | Actively seeking and incorporating mentor feedback to improve architecture | ☐ | ✅ | ☐ |
+| 7 | **Communication** | Expressing ideas clearly, explaining technical issues during collaboration | ☐ | ✅ | ☐ |
+| 8 | **Teamwork** | Coordinating frontend/backend module division, helping peers debug | ☐ | ✅ | ☐ |
+| 9 | **Professionalism** | Maintaining professional conduct, respecting community guidelines | ✅ | ☐ | ☐ |
+| 10 | **Problem Solving** | Analyzing CloudWatch logs, troubleshooting CORS, optimizing VPC Links | ☐ | ☐ | ✅ |
+| 11 | **Contribution to Projects** | Contributing automated CI/CD pipeline solutions for GlobalMart | ☐ | ☐ | ✅ |
+| 12 | **Overall Evaluation** | Overall assessment of effort throughout the internship | ☐ | ☐ | ✅ |
 
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+### Areas for Improvement and Future Development
 
-| No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
-| 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ✅    | ☐    | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
-| 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ✅    | ☐       |
-| 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ✅    | ☐    | ☐       |
-| 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
-| 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
-| 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
-
-### Needs Improvement
-
-- I need to further improve my problem-solving mindset, especially when facing real issues during lab implementation or project development.
-- I should continue strengthening my communication and presentation skills so I can report ideas more clearly, concisely, and confidently in a professional environment.
-- I need to deepen my knowledge of system architecture, security, and advanced AWS services to be better prepared for larger projects in the future.
-- I should maintain a more consistent learning routine and improve time management when handling theory study, labs, and reporting tasks at the same time.
+While I have achieved certain milestones, I recognize that there are still technical gaps I need to address in the future:
+- **Optimizing Independent Debugging:** When encountering complex issues with VPC networking or routing (Route Tables, NAT Gateways), I still spend considerable time isolating errors. I need to deepen my system log analysis skills.
+- **Presenting Technical Solutions:** When explaining architectural choices or why VPC Link is preferred over standard HTTP integration, I need to practice speaking more concisely and focusing on key technical points to convince stakeholders more effectively.
+- **Advancing Cloud Security Knowledge:** I plan to study how to apply granular IAM Policies (Least Privilege) instead of broad permissions, as well as configure WAF and KMS to protect data at a higher security level.
+- **Resource Management Awareness:** I need to be more mindful of cleaning up unused AWS resources (such as detached EBS volumes, idle NAT Gateways) to prevent unnecessary costs in enterprise-like environments.

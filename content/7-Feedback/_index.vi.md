@@ -6,37 +6,40 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-Trong suốt quá trình tham gia chương trình **First Cloud AI Journey (FCAJ)**, tôi đã có cơ hội học tập trong một môi trường năng động, có định hướng rõ ràng và luôn khuyến khích thực tập sinh chủ động tìm hiểu kiến thức mới. Phần này là một số chia sẻ, đánh giá cá nhân và đề xuất của tôi sau thời gian đồng hành cùng chương trình.
+Sau thời gian đồng hành cùng chương trình thực tập tại **First Cloud AI Journey (FCAJ)**, tôi vô cùng trân trọng cơ hội được làm việc trong một cộng đồng nhiệt huyết và có lộ trình học tập bài bản. Dưới đây là những chia sẻ, đúc kết cá nhân cùng một số đề xuất của tôi nhằm giúp chương trình ngày càng hoàn thiện hơn.
 
-### Đánh giá chung
+### Nhận xét & Đánh giá khách quan
 
-**1. Môi trường làm việc**  
-Môi trường học tập và làm việc trong FCAJ rất thân thiện, cởi mở và tạo cảm giác dễ hòa nhập. Trong suốt quá trình thực tập, tôi luôn cảm nhận được tinh thần hỗ trợ từ mentor, team admin và các bạn cùng chương trình. Điều này giúp tôi tự tin hơn khi đặt câu hỏi, thử nghiệm và tiếp cận các nội dung mới về AWS, cloud và project thực tế.
+**1. Môi trường thực tập**  
+Môi trường tại FCAJ được tổ chức rất linh hoạt, năng động và cởi mở. Việc khuyến khích sinh viên tự chủ động làm quen với các khái niệm phức tạp (như thiết kế mạng VPC, tích hợp API Gateway qua VPC Link) giúp chúng tôi rèn luyện tính độc lập. Không gian cộng đồng hỗ trợ trao đổi liên tục giúp giảm bớt áp lực khi tiếp cận công nghệ mới.
 
-**2. Sự hỗ trợ của mentor / team admin**  
-Mentor hỗ trợ rất tận tình, không chỉ giải thích kiến thức mà còn định hướng cách tự học, cách tìm tài liệu và cách tiếp cận vấn đề theo hướng thực tế hơn. Team admin cũng hỗ trợ tốt trong việc tổ chức lịch học, tài liệu, thông báo và các hoạt động cộng đồng. Tôi đánh giá cao việc mentor không chỉ đưa ra đáp án mà còn khuyến khích tôi tự suy nghĩ và tự triển khai trước.
+**2. Vai trò hỗ trợ từ Mentor và Ban quản trị (Admin)**  
+Mentor luôn đóng vai trò là người định hướng thay vì chỉ cung cấp đáp án trực tiếp. Khi tôi gặp khó khăn về cấu hình CORS hay thiết lập target group cho ECS Fargate, các mentor đã hướng dẫn phương pháp khoanh vùng lỗi, đọc log CloudWatch để tìm nguyên nhân gốc. Đội ngũ admin hỗ trợ sắp xếp các buổi workshop chuyên đề trực tuyến và cập nhật thông tin kịp thời, giúp lộ trình học tập của thực tập sinh luôn đi đúng hướng.
 
-**3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc và nội dung học tập trong chương trình khá phù hợp với định hướng chuyên ngành công nghệ thông tin của tôi. Bên cạnh việc củng cố kiến thức nền tảng, chương trình còn giúp tôi tiếp cận thêm nhiều nội dung thực tế như AWS services, thiết kế hệ thống, bảo mật, DevOps và cách triển khai một project theo tư duy doanh nghiệp.
+**3. Sự tương quan giữa chương trình và chuyên ngành**  
+Nội dung thực tập bám sát thực tiễn ngành Công nghệ Thông tin, đặc biệt là xu hướng Cloud Engineering và DevOps hiện đại. Việc xây dựng ứng dụng full-stack (React - Spring Boot) rồi đưa lên nền tảng container (ECS/Fargate) và cấu hình CI/CD đã giúp tôi củng cố và hệ thống hóa toàn bộ kiến thức phát triển phần mềm được học ở giảng đường.
 
-**4. Cơ hội học hỏi & phát triển kỹ năng**  
-Đây là điểm tôi đánh giá cao nhất trong chương trình. Tôi không chỉ học về mặt kỹ thuật mà còn cải thiện được kỹ năng tự học, kỹ năng tìm kiếm tài liệu, viết nội dung kỹ thuật, trình bày báo cáo, làm việc nhóm và giao tiếp trong môi trường chuyên nghiệp. Những buổi workshop, event và project thực tế giúp tôi hiểu rõ hơn khoảng cách giữa kiến thức trên lớp và nhu cầu thực tế của doanh nghiệp.
+**4. Khai phá tiềm năng và phát triển kỹ năng mềm**  
+Đây là điểm sáng lớn nhất mà tôi nhận được. Bên cạnh các bài lab khô khan, việc viết báo cáo chi tiết về sự khác biệt kiến trúc giữa các tuần (Worklog) và thiết lập tài liệu kỹ thuật chất lượng đã cải thiện đáng kể khả năng trình bày. Ngoài ra, việc lắng nghe chia sẻ từ các sự kiện cộng đồng trực tuyến đã mở rộng góc nhìn của tôi về xu hướng thị trường lao động.
 
-**5. Văn hóa & tinh thần đồng đội**  
-Tinh thần cộng đồng trong FCAJ rất tích cực. Mọi người sẵn sàng chia sẻ kiến thức, hỗ trợ nhau trong quá trình học lab, làm worklog và hoàn thiện báo cáo. Tôi cảm thấy đây không chỉ là một chương trình thực tập mà còn là một môi trường học hỏi chung, nơi thực tập sinh được khuyến khích tham gia, đóng góp và phát triển cùng nhau.
+**5. Văn hóa cộng đồng**  
+FCAJ đã xây dựng thành công văn hóa chia sẻ (knowledge sharing). Các thành viên cùng khóa không ngần ngại trao đổi, hỗ trợ nhau qua các kênh thảo luận nhóm khi deploy container gặp lỗi hoặc cấu hình bảo mật tài khoản gặp vướng mắc.
 
-**6. Chính sách / phúc lợi cho thực tập sinh**  
-Điểm tích cực lớn của chương trình là tạo điều kiện cho thực tập sinh được tham gia nhiều hoạt động học thuật như workshop, community event, thực hành lab và xây dựng project. Điều này mang lại giá trị lớn hơn cả về kiến thức lẫn trải nghiệm thực tế. Nếu có thể, chương trình có thể bổ sung thêm lộ trình rõ ràng hơn theo từng giai đoạn để thực tập sinh dễ theo dõi tiến độ của mình.
+**6. Cơ sở vật chất và phúc lợi hỗ trợ**  
+Chương trình đã tạo điều kiện tối đa bằng cách cung cấp tài khoản AWS Sandbox để thực tập sinh thực hành các bài lab thực tế mà không lo lắng về mặt chi phí. Điều này giúp chúng tôi tự tin thử nghiệm các dịch vụ nâng cao như Route 53, ALB, NAT Gateway.
 
+---
 
-### Một số câu hỏi khác
-- Điều tôi **hài lòng nhất** trong thời gian thực tập là cơ hội được học đi đôi với thực hành. Tôi được tiếp cận nhiều dịch vụ AWS, tham gia lab, workshop, event cộng đồng và từng bước làm quen với cách triển khai project thực tế.
-- Điều tôi nghĩ chương trình **có thể cải thiện** là bổ sung thêm một số mốc đánh giá ngắn theo từng giai đoạn để thực tập sinh biết mình đang ở đâu, còn thiếu phần nào và cần tập trung cải thiện kỹ năng gì.
-- Nếu giới thiệu cho bạn bè, tôi **sẵn sàng khuyên các bạn nên tham gia** chương trình này vì đây là môi trường phù hợp cho những ai muốn bắt đầu với cloud, AWS và làm quen với cách học mang tính thực tế.
+### Phản hồi các câu hỏi khảo sát nhanh
 
+- **Điều khiến tôi hài lòng nhất:** Cơ hội được thực hành trực tiếp (hands-on) trên AWS Console và viết mã cấu hình thực tế cho dự án `GlobalMart`. Trải nghiệm tự tay build Docker image, push lên ECR và vận hành ECS Service thực sự mang lại sự tự tin lớn về mặt kỹ năng kỹ thuật.
+- **Điểm chương trình có thể tối ưu thêm:** Nên bổ sung thêm các buổi "Review 1-1" ngắn định kỳ (ví dụ vào giữa kỳ thực tập) để mentor đánh giá tiến độ của từng cá nhân, chỉ ra cụ thể điểm yếu chuyên môn để thực tập sinh kịp thời bồi đắp trước khi bước vào dự án cuối khóa.
+- **Mức độ giới thiệu cho người khác:** Tôi chắc chắn sẽ đề xuất chương trình này cho các khóa sinh viên đàn em, đặc biệt là những ai có định hướng theo đuổi các mảng Cloud, System hay DevOps.
 
-### Đề xuất & mong muốn
-- Tôi mong chương trình có thể bổ sung thêm checklist hoặc roadmap ngắn theo từng tuần để thực tập sinh dễ theo dõi tiến độ và mục tiêu.
-- Tôi mong có thêm một số buổi review trực tiếp hoặc session chia sẻ kinh nghiệm giữa các nhóm để mọi người học hỏi lẫn nhau nhiều hơn.
-- Tôi rất mong có cơ hội tiếp tục tham gia những hoạt động tương tự trong tương lai, đặc biệt là các project thực tế, workshop chuyên sâu và hoạt động cộng đồng về AWS/AI.
-- Góp ý khác: FCAJ là một môi trường rất tốt để sinh viên bắt đầu hành trình với cloud. Tôi thật sự trân trọng sự hỗ trợ từ mentor và team, đồng thời hy vọng chương trình sẽ ngày càng phát triển để hỗ trợ thêm nhiều bạn sinh viên khác.
+---
+
+### Đề xuất và Định hướng tương lai
+
+- **Cung cấp lộ trình thi chứng chỉ:** Mong chương trình có thể tích hợp hoặc chia sẻ thêm các tài liệu định hướng ôn luyện chứng chỉ quốc tế (như AWS Certified Cloud Practitioner hoặc Solutions Architect Associate) vì đây là các chứng chỉ bổ trợ rất tốt cho sinh viên mới ra trường.
+- **Tổ chức buổi chia sẻ chéo giữa các nhóm:** Đề xuất có thêm các buổi trao đổi kỹ thuật chéo giữa các nhóm làm dự án cuối khóa để các thành viên có cơ hội học hỏi những cách tiếp cận kiến trúc khác nhau cho cùng một bài toán.
+- **Tài liệu tham khảo chuyên sâu:** Nên bổ sung thêm các bài viết hoặc tài liệu hướng dẫn về các chủ đề nâng cao như IaC (Terraform, AWS CloudFormation) để chuẩn bị hành trang tốt hơn cho sinh viên.
