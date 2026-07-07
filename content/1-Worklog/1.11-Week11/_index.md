@@ -16,11 +16,11 @@ pre: " <b> 1.11. </b> "
 ### Detailed Weekly Action Items:
 | Day | Activity Description | Start | End Date | Documentation |
 | --- | --- | --- | --- | --- |
-| Mon | Launch the ECS Fargate Cluster (`globalmart-cluster`) to host application workloads. | 29/06/2026 | 29/06/2026 | Project Codebase |
-| Tue | Draft ECS Task Definitions: allocate CPU/Memory metrics and configure database bindings. | 30/06/2026 | 30/06/2026 | Project Codebase |
+| Mon | Launch the ECS Fargate Cluster (`globalmart-cluster`) to host application workloads. | 29/06/2026 | 29/06/2026 | [Workshop Guide](../../5-Workshop/) |
+| Tue | Draft ECS Task Definitions: allocate CPU/Memory metrics and configure database bindings. | 30/06/2026 | 30/06/2026 | [Workshop Guide](../../5-Workshop/) |
 | Wed | Deploy internet-facing Public ALB for frontend ingress and private Internal ALB for backend APIs. | 01/07/2026 | 01/07/2026 | https://aws.amazon.com/elasticloadbalancing/ |
-| Thu | Establish Target Groups and configure health checks at `/actuator/health`. | 02/07/2026 | 02/07/2026 | Project Codebase |
-| Fri | Create ECS Services to run container tasks and bind them to load balancer listeners. Week 11 review. | 03/07/2026 | 03/07/2026 | Project Codebase |
+| Thu | Establish Target Groups and configure health checks at `/actuator/health`. | 02/07/2026 | 02/07/2026 | [Workshop Guide](../../5-Workshop/) |
+| Fri | Create ECS Services to run container tasks and bind them to load balancer listeners. Week 11 review. | 03/07/2026 | 03/07/2026 | [Workshop Guide](../../5-Workshop/) |
 
 ### Key Accomplishments & Deliverables - Week 11:
 

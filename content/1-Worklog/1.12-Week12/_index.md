@@ -16,11 +16,11 @@ pre: " <b> 1.12. </b> "
 ### Detailed Weekly Action Items:
 | Day | Activity Description | Start | End Date | Documentation |
 | --- | --- | --- | --- | --- |
-| Mon | Deploy HTTP API Gateway integrated with VPC Link connecting to private internal ALB. | 06/07/2026 | 06/07/2026 | Project Codebase |
-| Tue | Configure GitHub Actions workflow YAML files triggers for automated docker image compilation and ECS updates. | 07/07/2026 | 07/07/2026 | GitHub Actions Docs |
+| Mon | Deploy HTTP API Gateway integrated with VPC Link connecting to private internal ALB. | 06/07/2026 | 06/07/2026 | [Workshop Guide](../../5-Workshop/) |
+| Tue | Configure GitHub Actions workflow YAML files triggers for automated docker image compilation and ECS updates. | 07/07/2026 | 07/07/2026 | [CI/CD Guide](../../5-Workshop/) |
 | Wed | Configure automated RDS snapshot backup events and export target files to S3 buckets. | 08/07/2026 | 08/07/2026 | https://aws.amazon.com/s3/ |
 | Thu | Establish CloudWatch logs streams, metrics, alarms and bind SNS alert triggers to send email notifications. | 09/07/2026 | 09/07/2026 | https://aws.amazon.com/cloudwatch/ |
-| Fri | Verify end-to-end cloud infrastructure, write reports and finalize presentation materials. Done. | 10/07/2026 | 10/07/2026 | Internship Report |
+| Fri | Verify end-to-end cloud infrastructure, write reports and finalize presentation materials. Done. | 10/07/2026 | 10/07/2026 | [Main Report Portal](../../) |
 
 ### Key Accomplishments & Deliverables - Week 12:
 

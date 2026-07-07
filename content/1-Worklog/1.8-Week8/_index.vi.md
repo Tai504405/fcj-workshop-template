@@ -16,11 +16,11 @@ pre: " <b> 1.8. </b> "
 ### Nhiệm vụ cụ thể cần triển khai:
 | Ngày | Nhiệm vụ chi tiết | Ngày bắt đầu | Ngày hoàn thành | Nguồn tham khảo |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Đọc kỹ tài liệu yêu cầu, phân tích các tính năng của ứng dụng thương mại điện tử `GlobalMart`. | 08/06/2026 | 08/06/2026 | Đặc tả dự án |
+| Thứ 2 | Đọc kỹ tài liệu yêu cầu, phân tích các tính năng của ứng dụng thương mại điện tử `GlobalMart`. | 08/06/2026 | 08/06/2026 | [Tài liệu Đặc tả](../../2-Proposal/) |
 | Thứ 3 | Vẽ sơ đồ kiến trúc 3 lớp (3-tier) bảo mật và có khả năng phục hồi cao, tối ưu chi phí trên đám mây AWS. | 09/06/2026 | 09/06/2026 | https://aws.amazon.com/vi/solutions/ |
-| Thứ 4 | Khởi tạo mã nguồn dự án: viết code giao diện React SPA và thiết lập khung REST API Spring Boot. | 10/06/2026 | 10/06/2026 | Mã nguồn dự án |
-| Thứ 5 | Cài đặt và thiết lập cơ sở dữ liệu MySQL local dưới máy phát triển cá nhân, cấu hình kết nối ứng dụng. | 11/06/2026 | 11/06/2026 | Mã nguồn dự án |
-| Thứ 6 | Kiểm thử luồng trao đổi dữ liệu toàn cục giữa client và API cục bộ. Tổng kết Tuần 8. | 12/06/2026 | 12/06/2026 | Mã nguồn dự án |
+| Thứ 4 | Khởi tạo mã nguồn dự án: viết code giao diện React SPA và thiết lập khung REST API Spring Boot. | 10/06/2026 | 10/06/2026 | [Mã nguồn GitHub](https://github.com/Tai504405/fcj-workshop-template) |
+| Thứ 5 | Cài đặt và thiết lập cơ sở dữ liệu MySQL local dưới máy phát triển cá nhân, cấu hình kết nối ứng dụng. | 11/06/2026 | 11/06/2026 | [Mã nguồn GitHub](https://github.com/Tai504405/fcj-workshop-template) |
+| Thứ 6 | Kiểm thử luồng trao đổi dữ liệu toàn cục giữa client và API cục bộ. Tổng kết Tuần 8. | 12/06/2026 | 12/06/2026 | [Mã nguồn GitHub](https://github.com/Tai504405/fcj-workshop-template) |
 
 ### Kết quả thu hoạch thực tế sau Tuần 8:
 

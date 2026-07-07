@@ -16,11 +16,11 @@ pre: " <b> 1.12. </b> "
 ### Nhiệm vụ cụ thể cần triển khai:
 | Ngày | Nhiệm vụ chi tiết | Ngày bắt đầu | Ngày hoàn thành | Nguồn tham khảo |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Thiết lập API Gateway tích hợp VPC Link liên kết trực tiếp với Internal ALB để gọi Backend an toàn. | 06/07/2026 | 06/07/2026 | Mã nguồn dự án |
-| Thứ 3 | Xây dựng tệp workflow GitHub Actions tự động hóa: Code push → login ECR → build image → deploy ECS Service. | 07/07/2026 | 07/07/2026 | Tài liệu GitHub Actions |
+| Thứ 2 | Thiết lập API Gateway tích hợp VPC Link liên kết trực tiếp với Internal ALB để gọi Backend an toàn. | 06/07/2026 | 06/07/2026 | [Hướng dẫn Workshop](../../5-Workshop/) |
+| Thứ 3 | Xây dựng tệp workflow GitHub Actions tự động hóa: Code push → login ECR → build image → deploy ECS Service. | 07/07/2026 | 07/07/2026 | [Tài liệu CI/CD](../../5-Workshop/) |
 | Thứ 4 | Cấu hình sao lưu RDS Snapshot tự động định kỳ, thiết lập xuất tệp backup lưu trữ lâu dài trên S3 Bucket. | 08/07/2026 | 08/07/2026 | https://aws.amazon.com/s3/ |
 | Thứ 5 | Tạo các CloudWatch Alarms giám sát quá tải và liên kết SNS tự động gửi cảnh báo về email cá nhân. | 09/07/2026 | 09/07/2026 | https://aws.amazon.com/cloudwatch/ |
-| Thứ 6 | Kiểm định hoạt động toàn hệ thống dự án, viết tài liệu và kiểm tra toàn bộ báo cáo thực tập. Kết thúc thực tập. | 10/07/2026 | 10/07/2026 | Báo cáo thực tập |
+| Thứ 6 | Kiểm định hoạt động toàn hệ thống dự án, viết tài liệu và kiểm tra toàn bộ báo cáo thực tập. Kết thúc thực tập. | 10/07/2026 | 10/07/2026 | [Trang chủ Báo cáo](../../) |
 
 ### Kết quả thu hoạch thực tế sau Tuần 12:
 

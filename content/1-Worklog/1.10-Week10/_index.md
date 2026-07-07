@@ -16,11 +16,11 @@ pre: " <b> 1.10. </b> "
 ### Detailed Weekly Action Items:
 | Day | Activity Description | Start | End Date | Documentation |
 | --- | --- | --- | --- | --- |
-| Mon | Build a dedicated VPC (`globalmart-vpc`, CIDR `10.0.0.0/16`) and allocate public and private subnets. | 22/06/2026 | 22/06/2026 | Project Codebase |
-| Tue | Configure Internet Gateways, NAT Gateways, and set up Route Tables for subnets. | 23/06/2026 | 23/06/2026 | Project Codebase |
-| Wed | Configure layered Security Group rules, locking port 3306 database ingress to backend nodes. | 24/06/2026 | 24/06/2026 | Project Codebase |
+| Mon | Build a dedicated VPC (`globalmart-vpc`, CIDR `10.0.0.0/16`) and allocate public and private subnets. | 22/06/2026 | 22/06/2026 | [GitHub Repository](https://github.com/Tai504405/fcj-workshop-template) |
+| Tue | Configure Internet Gateways, NAT Gateways, and set up Route Tables for subnets. | 23/06/2026 | 23/06/2026 | [GitHub Repository](https://github.com/Tai504405/fcj-workshop-template) |
+| Wed | Configure layered Security Group rules, locking port 3306 database ingress to backend nodes. | 24/06/2026 | 24/06/2026 | [GitHub Repository](https://github.com/Tai504405/fcj-workshop-template) |
 | Thu | Launch Amazon RDS MySQL instance (Single-AZ, db.t3.micro) inside private database subnets. | 25/06/2026 | 25/06/2026 | https://aws.amazon.com/rds/ |
-| Fri | Deploy a temporary bastion EC2 instance to execute database schema seeding. Week 10 review. | 26/06/2026 | 26/06/2026 | Project Codebase |
+| Fri | Deploy a temporary bastion EC2 instance to execute database schema seeding. Week 10 review. | 26/06/2026 | 26/06/2026 | [GitHub Repository](https://github.com/Tai504405/fcj-workshop-template) |
 
 ### Key Accomplishments & Deliverables - Week 10:
 
