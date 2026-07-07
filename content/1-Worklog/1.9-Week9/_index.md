@@ -16,8 +16,8 @@ pre: " <b> 1.9. </b> "
 ### Detailed Weekly Action Items:
 | Day | Activity Description | Start | End Date | Documentation |
 | --- | --- | --- | --- | --- |
-| Mon | Write a Dockerfile for the React frontend utilizing Nginx to serve static files. | 15/06/2026 | 15/06/2026 | [GitHub Repository](https://github.com/Tai504405/fcj-workshop-template) |
-| Tue | Draft a multi-stage Dockerfile for the Spring Boot backend jar service to minimize output size. | 16/06/2026 | 16/06/2026 | [GitHub Repository](https://github.com/Tai504405/fcj-workshop-template) |
+| Mon | Write a Dockerfile for the React frontend utilizing Nginx to serve static files. | 15/06/2026 | 15/06/2026 | [GitHub Repository](https://github.com/KENTksl/globalmart-production-cicd.git) |
+| Tue | Draft a multi-stage Dockerfile for the Spring Boot backend jar service to minimize output size. | 16/06/2026 | 16/06/2026 | [GitHub Repository](https://github.com/KENTksl/globalmart-production-cicd.git) |
 | Wed | Create remote container repositories for globalmart-frontend and globalmart-backend on Amazon ECR. | 17/06/2026 | 17/06/2026 | https://aws.amazon.com/ecr/ |
 | Thu | Run Docker login commands via AWS CLI and push local images to remote ECR endpoints. | 18/06/2026 | 18/06/2026 | https://aws.amazon.com/ecr/ |
 | Fri | Inspect pushed images and verify image tags in the Amazon ECR console. Week 9 review. | 19/06/2026 | 19/06/2026 | https://aws.amazon.com/ecr/ |

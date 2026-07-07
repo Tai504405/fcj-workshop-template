@@ -16,11 +16,11 @@ pre: " <b> 1.10. </b> "
 ### Nhiệm vụ cụ thể cần triển khai:
 | Ngày | Nhiệm vụ chi tiết | Ngày bắt đầu | Ngày hoàn thành | Nguồn tham khảo |
 | --- | --- | --- | --- | --- |
-| Thứ 2 | Khởi tạo VPC mạng dự án (`globalmart-vpc`, CIDR `10.0.0.0/16`) và chia nhỏ các public/private subnet. | 22/06/2026 | 22/06/2026 | [Mã nguồn GitHub](https://github.com/Tai504405/fcj-workshop-template) |
-| Thứ 3 | Cấu hình Internet Gateway (IGW), NAT Gateway kết nối mạng và thiết lập Route Table cho từng subnet. | 23/06/2026 | 23/06/2026 | [Mã nguồn GitHub](https://github.com/Tai504405/fcj-workshop-template) |
-| Thứ 4 | Thiết lập các Security Group bảo mật: chặn mọi kết nối vào database ngoại trừ kết nối từ Backend. | 24/06/2026 | 24/06/2026 | [Mã nguồn GitHub](https://github.com/Tai504405/fcj-workshop-template) |
+| Thứ 2 | Khởi tạo VPC mạng dự án (`globalmart-vpc`, CIDR `10.0.0.0/16`) và chia nhỏ các public/private subnet. | 22/06/2026 | 22/06/2026 | [Mã nguồn GitHub](https://github.com/KENTksl/globalmart-production-cicd.git) |
+| Thứ 3 | Cấu hình Internet Gateway (IGW), NAT Gateway kết nối mạng và thiết lập Route Table cho từng subnet. | 23/06/2026 | 23/06/2026 | [Mã nguồn GitHub](https://github.com/KENTksl/globalmart-production-cicd.git) |
+| Thứ 4 | Thiết lập các Security Group bảo mật: chặn mọi kết nối vào database ngoại trừ kết nối từ Backend. | 24/06/2026 | 24/06/2026 | [Mã nguồn GitHub](https://github.com/KENTksl/globalmart-production-cicd.git) |
 | Thứ 5 | Khởi tạo cơ sở dữ liệu Amazon RDS MySQL (Single-AZ, `db.t3.micro`) đặt hoàn toàn ở private subnet B. | 25/06/2026 | 25/06/2026 | https://aws.amazon.com/rds/ |
-| Thứ 6 | Khởi chạy một EC2 instance tạm thời để truy cập vào RDS MySQL, tiến hành khởi tạo cấu trúc bảng dữ liệu. Tổng kết Tuần 10. | 26/06/2026 | 26/06/2026 | [Mã nguồn GitHub](https://github.com/Tai504405/fcj-workshop-template) |
+| Thứ 6 | Khởi chạy một EC2 instance tạm thời để truy cập vào RDS MySQL, tiến hành khởi tạo cấu trúc bảng dữ liệu. Tổng kết Tuần 10. | 26/06/2026 | 26/06/2026 | [Mã nguồn GitHub](https://github.com/KENTksl/globalmart-production-cicd.git) |
 
 ### Kết quả thu hoạch thực tế sau Tuần 10:
 
