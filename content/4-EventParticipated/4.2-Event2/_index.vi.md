@@ -1,145 +1,133 @@
 ---
 title: "Event 2"
-date: 2026-06-27
+date: 2026-06-06
 weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-# Bài thu hoạch “FCAJ Community Day - Data Driven, AI Risen”
+# Bài thu hoạch "FCJ Community Day - From Zero to Cloud Hero"
 
 ### Thông Tin Sự Kiện
 
-- **Tên sự kiện**: FCAJ Community Day - Data Driven, AI Risen
-- **Thời gian**: Thứ Bảy, 27 tháng 6 năm 2026, 09:00 - 12:00
-- **Địa điểm**: Bitexco Financial Tower, Thành phố Hồ Chí Minh
-- **Tình trạng đăng ký**: Sự kiện đã hết vé và không còn nhận đăng ký nữa
+- **Tên sự kiện**: FCJ Community Day - From Zero to Cloud Hero
+- **Thời gian**: Thứ Sáu, 6 tháng 6 năm 2026, 09:00 - 12:00
+- **Địa điểm**: Văn phòng AWS Việt Nam, Thành phố Hồ Chí Minh
+- **Ghi chú**: Sự kiện tổ chức tại phòng nhỏ với màn hình tivi, phù hợp cho nhóm học viên FCJ với không khí thân thiện và gần gũi hơn
 
 ### Danh Sách Diễn Giả
 
-- **Truong Tran** - AI Solution Sales - Noventiq
-- **Steve Tran** - CTO/Founder - CloudThinker
-- **Trung Vu** - CEO - Revve AI
-- **Anh Dang** - Solution Sales - Noventiq
-- **Nghi Danh** - AI Engineer - Renova Cloud
-- **Kiet Tran** - AI Engineer - AWS Student Builder Group
-- **Bao Phan** - Cloud Engineer - Cloud Kinetics
-- **Nguyen Nguyen** - Cloud Engineer - Cloud Kinetics
-- **Toan Nguyen** - AWS Security Builder
+- **Tran Trung Vinh** - System Administrator at Central Retail Group
+- **Lê Hoàng Gia Đại (Pretty Boy)** - Final-year student at HUTECH University, aspiring AWS Cloud & Cyber Security Engineer
+- **Viet Phat** - AI majoring at Swinburne University of Technology
+- Các thành viên cộng đồng FCJ AI chia sẻ về Docker, GraphRAG và Cybersecurity
 
 ### Lịch Trình Sự Kiện
 
 | Thời gian | Nội dung |
-|------------|----------|
-| 08:30 - 09:00 | Settle into your seat |
-| 09:00 - 09:25 | Deep Response Engine: From Detection to Autonomous Resolution |
-| 09:25 - 09:55 | Voice Agents: Building Human-Like AI Conversations at Scale |
-| 09:55 - 10:20 | AWS DevOps Agent: Your Always-Available Operations Teammate |
-| 10:20 - 10:45 | AI-Powered Productivity: Workforce Planning For Enterprise |
-| 10:45 - 11:30 | Building Secure Private MCP Connection with Amazon Quick |
+|-----------|----------|
+| 09:00 - 09:30 | From IT Helpdesk to Senior Sysadmin – Hành trình thực tế |
+| 09:30 - 10:00 | Docker Use Cases & Docker Commands in Practice |
+| 10:00 - 10:30 | Build GraphRAG Applications with Amazon Bedrock and Amazon Neptune |
+| 10:30 - 10:55 | Combining AWS WAF with Machine Learning for Cyber Attack Detection |
+| 10:55 - 11:00 | Break |
+| 11:00 - 11:30 | Network Intrusion Detection System (NIDS) – Design and Deployment |
+| 11:30 - 12:00 | ML & AWS Applications in Cybersecurity |
 
 ### Nội Dung Nổi Bật
 
-#### Deep Response Engine: From Detection to Autonomous Resolution
+#### From IT Helpdesk to Senior Sysadmin
+- Chia sẻ hành trình thực tế từ vị trí IT Helpdesk lên Senior Sysadmin và các bước tiến vào Cloud & DevOps
+- **Kỹ năng tích lũy từ Helpdesk**: Troubleshooting under pressure, communication with end users, problem-solving mindset, understanding how IT systems work
+- **Turning Point**: Learning Linux and Networking, Building hands-on lab environments, Exploring Infrastructure Technologies, Preparing for a Sysadmin role
+- **Key Realization**: *"I didn't want to just support systems. I wanted to understand how they were built."*
+- **Hành trình phỏng vấn với Central Retail Group**: Preparation → Focus on real projects and achievements; Before the Interview → Research company tech landscape; Technical Assessment → Architecture design, incident response, troubleshooting
+- **Bài học cuối**: *"Practical experience is your strongest advantage"*
 
-- Trình bày bài toán độ phức tạp ngày càng tăng trong vận hành cloud hiện đại
-- Nhấn mạnh sự chuyển dịch từ hệ thống chỉ phát hiện cảnh báo sang hệ thống có thể tự động hành động
-- Giới thiệu kiến trúc của Deep Response Engine và demo quy trình phản ứng sự cố tự động
-- Làm rõ tác động kinh doanh như giảm chi phí vận hành và hướng đến zero-downtime operations
+#### Docker Use Cases & Docker Commands in Practice
+- Giới thiệu các trường hợp sử dụng Docker phổ biến: CI/CD pipelines, Microservices architectures, Development and testing environments, Cloud-native applications, Legacy application modernization
+- Tổng hợp các nhóm lệnh Docker:
+  - **Image-related commands**: docker image ls, docker pull, docker push, docker build
+  - **Container lifecycle commands**: docker create, docker run, docker start, docker stop
+  - **Interactive commands**: docker exec, docker attach, docker logs, docker top
+  - **Network commands**: docker network create, docker network ls, docker network connect, docker network disconnect
+  - **Volume commands**: docker volume create, docker volume inspect, docker volume rm, docker volume prune
+  - **Docker-compose commands**: docker-compose build, docker-compose up, docker-compose ls, docker-compose logs
 
-#### Voice Agents: Building Human-Like AI Conversations at Scale
+#### Build GraphRAG Applications Using Amazon Bedrock and Amazon Neptune
+- Giới thiệu kiến trúc GraphRAG và cách kết hợp Graph Database với Retrieval-Augmented Generation
+- Hai hướng tiếp cận:
+  - **Fully Managed**: GraphRAG offering sử dụng Bedrock và Neptune Analytics
+  - **Open-source**: GraphRAG toolkit (GitHub) với Neptune Analytics, Amazon Bedrock và LlamaIndex
 
-- Phân tích quá trình phát triển từ IVR, chatbot đến voice agent có khả năng hội thoại tự nhiên hơn
-- Nêu các thách thức chính khi xây dựng Voice AI như độ trễ, độ chính xác và trải nghiệm tương tác
-- Giới thiệu hướng xây dựng kiến trúc tích hợp telephony, streaming, Amazon Bedrock và các MCP tools
-- Chia sẻ demo thực tế và kinh nghiệm triển khai Voice Agent cho bài toán doanh nghiệp, đặc biệt với tiếng Việt là ngôn ngữ ít tài nguyên
+#### Combining AWS WAF with Machine Learning for Cyber Attack Detection
+- Tổng quan về AWS WAF: Capabilities, strengths, and limitations
+- Lý do signature-based protection không đủ cho các cuộc tấn công hiện đại
+- Giới thiệu NIDS và behavior-based detection sử dụng Machine Learning
+- Xây dựng và huấn luyện ML-based NIDS dùng dataset CSE-CIC-IDS2018
+- Phát triển real-time dashboard cho attack monitoring và visualization
+- Correlating NIDS predictions với AWS WAF events để phát hiện mối đe dọa toàn diện
+- Demo, lessons learned, challenges và future improvements
 
-#### AWS DevOps Agent: Your Always-Available Operations Teammate
+#### Network Intrusion Detection System (NIDS)
+- NIDS được thiết kế để giám sát và phát hiện các cuộc tấn công mạng
+- Mục tiêu: Phát hiện hành vi bất thường, tấn công và truy cập trái phép
+- **Các chức năng cốt lõi**:
+  - Traffic Monitoring: Network, Web, HTTP/HTTPS traffic
+  - Behavioral Analysis: Signature matching or anomaly detection
+  - Detection & Alerting: Real-time alerts
+  - Logging & Response: Records incident details for analysis
+  - Integration Capabilities: Seamlessly integrates with Firewalls, SIEMs
 
-- Giới thiệu vai trò của AWS DevOps Agent như một trợ lý vận hành luôn sẵn sàng hỗ trợ
-- Cho thấy cách AI hỗ trợ giảm MTTD và MTTR trong quá trình giám sát và xử lý sự cố
-- Trình bày hướng tiếp cận multi-agent reasoning với Bedrock AgentCore
-- Minh họa use case thực tế và demo ECS để thấy rõ khả năng tự động hóa tác vụ vận hành
-
-#### AI-Powered Productivity: Workforce Planning For Enterprise
-
-- Nêu các khó khăn của doanh nghiệp trong chuyển đổi số cho bộ phận nhân sự
-- Giới thiệu Amazon Quick và cách công cụ này hỗ trợ các quy trình HR
-- Chia sẻ cách dùng AI để tăng tốc sàng lọc hồ sơ, hỗ trợ tuyển dụng và tối ưu quy trình làm việc
-- Nhấn mạnh vai trò của workforce analytics và data-driven insights trong lập kế hoạch nguồn nhân lực
-
-#### Building Secure Private MCP Connection with Amazon Quick
-
-- Giới thiệu Amazon Quick như một nền tảng AI assistant cho môi trường doanh nghiệp
-- Giải thích MCP (Model Context Protocol) và vai trò trong việc mở rộng khả năng tích hợp
-- Phân tích các rủi ro bảo mật khi kết nối MCP với những hệ thống nội bộ
-- Trình bày cách cấu hình private connectivity trong VPC để dữ liệu không đi qua internet công cộng
-- Chia sẻ demo và kinh nghiệm triển khai thực tế để tăng mức độ an toàn cho hệ thống
+#### ML & AWS Applications in Cybersecurity
+- **Machine Learning**: Capable of learning from real-world network behaviors, Detects novel attack patterns, Automatically analyzes massive volumes of network data, Continuously adapts to rapidly changing threats
+- **Amazon Web Services**: Infrastructure platform built to meet stringent security requirements, Service model reduces the burden of physical security management, Ability to scale security on-demand based on system needs
 
 ### Những Gì Học Được
 
-#### Về AI cho vận hành và tự động hóa
+#### Về Hành Trình Nghề Nghiệp
+- Học được bài học quý từ anh Tran Trung Vinh: thực hành thực tế quan trọng hơn chứng chỉ; portfolio thực chất hơn bằng cấp
+- Hiểu được con đường từ Helpdesk lên Sysadmin và vào Cloud/DevOps, từ đó định hướng rõ hơn cho bản thân
+- Nhận ra: *"Where you start don't matter – keep going. Every small step counts."*
 
-- Hiểu rõ hơn cách kết hợp AI vào quy trình vận hành để đi từ phát hiện sự cố sang phản ứng tự động
-- Nhận thấy giá trị thực tế của việc giảm MTTD, MTTR và chuẩn hóa quy trình xử lý incident
+#### Về Docker và Containerization
+- Nắm rõ các trường hợp ứng dụng Docker trong CI/CD, Microservices và môi trường phát triển
+- Có được tài liệu tham khảo thực tế về các nhóm lệnh Docker thường dùng
 
-#### Về Voice AI và kiến trúc triển khai
+#### Về GraphRAG và AI trên AWS
+- Hiểu cách kết hợp Graph Database (Neptune) với Amazon Bedrock để xây dựng ứng dụng RAG có ngữ cảnh phong phú hơn
+- Thấy được hai hướng triển khai: Fully Managed và Open-source toolkit
 
-- Biết thêm về cấu trúc của một hệ thống Voice Agent hiện đại trên AWS
-- Hiểu những khó khăn khi triển khai Voice AI cho tiếng Việt và cách tối ưu trải nghiệm hội thoại
-- Thấy rõ vai trò của Amazon Bedrock, streaming và các công cụ tích hợp trong bài toán Voice AI
-
-#### Về DevOps và AI Agent
-
-- Nắm được cách một DevOps Agent có thể hỗ trợ đội ngũ kỹ thuật trong môi trường multi-cloud hoặc hybrid
-- Học được cách áp dụng multi-agent reasoning cho các bài toán vận hành phức tạp
-
-#### Về AI ứng dụng trong nhân sự
-
-- Hiểu cách AI hỗ trợ HR trong tuyển dụng, sàng lọc CV và phân tích dữ liệu nhân sự
-- Nhận ra lợi ích của việc ra quyết định dựa trên dữ liệu trong workforce planning
-
-#### Về bảo mật khi tích hợp AI
-
-- Học được tầm quan trọng của private connection khi kết nối Amazon Quick với MCP server
-- Hiểu vì sao cần thiết kế kết nối an toàn để bảo vệ dữ liệu doanh nghiệp và tránh lưu lượng đi qua internet công cộng
+#### Về Bảo Mật Mạng và Cybersecurity trên AWS
+- Hiểu cơ chế hoạt động của NIDS và cách kết hợp ML để phát hiện tấn công
+- Nắm được vai trò bổ sung của Machine Learning và AWS WAF trong bảo vệ hệ thống
+- Học được cách xây dựng real-time dashboard cho threat monitoring
 
 ### Ứng Dụng Vào Công Việc
 
-- Áp dụng tư duy tự động hóa vận hành để cải thiện tốc độ phản hồi khi hệ thống phát sinh lỗi
-- Tìm hiểu thêm cách xây dựng AI agent hỗ trợ DevOps cho các project sử dụng AWS
-- Nghiên cứu hướng phát triển Voice AI trên Amazon Bedrock cho các bài toán chăm sóc khách hàng hoặc trợ lý ảo
-- Tham khảo cách ứng dụng Amazon Quick trong các quy trình nội bộ như HR, tổng hợp dữ liệu và hỗ trợ ra quyết định
-- Chú ý hơn đến yếu tố bảo mật khi thiết kế kết nối giữa AI assistant và các hệ thống nội bộ
+- Áp dụng kiến thức Docker vào quy trình CI/CD và quản lý môi trường dev/staging trong dự án thực tập
+- Nghiên cứu thêm về AWS WAF và Machine Learning để tích hợp vào hệ thống bảo mật
+- Thử khám phá GraphRAG với Amazon Bedrock và Neptune cho các bài toán cần truy vấn tri thức phức tạp
+- Lấy cảm hứng từ hành trình của anh Tran Trung Vinh để xây dựng portfolio thực tế thay vì chỉ tập trung vào chứng chỉ
 
 ### Trải nghiệm trong event
 
-Tham gia **FCAJ Community Day - Data Driven, AI Risen** là một trải nghiệm rất đáng giá vì chương trình tập trung vào những chủ đề đang rất thực tế như AI agent, Voice AI, DevOps automation, ứng dụng AI trong HR và bảo mật khi kết nối hệ thống doanh nghiệp. Một số trải nghiệm nổi bật:
+Tham gia **FCJ Community Day - From Zero to Cloud Hero** là trải nghiệm rất thiết thực, tập trung nhiều vào kỹ năng vận hành, bảo mật và xây dựng ứng dụng AI trên AWS. Sự kiện được tổ chức trong không gian nhỏ với màn hình tivi, tạo cảm giác thân mật và dễ tương tác hơn.
 
-#### Học hỏi từ các diễn giả có kinh nghiệm thực tế
-- Phần chia sẻ của anh Steve Tran giúp tôi hiểu rõ hơn tầm quan trọng của việc trải nghiệm sớm trong môi trường doanh nghiệp và cách nhìn nhận các bài toán cloud thực tế.
-- Các diễn giả đến từ Revve AI, Renova Cloud, Cloud Kinetics và Noventiq mang đến nhiều góc nhìn ứng dụng AI gắn với nhu cầu doanh nghiệp.
+#### Ấn tượng với chia sẻ hành trình thực tế
+- Câu chuyện của anh Tran Trung Vinh là phần tôi ấn tượng nhất – một người đi từ IT Helpdesk lên Senior Sysadmin rồi sang Cloud, chứng minh rằng xuất phát điểm không quan trọng bằng sự kiên trì và thực hành.
 
-#### Hiểu rõ hơn về Voice AI và AI Agent
-- Tôi được nghe trình bày về cấu trúc của Voice AI, các thành phần quan trọng trong hệ thống hội thoại và khó khăn khi triển khai cho tiếng Việt.
-- Phần demo Voice Agent trên AWS Bedrock giúp tôi hình dung rõ hơn cách kết hợp mô hình nền tảng với hệ thống thực tế.
-- Chủ đề DevOps Agent cho tôi thấy AI không chỉ hỗ trợ nội dung mà còn có thể tham gia trực tiếp vào vận hành và xử lý sự cố.
+#### Học Docker theo hướng thực hành
+- Phần Docker không chỉ giới thiệu lý thuyết mà cung cấp danh sách lệnh thực tế có thể dùng ngay – rất hữu ích cho công việc hàng ngày.
 
-#### Nhìn thấy tính thực tiễn của AI trong doanh nghiệp
-- Phần trình bày về HR cho thấy AI có thể hỗ trợ tuyển dụng, sàng lọc CV và phân tích nhân sự theo hướng thực tế, dễ ứng dụng.
-- Nội dung về Amazon Quick và kết nối MCP private giúp tôi hiểu rằng triển khai AI trong doanh nghiệp luôn phải đi cùng yêu cầu bảo mật.
+#### Khám phá GraphRAG – hướng tiếp cận AI mới
+- Lần đầu nghe về GraphRAG và cách kết hợp graph database với AI – đây là hướng mở ra nhiều ứng dụng thú vị cho các bài toán cần kiến thức liên kết phức tạp.
 
-#### Cơ hội kết nối và mở rộng góc nhìn
-- Sự kiện giúp tôi tiếp cận nhiều chủ đề mới đang được cộng đồng quan tâm, đồng thời mở rộng thêm góc nhìn về xu hướng phát triển AI trên AWS.
-- Tôi cũng có cơ hội quan sát cách các đội ngũ kỹ thuật trình bày giải pháp, demo sản phẩm và liên hệ trực tiếp với bài toán thực tế.
+#### Hiểu thêm về Cybersecurity và ML
+- Phần trình bày về NIDS và cách tích hợp Machine Learning vào bảo mật giúp tôi thấy bức tranh lớn hơn về security engineering trên AWS.
 
 #### Một số hình ảnh khi tham gia sự kiện
-![Hình ảnh 1 tại FCAJ Community Day](/images/4-EventParticipated/4.2-Event2/z7989458379737_8c3ed9d1ace68ada08cfa1955e689651.jpg)
-![Hình ảnh 2 tại FCAJ Community Day](/images/4-EventParticipated/4.2-Event2/z7989458385338_94aec86cb3caa475a7fe4b76f765b4de.jpg)
-![Hình ảnh 3 tại FCAJ Community Day](/images/4-EventParticipated/4.2-Event2/z7989458395696_9f03a3139fcc7005f244a7b5aa2ec9dc.jpg)
-![Hình ảnh 4 tại FCAJ Community Day](/images/4-EventParticipated/4.2-Event2/z7989458396025_7e9f092033741c3836a52b8303533bce.jpg)
-![Hình ảnh 5 tại FCAJ Community Day](/images/4-EventParticipated/4.2-Event2/z7989458408046_ede4085cc94bb016eb61ab124eee0d8b.jpg)
-![Hình ảnh 6 tại FCAJ Community Day](/images/4-EventParticipated/4.2-Event2/z7989458429061_f3ee987b63664a6ce8a40b1222e0a9af.jpg)
-![Hình ảnh 7 tại FCAJ Community Day](/images/4-EventParticipated/4.2-Event2/z7989458430464_72612cdcf2536adbbcb5620aee0f04bd.jpg)
-![Hình ảnh 8 tại FCAJ Community Day](/images/4-EventParticipated/4.2-Event2/z7989458430537_4985e150913f9d756df3b1fec7b87a89.jpg)
-> Tổng thể, sự kiện giúp tôi cập nhật thêm nhiều kiến thức thực tế về AI trên AWS, hiểu rõ hơn cách các doanh nghiệp đang ứng dụng AI vào vận hành, nhân sự và bảo mật, đồng thời tạo thêm động lực để tiếp tục tìm hiểu sâu hơn về các giải pháp AI/Cloud hiện đại.
+![Hình ảnh 1 tại FCJ Community Day 06/06](/images/4-EventParticipated/4.2-Event2/z8000681552574_3eaa03c724c457d4238755f59b32cd18.jpg)
+![Hình ảnh 2 tại FCJ Community Day 06/06](/images/4-EventParticipated/4.2-Event2/z8000681565809_707b3c7dda7b364753ee8d4da0fc7fa6.jpg)
+![Hình ảnh 3 tại FCJ Community Day 06/06](/images/4-EventParticipated/4.2-Event2/z8000681582742_4fcbc6344f47ec310cf0c1f1b308760f.jpg)
+> Tổng thể, sự kiện giúp tôi hiểu sâu hơn về các công nghệ vận hành thực tế, mở rộng góc nhìn về bảo mật và AI trên AWS, đồng thời truyền cảm hứng qua những câu chuyện hành trình nghề nghiệp chân thực.

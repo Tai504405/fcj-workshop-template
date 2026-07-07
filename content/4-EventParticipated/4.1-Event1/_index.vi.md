@@ -1,138 +1,107 @@
 ---
 title: "Event 1"
-date: 2026-05-23
+date: 2026-05-30
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Bài thu hoạch “FCAJ Community Day - Conference Call”
+# Bài thu hoạch "FCJ Community Day - Stop Procrastinating, Start Building"
 
 ### Thông Tin Sự Kiện
 
-- **Tên sự kiện**: FCAJ Community Day - Conference Call
-- **Thời gian**: Thứ Bảy, 23 tháng 5 năm 2026, 09:00 - 12:00
-- **Địa điểm**: Bitexco Financial Tower, Thành phố Hồ Chí Minh
+- **Tên sự kiện**: FCJ Community Day - Stop Procrastinating, Start Building
+- **Thời gian**: Thứ Sáu, 30 tháng 5 năm 2026, 09:00 - 12:00
+- **Địa điểm**: Văn phòng AWS Việt Nam, Thành phố Hồ Chí Minh
+
 ### Danh Sách Diễn Giả
 
-- **Tinh Truong** - Platform Engineer - GoTymeX
-- **Pham Nguyen Hai Anh** - G-AsiaPacific Vietnam
-- **Nguyen Tuan Thinh** - DevOps Engineer - First Cloud AI Journey
-- **Team UTMorpho** - LotusHacks 2026
-- **Dao Duc** - Solution Architect - Cloud Kinetics
-- **Vy Lam** - Senior Business Systems Analyst - VPBank
+- Diễn giả chủ đề Iceberg Model & Procrastination
+- Đội ngũ phát triển **Tử vi Đại Việt** - AI-Powered Astrology Platform
+- Các thành viên cộng đồng FCJ AI chia sẻ kinh nghiệm thực tế
 
 ### Lịch Trình Sự Kiện
 
 | Thời gian | Nội dung |
-|------------|----------|
-| 09:00 - 09:30 | Context Is Everything: Making AI Actually Work for You |
-| 09:30 - 10:00 | 36 hrs with LotusHacks – Building UTMorpho from Idea to Reality |
-| 10:00 – 10:40 | From Edge To Origin: CloudFront as Your Foundation |
-| 10:40 - 10:55 | Friendly AI Assistant with Amazon Quick |
-| 10:55 – 11:00 | Break |
-| 11:00 - 11:30 | Non-Determinism of "Deterministic" LLM Settings |
-| 11:30 - 12:00 | Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring |
+|-----------|----------|
+| 09:00 - 09:30 | The Iceberg Model: Looking Beneath the Surface |
+| 09:30 - 10:00 | Why Solving Symptoms Is Not Enough |
+| 10:00 - 10:30 | The Cost of Waiting – The Guilt Loop |
+| 10:30 - 10:50 | Tử vi Đại Việt: AI-Powered Astrology Platform Demo |
+| 10:50 - 11:10 | The Hidden Data: The Science of Procrastination |
+| 11:10 - 12:00 | Don't Let the Iceberg Freeze Your Future – Go Build, Starting Today |
 
 ### Nội Dung Nổi Bật
 
-#### Context Is Everything: Making AI Actually Work for You
-- Why AI fails without context & what “context” really means
-- From prompts to memory: how AI is evolving (Second AI Brain concept)
-- How better context leads to better results (practical mindset & tips)
-- Career insights & how students can start building with AI + Q&A
+#### The Iceberg Model: Looking Beneath the Surface
+- Giới thiệu khái niệm Iceberg Model và ý nghĩa trong tư duy hệ thống
+- Phân biệt giữa triệu chứng bề nổi và nguyên nhân sâu xa bên dưới
+- Cách áp dụng System Thinking để nhìn nhận vấn đề toàn diện hơn
 
-#### 36 hrs with LotusHacks – Building UTMorpho from Idea to Reality
-- Why We Joined LotusHacks
-- From Zero to Idea – The Brainstorming Journey
-- Defining the Problem & Shaping UTMorpho
-- Building Under Pressure – 36-Hour Development Sprint
-- Challenges, Failures & Turning Points
-- UTMorpho – Product Overview & Demo
-- Key Learnings & What’s Next
+#### Why Solving Symptoms Is Not Enough
+- Đối chiếu **Traditional Thinking** (reaction mode, firefighting, symptom fixing) với **System Thinking** (root cause exploration, Iceberg's beneath the surface)
+- Trích dẫn: *"Understand why the system creates problems repeatedly"*
+- Hướng dẫn cách chuyển từ tư duy phản ứng sang tư duy phân tích cốt lõi
 
-#### From Edge To Origin: CloudFront as Your Foundation
-- Amazon CloudFront for every workload
-- Cost optimization with Amazon CloudFront
-- Security capabilities
-- Enhanced reliability with Amazon CloudFront
-- Enhanced performance with Amazon CloudFront
+#### The Cost of Waiting – The Guilt Loop
+- Phân tích vòng lặp trì hoãn: Face a hard task → Avoid it (TikTok, games) → Temporary relief → More tired & stressed → Guilt & self-blame → **MORE PROCRASTINATION**
+- Nhấn mạnh: *"The perfect moment never arrives. Every day of waiting makes the iceberg grow bigger and harder to break."*
+- Các câu hỏi tương tác khai mào: "Has anyone NEVER procrastinated?", "Deadline tomorrow, but scrolling tonight?", "Watched your crush leave and said nothing?"
 
-#### Friendly AI Assistant with Amazon Quick
-- Quick Chat Agent: AI assistants for exploring data, analyzing insights
-- Quick Flows: Create intelligent workflows with natural language — no coding required
-- Quick Spaces: Shared collaborative spaces that turn individual insights into team knowledge
-- Quick Sight: Build dashboards and reports from raw data using natural language
+#### Tử vi Đại Việt: AI-Powered Astrology Platform
+- Demo nền tảng tử vi thông minh ứng dụng AI để phân tích bản mệnh
+- Sản phẩm tích hợp các nguồn tri thức: Chiêm Tinh Học, Thần Số Học, Bản Đồ Sao, Phong Thủy, Tướng Số, Tarot
+- Roadmap phát triển: Expand KB for Multisystem cross-validation, AI Voice Mode, Psychology layer
+- Voucher ưu đãi 50% cho Standard package: `AWS_STANDARD_50`
 
-#### Non-Determinism of "Deterministic" LLM Settings
-- How LLMs choose the next token
-- Assumption: Temperature=0 guarantees determinism
-- Reality: Inference optimizations say otherwise
-- Practical impacts
-- Mitigation strategies
+#### The Hidden Data: The Science of Procrastination
+- Số liệu nghiên cứu: 70–80% procrastination stems from difficulty managing emotions, **80%+** adults affected
+- Nguyên nhân gốc rễ: Prefrontal Cortex (logic) vs. Limbic System (emotion), và cảm xúc luôn thắng khi ta sợ hãi
+- Dẫn chứng khoa học từ University of Sheffield và American Psychological Association (APA)
 
-#### Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring
-- The structural mismatch between banking systems and startup data
-- Single Agent: When to and When Not To
-- The Multi-Agent Paradigm
-- Blueprint of a Virtual Credit Committee
-- Guardrails & Compliance
-- Operational ROI & Implementation Roadmap
-- What's Next
+#### Don't Let the Iceberg Freeze Your Future – Go Build, Starting Today
+- Tổng kết và kêu gọi hành động: *"Don't let the iceberg freeze your future. GO BUILD – Starting today."*
+- Ba bước thực hành: Build one small habit, Normalize fear, Use small idea to start, Build positive confidence
 
 ### Những Gì Học Được
 
-#### Về AI và Context
-- Hiểu được tầm quan trọng của **context** để AI hoạt động hiệu quả, thay vì chỉ dùng prompts đơn thuần
-- Khám phá khái niệm **Second AI Brain** và cách AI phát triển từ prompt-based sang memory-based
-- Nhận được career insights và cách sinh viên bắt đầu building với AI
+#### Về Tư Duy Hệ Thống
+- Học cách nhìn xa hơn bề mặt vấn đề bằng **Iceberg Model**, không chỉ xử lý triệu chứng mà tìm nguyên nhân sâu xa
+- Hiểu rõ sự khác biệt giữa Traditional Thinking và System Thinking trong việc giải quyết vấn đề
 
-#### Về Hackathon và Sản Phẩm
-- Học được quy trình từ **zero to idea** trong một hackathon (LotusHacks)
-- Hiểu được thách thức khi xây dựng sản phẩm trong giới hạn thời gian (36-hour sprint)
-- Xem demo sản phẩm UTMorpho và rút ra key learnings
+#### Về Trì Hoãn và Quản Lý Bản Thân
+- Nhận ra cơ chế tâm lý đằng sau sự trì hoãn – đây là vấn đề điều tiết cảm xúc chứ không phải thiếu thời gian
+- Hiểu rõ Guilt Loop và cách nó tạo ra vòng lặp tiêu cực khó thoát ra
+- Học được rằng 70-80% trì hoãn bắt nguồn từ việc khó kiểm soát cảm xúc
 
-#### Về AWS CloudFront
-- Hiểu được vai trò của **Amazon CloudFront** cho mọi workload
-- Nắm được cách tối ưu chi phí, bảo mật, độ tin cậy và hiệu năng với CloudFront
-
-#### Về Amazon Quick
-- Khám phá các tính năng của Amazon Quick: Quick Chat Agent, Quick Flows, Quick Spaces, Quick Sight
-- Hiểu cách dùng natural language để tạo workflows, build dashboards không cần code
-
-#### Về LLM và Multi-Agent System
-- Hiểu được non-determinism của LLM ngay cả khi Temperature=0
-- Nhận được mitigation strategies
-- Xem case study về **Enterprise-Grade Multi-Agent System** cho startup credit scoring
-- Hiểu về Virtual Credit Committee, guardrails & compliance, operational ROI
+#### Về AI và Sản Phẩm Công Nghệ
+- Khám phá cách một đội ngũ trẻ xây dựng nền tảng AI trong lĩnh vực văn hóa truyền thống
+- Thấy được tiềm năng kết hợp AI với các lĩnh vực phi kỹ thuật như tử vi, phong thủy, tâm lý học
 
 ### Ứng Dụng Vào Công Việc
 
-- Áp dụng hiểu biết về **context** để cải thiện cách dùng AI trong công việc hàng ngày
-- Thử áp dụng quy trình brainstorming từ zero to idea cho các project nhỏ
-- Nghiên cứu thêm về **Amazon CloudFront** để tối ưu cho các website/app
-- Thử dùng **Amazon Quick** để tạo workflows/dashboards nhanh chóng
-- Học thêm về **multi-agent system** để áp dụng cho các bài toán phức tạp
+- Áp dụng **Iceberg Model** để phân tích nguyên nhân gốc rễ khi debug lỗi hệ thống
+- Nhận diện Guilt Loop để chủ động phá vỡ vòng lặp trì hoãn trong công việc hằng ngày
+- Sử dụng tư duy System Thinking khi thiết kế giải pháp cho các bài toán kỹ thuật phức tạp
+- Lấy cảm hứng từ Tử vi Đại Việt để khám phá hướng ứng dụng AI vào các lĩnh vực chuyên biệt
 
 ### Trải nghiệm trong event
 
-Tham gia **FCAJ Community Day - Conference Call** là một trải nghiệm rất thú vị và bổ ích, giúp tôi cập nhật nhiều kiến thức mới về AI, AWS services và cách xây dựng sản phẩm trong giới hạn thời gian. Một số trải nghiệm nổi bật:
+Tham gia **FCJ Community Day - Stop Procrastinating, Start Building** là một trải nghiệm khác biệt so với các sự kiện công nghệ thông thường. Thay vì chỉ tập trung vào kỹ thuật, sự kiện mang đến góc nhìn về tư duy, tâm lý và cách xây dựng thói quen hành động.
 
-#### Học hỏi về AI và context
-- Phiên "Context Is Everything" giúp tôi hiểu rõ hơn tại sao AI không hoạt động tốt nếu thiếu context, cũng như khái niệm Second AI Brain.
+#### Ấn tượng với Iceberg Model
+- Phần trình bày về Iceberg Model và System Thinking giúp tôi nhìn nhận vấn đề một cách toàn diện hơn, không chỉ dừng lại ở việc xử lý bề mặt.
 
-#### Xem chia sẻ về LotusHacks
-- Thấy được hành trình từ ý tưởng đến sản phẩm UTMorpho trong 36 tiếng, hiểu được thách thức và cách vượt qua.
+#### Hiểu rõ hơn về tâm lý trì hoãn
+- Được tiếp cận số liệu khoa học và cơ chế tâm lý đằng sau trì hoãn – đây là điều ít khi được đề cập trong các sự kiện công nghệ thông thường.
 
-#### Khám phá AWS services
-- Hiểu được cách dùng CloudFront cho mọi workload, cách tối ưu chi phí và bảo mật.
-- Thấy được tính năng của Amazon Quick dùng natural language để làm việc với data, workflows, dashboards.
+#### Khám phá sản phẩm AI độc đáo
+- Tử vi Đại Việt là ví dụ thú vị về cách kết hợp AI với văn hóa bản địa, cho thấy AI không chỉ giới hạn ở các bài toán kỹ thuật.
 
-#### Hiểu về LLM và multi-agent
-- Phiên về non-determinism của LLM giúp tôi nhận ra những điều không như mong đợi ngay cả khi Temperature=0.
-- Case study về multi-agent system cho startup credit scoring cho tôi thấy cách áp dụng AI vào bài toán thực tế.
+#### Truyền cảm hứng hành động
+- Thông điệp "Don't let the iceberg freeze your future – GO BUILD" là lời nhắc nhở mạnh mẽ để bắt đầu hành động thay vì chờ đợi điều kiện hoàn hảo.
 
 #### Một số hình ảnh khi tham gia sự kiện
-![Hình ảnh 1 tại FCAJ Community Day](/images/4-EventParticipated/4.1-Event1/event-day1-1.jpg)
-![Hình ảnh 2 tại FCAJ Community Day](/images/4-EventParticipated/4.1-Event1/event-day1-2.jpg)
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi mở rộng hiểu biết về AI, AWS services và cách xây dựng sản phẩm trong giới hạn thời gian, đồng thời tạo cơ hội kết nối với cộng đồng FCAJ.
+![Hình ảnh 1 tại FCJ Community Day 30/05](/images/4-EventParticipated/4.1-Event1/z8000675083714_39c4274da16b8bfabb2c687ae23e25b4.jpg)
+![Hình ảnh 2 tại FCJ Community Day 30/05](/images/4-EventParticipated/4.1-Event1/z8000675023768_4b79f565e697ba25ce587c54b71b79ff.jpg)
+> Tổng thể, sự kiện không chỉ cung cấp kiến thức về công nghệ mà còn giúp tôi nhìn lại cách tôi tiếp cận công việc và học tập – đặc biệt là vượt qua rào cản tâm lý để bắt đầu hành động.

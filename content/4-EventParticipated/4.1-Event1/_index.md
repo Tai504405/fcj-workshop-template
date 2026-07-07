@@ -1,142 +1,108 @@
 ---
 title: "Event 1"
-date: 2026-05-23
+date: 2026-05-30
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Summary Report: “FCAJ Community Day - Conference Call”
+# Summary Report: "FCJ Community Day - Stop Procrastinating, Start Building"
 
 ### Event Information
 
-- **Event Name**: FCAJ Community Day - Conference Call
-- **Date & Time**: Tuesday, May 23, 2026, 09:00 - 12:00
-- **Location**: Bitexco Financial Tower, Ho Chi Minh City
-- **Note**: Viewing area on the 36th floor for invited guests to watch the livestream from the main event on the 26th floor; guests on the 36th floor had the opportunity to participate in 10 lucky draw sessions.
+- **Event Name**: FCJ Community Day - Stop Procrastinating, Start Building
+- **Date & Time**: Friday, May 30, 2026, 09:00 - 12:00
+- **Location**: AWS Vietnam Office, Ho Chi Minh City
+- **Note**: Held in a classroom-style setting with a projector screen; open to FCJ community members and student attendees.
 
 ### Speakers
 
-- **Tinh Truong** - Platform Engineer - GoTymeX
-- **Pham Nguyen Hai Anh** - G-AsiaPacific Vietnam
-- **Nguyen Tuan Thinh** - DevOps Engineer - First Cloud AI Journey
-- **Team UTMorpho** - LotusHacks 2026
-- **Dao Duc** - Solution Architect - Cloud Kinetics
-- **Vy Lam** - Senior Business Systems Analyst - VPBank
+- Speaker on the Iceberg Model & Systems Thinking
+- **Tử vi Đại Việt** Team – Developers of an AI-Powered Astrology Platform
+- FCJ AI community members sharing real-world experiences and career journeys
 
 ### Event Schedule
 
 | Time | Content |
 |------|---------|
-| 08:30 – 09:00 | Settle into your seat at floor 36 |
-| 09:00 - 09:30 | Context Is Everything: Making AI Actually Work for You |
-| 09:30 - 10:00 | 36 hrs with LotusHacks – Building UTMorpho from Idea to Reality |
-| 10:00 – 10:40 | From Edge To Origin: CloudFront as Your Foundation |
-| 10:40 - 10:55 | Friendly AI Assistant with Amazon Quick |
-| 10:55 – 11:00 | Break |
-| 11:00 - 11:30 | Non-Determinism of "Deterministic" LLM Settings |
-| 11:30 - 12:00 | Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring |
+| 09:00 - 09:30 | The Iceberg Model: Looking Beneath the Surface |
+| 09:30 - 10:00 | Why Solving Symptoms Is Not Enough |
+| 10:00 - 10:30 | The Cost of Waiting – The Guilt Loop |
+| 10:30 - 10:50 | Tử vi Đại Việt: AI-Powered Astrology Platform Demo |
+| 10:50 - 11:10 | The Hidden Data: The Science of Procrastination |
+| 11:10 - 12:00 | Don't Let the Iceberg Freeze Your Future – Go Build, Starting Today |
 
 ### Key Highlights
 
-#### Context Is Everything: Making AI Actually Work for You
-- Why AI fails without context & what “context” really means
-- From prompts to memory: how AI is evolving (Second AI Brain concept)
-- How better context leads to better results (practical mindset & tips)
-- Career insights & how students can start building with AI + Q&A
+#### The Iceberg Model: Looking Beneath the Surface
+- Introduced the Iceberg Model as a framework for systems thinking
+- Explained the difference between visible surface symptoms and the deeper root causes hidden below
+- Applied to software engineering contexts: visible bugs vs. hidden systemic issues
 
-#### 36 hrs with LotusHacks – Building UTMorpho from Idea to Reality
-- Why We Joined LotusHacks
-- From Zero to Idea – The Brainstorming Journey
-- Defining the Problem & Shaping UTMorpho
-- Building Under Pressure – 36-Hour Development Sprint
-- Challenges, Failures & Turning Points
-- UTMorpho – Product Overview & Demo
-- Key Learnings & What’s Next
+#### Why Solving Symptoms Is Not Enough
+- Contrasted **Traditional Thinking** (reaction mode, firefighting, symptom fixing) with **System Thinking** (root cause exploration, Iceberg's beneath the surface)
+- Key quote: *"Understand why the system creates problems repeatedly"*
+- Provided a practical guide for shifting from reactive to analytical problem-solving
 
-#### From Edge To Origin: CloudFront as Your Foundation
-- Amazon CloudFront for every workload
-- Cost optimization with Amazon CloudFront
-- Security capabilities
-- Enhanced reliability with Amazon CloudFront
-- Enhanced performance with Amazon CloudFront
+#### The Cost of Waiting – The Guilt Loop
+- Dissected the procrastination cycle: Face a hard task → Avoid it (TikTok, games) → Temporary relief → More tired & stressed → Guilt & self-blame → **MORE PROCRASTINATION**
+- Key insight: *"The perfect moment never arrives. Every day of waiting makes the iceberg grow bigger and harder to break."*
+- Interactive warm-up questions: "Has anyone NEVER procrastinated?", "Deadline tomorrow, but scrolling tonight?", "Watched your crush leave and said nothing?"
 
-#### Friendly AI Assistant with Amazon Quick
-- Quick Chat Agent: AI assistants for exploring data, analyzing insights
-- Quick Flows: Create intelligent workflows with natural language — no coding required
-- Quick Spaces: Shared collaborative spaces that turn individual insights into team knowledge
-- Quick Sight: Build dashboards and reports from raw data using natural language
+#### Tử vi Đại Việt: AI-Powered Astrology Platform
+- Live demo of an AI-powered Vietnamese astrology platform
+- Integrates multiple knowledge bases: Astrology, Numerology, Star Maps, Feng Shui, Physiognomy, and Tarot
+- Roadmap: Expand KB for Multisystem cross-validation, AI Voice Mode, Psychology layer for emotional resonance
+- Attendee discount: 50% off Standard package with code `AWS_STANDARD_50`
 
-#### Non-Determinism of "Deterministic" LLM Settings
-- How LLMs choose the next token
-- Assumption: Temperature=0 guarantees determinism
-- Reality: Inference optimizations say otherwise
-- Practical impacts
-- Mitigation strategies
+#### The Hidden Data: The Science of Procrastination
+- Key statistics: 70–80% of procrastination stems from difficulty managing emotions; **80%+** of adults affected in at least one critical area of their life
+- Root cause: Prefrontal Cortex (logic) vs. Limbic System (emotion) — emotion always wins when we're scared
+- Science-backed data from University of Sheffield and the American Psychological Association (APA)
 
-#### Enterprise-Grade Multi-Agent System: The Case of Startup Credit Scoring
-- The structural mismatch between banking systems and startup data
-- Single Agent: When to and When Not To
-- The Multi-Agent Paradigm
-- Blueprint of a Virtual Credit Committee
-- Guardrails & Compliance
-- Operational ROI & Implementation Roadmap
-- What's Next
+#### Don't Let the Iceberg Freeze Your Future – Go Build, Starting Today
+- Closing call to action: *"Don't let the iceberg freeze your future. GO BUILD – Starting today."*
+- Three practical steps: Build one small habit, normalize fear, use a small idea to start, build positive confidence gradually
 
 ### Key Takeaways
 
-#### About AI and Context
-- Understood the importance of **context** for AI to work effectively, instead of just using simple prompts
-- Explored the **Second AI Brain** concept and how AI evolved from prompt-based to memory-based
-- Received career insights and how students can start building with AI
+#### About Systems Thinking
+- Learned to look beyond the surface of problems using the **Iceberg Model** – not just solving symptoms but identifying root causes
+- Understood the difference between Traditional Thinking and System Thinking in problem-solving
 
-#### About Hackathons and Products
-- Learned the **zero to idea** process in a hackathon (LotusHacks)
-- Understood the challenges of building a product under time constraints (36-hour sprint)
-- Saw the UTMorpho product demo and drew key learnings
+#### About Procrastination and Self-Management
+- Recognized the psychological mechanism behind procrastination – it's an emotion regulation issue, not a time management issue
+- Understood the Guilt Loop and how it creates a vicious cycle that's hard to escape
+- Learned that 70–80% of procrastination originates from difficulty controlling emotions
 
-#### About AWS CloudFront
-- Understood the role of **Amazon CloudFront** for every workload
-- Mastered how to optimize cost, security, reliability, and performance with CloudFront
-
-#### About Amazon Quick
-- Explored Amazon Quick features: Quick Chat Agent, Quick Flows, Quick Spaces, Quick Sight
-- Understood how to use natural language to create workflows and build dashboards without code
-
-#### About LLMs and Multi-Agent Systems
-- Understood the non-determinism of LLMs even when Temperature=0
-- Received mitigation strategies
-- Saw a case study about **Enterprise-Grade Multi-Agent System** for startup credit scoring
-- Understood Virtual Credit Committee, guardrails & compliance, operational ROI
+#### About AI and Tech Products
+- Explored how a young team built an AI platform in the traditional culture space (astrology & feng shui)
+- Saw the potential of combining AI with non-technical domains like Vietnamese astrology, psychology, and spiritual traditions
 
 ### Applying to Work
 
-- Applied learnings about **context** to improve AI usage in daily work
-- Tried applying the zero-to-idea brainstorming process to small projects
-- Researched more about **Amazon CloudFront** to optimize websites/apps
-- Tried using **Amazon Quick** to create workflows/dashboards quickly
-- Studied more about **multi-agent systems** for complex problems
+- Applying the **Iceberg Model** to analyze root causes when debugging complex system issues
+- Identifying the Guilt Loop to proactively break procrastination cycles in day-to-day work
+- Using System Thinking when designing solutions for complex technical problems
+- Drawing inspiration from Tử vi Đại Việt to explore AI applications in specialized niche domains
 
 ### Event Experience
 
-Attending **FCAJ Community Day - Conference Call** was a very fun and valuable experience, helping me update a lot of new knowledge about AI, AWS services, and building products under time constraints. Some key experiences:
+Attending **FCJ Community Day - Stop Procrastinating, Start Building** was a refreshing experience compared to typical tech events. Instead of focusing solely on technical skills, this event offered a deep dive into developer mindset, psychology, and the habit of taking action.
 
-#### Learning about AI and context
-- The "Context Is Everything" session helped me understand better why AI doesn't work well without context, as well as the Second AI Brain concept.
+#### Impressed by the Iceberg Model
+- The Iceberg Model and System Thinking segment gave me a more holistic way to look at problems – going beyond surface-level troubleshooting.
 
-#### Watching the LotusHacks share
-- Saw the journey from idea to UTMorpho product in 36 hours, understood the challenges and how to overcome them.
+#### Better understanding of procrastination psychology
+- Getting access to scientific data and the psychological mechanisms behind procrastination was something rarely seen at tech community events.
 
-#### Exploring AWS services
-- Understood how to use CloudFront for every workload, how to optimize cost and security.
-- Saw Amazon Quick features using natural language to work with data, workflows, dashboards.
+#### Discovering a unique AI product
+- Tử vi Đại Việt was a fascinating example of how AI can be combined with local culture – showing that AI isn't limited to purely technical use cases.
 
-#### Understanding LLMs and multi-agent systems
-- The session about LLM non-determinism helped me realize unexpected things even when Temperature=0.
-- The case study about multi-agent systems for startup credit scoring showed me how to apply AI to real-world problems.
+#### Inspired to take action
+- The closing message "Don't let the iceberg freeze your future – GO BUILD" was a powerful reminder to start acting rather than waiting for perfect conditions.
 
 #### Some event photos
-![Photo 1 at FCAJ Community Day](/images/4-EventParticipated/4.1-Event1/event-day1-1.jpg)
-![Photo 2 at FCAJ Community Day](/images/4-EventParticipated/4.1-Event1/event-day1-2.jpg)
-
-> Overall, the event not only provided technical knowledge but also helped me expand my understanding of AI, AWS services, and building products under time constraints, while creating opportunities to connect with the FCAJ community.
+![Photo 1 at FCJ Community Day 30/05](/images/4-EventParticipated/4.1-Event1/z8000675083714_39c4274da16b8bfabb2c687ae23e25b4.jpg)
+![Photo 2 at FCJ Community Day 30/05](/images/4-EventParticipated/4.1-Event1/z8000675023768_4b79f565e697ba25ce587c54b71b79ff.jpg)
+> Overall, this event didn't just provide technical insights — it helped me reflect on how I approach work and learning, especially when it comes to overcoming psychological barriers and starting to take action.
