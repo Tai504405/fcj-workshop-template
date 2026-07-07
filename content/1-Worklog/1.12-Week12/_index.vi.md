@@ -1,30 +1,30 @@
 ---
-title: "Worklog Tuần 12"
+title: "Nhật ký Tuần 12"
 date: 2026-07-06
 weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
 
-### Mục tiêu tuần 12:
+### Mục tiêu định hướng trong tuần 12:
 
-* Cấu hình kết nối an toàn API Gateway kết hợp VPC Link.
-* Thiết lập luồng CI/CD tự động hóa việc build và deploy bằng GitHub Actions.
-* Triển khai sao lưu cơ sở dữ liệu định kỳ ra S3 và giám sát CloudWatch Logs.
-* Hoàn thành toàn bộ tài liệu báo cáo thực tập.
+* Tạo kết nối an toàn cho Frontend gọi Backend private bằng API Gateway kết hợp VPC Link.
+* Xây dựng pipeline CI/CD tự động build, push image và deploy thông qua GitHub Actions.
+* Triển khai kế hoạch tự động sao lưu dữ liệu RDS ra S3 và giám sát hệ thống.
+* Hoàn thành toàn bộ nội dung và rà soát báo cáo thực tập.
 
-### Nhiệm vụ thực hiện chi tiết:
-| Thứ tự | Nội dung công việc | Bắt đầu | Kết thúc | Tài liệu tham khảo |
+### Nhiệm vụ cụ thể cần triển khai:
+| Ngày | Nhiệm vụ chi tiết | Ngày bắt đầu | Ngày hoàn thành | Nguồn tham khảo |
 | --- | --- | --- | --- | --- |
-| 2 | Tạo API Gateway kết nối an toàn đến Backend private thông qua cấu hình VPC Link. | 06/07/2026 | 06/07/2026 | Mã nguồn dự án |
-| 3 | Thiết lập GitHub Actions tự động hóa quy trình: Push code → Build image ECR → Redeploy ECS. | 07/07/2026 | 07/07/2026 | Tài liệu GitHub Actions |
-| 4 | Cấu hình xuất tự động RDS Snapshot sang S3 Backup bucket để lưu trữ lâu dài. | 08/07/2026 | 08/07/2026 | https://aws.amazon.com/s3/ |
-| 5 | Cài đặt CloudWatch Alarms giám sát hiệu năng, cấu hình SNS gửi cảnh báo qua Email/SMS. | 09/07/2026 | 09/07/2026 | https://aws.amazon.com/cloudwatch/ |
-| 6 | Tổng kết toàn bộ hệ thống dự án, viết tài liệu và kiểm tra toàn bộ báo cáo thực tập. Kết thúc. | 10/07/2026 | 10/07/2026 | Báo cáo thực tập |
+| Thứ 2 | Thiết lập API Gateway tích hợp VPC Link liên kết trực tiếp với Internal ALB để gọi Backend an toàn. | 06/07/2026 | 06/07/2026 | Mã nguồn dự án |
+| Thứ 3 | Xây dựng tệp workflow GitHub Actions tự động hóa: Code push → login ECR → build image → deploy ECS Service. | 07/07/2026 | 07/07/2026 | Tài liệu GitHub Actions |
+| Thứ 4 | Cấu hình sao lưu RDS Snapshot tự động định kỳ, thiết lập xuất tệp backup lưu trữ lâu dài trên S3 Bucket. | 08/07/2026 | 08/07/2026 | https://aws.amazon.com/s3/ |
+| Thứ 5 | Tạo các CloudWatch Alarms giám sát quá tải và liên kết SNS tự động gửi cảnh báo về email cá nhân. | 09/07/2026 | 09/07/2026 | https://aws.amazon.com/cloudwatch/ |
+| Thứ 6 | Kiểm định hoạt động toàn hệ thống dự án, viết tài liệu và kiểm tra toàn bộ báo cáo thực tập. Kết thúc thực tập. | 10/07/2026 | 10/07/2026 | Báo cáo thực tập |
 
-### Kết quả thu hoạch sau Tuần 12:
+### Kết quả thu hoạch thực tế sau Tuần 12:
 
-* Thiết lập thành công API Gateway làm cổng truy cập bảo mật duy nhất cho ứng dụng Backend.
-* Tích hợp thành công quy trình CI/CD chuyên nghiệp với GitHub Actions.
-* Hệ thống vận hành an toàn nhờ có cơ chế sao lưu tự động và cảnh báo tức thời khi có sự cố.
-* Hoàn thành xuất sắc bài báo cáo thực tập cuối khóa.
+* Bảo vệ cổng kết nối API Backend thông qua API Gateway kết hợp VPC Link.
+* Tích hợp luồng CI/CD tự động hóa hoàn toàn quy trình đóng gói và triển khai ứng dụng.
+* Dữ liệu được bảo vệ an toàn nhờ có cơ chế sao lưu tự động và cảnh báo tức thời từ CloudWatch.
+* Hoàn thành xuất sắc toàn bộ nội dung báo cáo thực tập cuối khóa.

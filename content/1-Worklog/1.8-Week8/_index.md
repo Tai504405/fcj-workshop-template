@@ -1,29 +1,29 @@
 ---
-title: "Week 8 Worklog"
+title: "Week 8 Journal"
 date: 2026-06-08
 weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
 
-### Focus & Objectives of Week 8:
+### Key Focus & Objectives of Week 8:
 
-* Analyze technical requirements for the final graduation project `GlobalMart`.
-* Design structural blueprints and flowcharts for cloud-based infrastructure.
-* Initialize repository code structures for Frontend (React SPA) and Backend (Spring Boot).
-* Set up local relational databases to enable initial development validation.
+* Review business logic and database requirements for the `GlobalMart` ecommerce system.
+* Design architectural blueprints and network topology charts for the cloud-ready solution.
+* Initialize repository structures for the React client and Spring Boot REST API application.
+* Deploy local database engines to facilitate early software prototyping.
 
 ### Detailed Weekly Action Items:
-| No. | Task Description | Start | Completion | Reference Links |
+| Day | Activity Description | Start | End Date | Documentation |
 | --- | --- | --- | --- | --- |
-| 2 | Analyze specification requirements and database entity diagrams for the GlobalMart project. | 08/06/2026 | 08/06/2026 | Project Specs |
-| 3 | Architect a scalable 3-tier system design on AWS. | 09/06/2026 | 09/06/2026 | https://aws.amazon.com/solutions/ |
-| 4 | Initialize source code for React client SPA and Spring Boot backend API application. | 10/06/2026 | 10/06/2026 | Project Repository |
-| 5 | Deploy local MySQL engine and bind connection configurations in application property files. | 11/06/2026 | 11/06/2026 | Project Repository |
-| 6 | Perform end-to-end integration tests locally between client and server. Review Week 8. | 12/06/2026 | 12/06/2026 | Project Repository |
+| Mon | Analyze application specs and define database relationship schemas for GlobalMart. | 08/06/2026 | 08/06/2026 | Project Specifications |
+| Tue | Draft a secure 3-tier system blueprint highlighting network segmentation and high availability. | 09/06/2026 | 09/06/2026 | https://aws.amazon.com/solutions/ |
+| Wed | Scaffold codebases: set up React components and configure Spring Boot starter dependency libraries. | 10/06/2026 | 10/06/2026 | Project Codebase |
+| Thu | Run a local MySQL instance and define credentials inside application configurations. | 11/06/2026 | 11/06/2026 | Project Codebase |
+| Fri | Verify client-to-API communication flows under local configurations. Week 8 review. | 12/06/2026 | 12/06/2026 | Project Codebase |
 
-### Key Accomplishments - Week 8:
+### Key Accomplishments & Deliverables - Week 8:
 
-* Finalized the 3-tier architectural design and system schema documentation.
-* Generated clean starter project bases running properly under local environments.
-* Mapped REST API endpoints for frontend-backend communications.
+* Finalized architectural designs and specifications for the GlobalMart deployment.
+* Successfully scaffolded code templates running without local compilation issues.
+* Mapped primary application API endpoints between frontend and backend.

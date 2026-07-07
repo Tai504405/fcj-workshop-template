@@ -1,30 +1,30 @@
 ---
-title: "Worklog Tuần 2"
+title: "Nhật ký Tuần 2"
 date: 2026-04-27
 weight: 2
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-### Mục tiêu tuần 2:
+### Mục tiêu định hướng trong tuần 2:
 
-* Nghiên cứu các dịch vụ tính toán (Compute) trên AWS.
-* Thực hành cấu hình máy chủ ảo EC2, ổ đĩa EBS và cơ chế tự động co giãn Auto Scaling.
-* Tìm hiểu về lưu trữ EFS và dịch vụ triển khai nhanh Lightsail.
-* Làm quen với giám sát hệ thống qua CloudWatch và dịch vụ di trú máy chủ AWS MGN.
+* Tìm hiểu các giải pháp tính toán (Compute) đa dạng trên AWS.
+* Thực hành tạo lập và kết nối máy ảo EC2, gắn thêm không gian lưu trữ EBS.
+* Cấu hình tự động co giãn số lượng máy chủ (Auto Scaling) và ổ đĩa dùng chung EFS.
+* Thiết lập giám sát hạ tầng với CloudWatch và nghiên cứu dịch vụ chuyển đổi máy chủ AWS MGN.
 
-### Nhiệm vụ thực hiện chi tiết:
-| Thứ tự | Nội dung công việc | Bắt đầu | Kết thúc | Tài liệu tham khảo |
+### Nhiệm vụ cụ thể cần triển khai:
+| Ngày | Nhiệm vụ chi tiết | Ngày bắt đầu | Ngày hoàn thành | Nguồn tham khảo |
 | --- | --- | --- | --- | --- |
-| 2 | Học về Amazon EC2 (các loại Instance, AMI, Key Pair) và dịch vụ lưu trữ EBS. | 27/04/2026 | 27/04/2026 | https://000004.awsstudygroup.com |
-| 3 | Tìm hiểu cơ chế tự động co giãn (Auto Scaling Group) và hệ thống file chia sẻ Amazon EFS. | 28/04/2026 | 28/04/2026 | https://000004.awsstudygroup.com |
-| 4 | Học về Amazon Lightsail (triển khai nhanh ứng dụng) và CloudWatch (giám sát metrics, alarm). | 29/04/2026 | 29/04/2026 | https://000006.awsstudygroup.com |
-| 5 | Thực hành cấu hình tự động co giãn máy chủ theo tải thực tế và cấu hình CloudWatch Alarm. | 30/04/2026 | 30/04/2026 | https://000006.awsstudygroup.com |
-| 6 | Tìm hiểu về dịch vụ chuyển đổi hạ tầng vật lý sang đám mây AWS Application Migration Service (MGN). Tổng kết tuần 2. | 01/05/2026 | 01/05/2026 | https://aws.amazon.com/mgn/ |
+| Thứ 2 | Tìm hiểu Amazon EC2: cách chọn cấu hình máy ảo, tạo Key Pair bảo mật và gắn thêm ổ đĩa Amazon Elastic Block Store (EBS). | 27/04/2026 | 27/04/2026 | https://000004.awsstudygroup.com |
+| Thứ 3 | Học cách thiết lập hệ thống tự động co giãn Auto Scaling Group để đáp ứng tải thay đổi và tạo ổ đĩa chia sẻ dùng chung Amazon EFS. | 28/04/2026 | 28/04/2026 | https://000004.awsstudygroup.com |
+| Thứ 4 | Nghiên cứu dịch vụ Lightsail để chạy ứng dụng nhanh gọn. Học cách sử dụng CloudWatch để theo dõi tài nguyên hệ thống. | 29/04/2026 | 29/04/2026 | https://000006.awsstudygroup.com |
+| Thứ 5 | Thực hành dựng hoàn chỉnh luồng ASG tự động tăng/giảm số lượng EC2 khi giả lập quá tải CPU, cấu hình cảnh báo CloudWatch Alarm. | 30/04/2026 | 30/04/2026 | https://000006.awsstudygroup.com |
+| Thứ 6 | Nghiên cứu nguyên lý hoạt động của AWS Application Migration Service (MGN) phục vụ di chuyển hệ thống lên đám mây. Tổng kết Tuần 2. | 01/05/2026 | 01/05/2026 | https://aws.amazon.com/mgn/ |
 
-### Kết quả thu hoạch sau Tuần 2:
+### Kết quả thu hoạch thực tế sau Tuần 2:
 
-* Khởi tạo và kết nối thành công máy chủ ảo EC2 với các loại ổ đĩa EBS khác nhau.
-* Cấu hình thành công Auto Scaling tự động thêm/bớt máy chủ khi tải tăng/giảm.
-* Thiết lập thành công CloudWatch Dashboard và Alarm cảnh báo qua Email.
-* Hiểu quy trình dịch chuyển máy chủ vật lý lên AWS sử dụng công cụ MGN.
+* Khởi chạy thành công các instance EC2 và đính kèm thêm ổ đĩa EBS hoạt động bình thường.
+* Thiết lập cấu hình Auto Scaling tự động co giãn linh hoạt dựa trên tải CPU thực tế.
+* Tạo thành công Dashboard giám sát và Alarm gửi thông báo tự động khi CPU quá tải.
+* Hiểu quy trình dịch chuyển máy chủ vật lý lên Cloud thông qua công cụ MGN.

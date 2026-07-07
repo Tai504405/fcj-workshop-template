@@ -1,29 +1,29 @@
 ---
-title: "Worklog Tuần 4"
+title: "Nhật ký Tuần 4"
 date: 2026-05-11
 weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
 
-### Mục tiêu tuần 4:
+### Mục tiêu định hướng trong tuần 4:
 
-* Nghiên cứu các dịch vụ lưu trữ dữ liệu chính trên AWS (Amazon S3).
-* Tìm hiểu cơ sở dữ liệu quan hệ Amazon RDS và Amazon Aurora.
-* Thực hành lưu trữ dữ liệu an toàn trên Amazon S3 và phân quyền truy cập.
-* Tìm hiểu giải pháp quản lý sao lưu tập trung với AWS Backup.
+* Nghiên cứu giải pháp lưu trữ đối tượng Amazon S3 và quản lý vòng đời tệp tin.
+* Khảo sát các dịch vụ cơ sở dữ liệu quan hệ được quản lý như Amazon RDS và Amazon Aurora.
+* Thực hành tạo lập, phân quyền lưu trữ tệp trên Amazon S3 bảo mật.
+* Tìm hiểu cách thiết lập kế hoạch bảo vệ dữ liệu tự động với AWS Backup.
 
-### Nhiệm vụ thực hiện chi tiết:
-| Thứ tự | Nội dung công việc | Bắt đầu | Kết thúc | Tài liệu tham khảo |
+### Nhiệm vụ cụ thể cần triển khai:
+| Ngày | Nhiệm vụ chi tiết | Ngày bắt đầu | Ngày hoàn thành | Nguồn tham khảo |
 | --- | --- | --- | --- | --- |
-| 2 | Học về Amazon S3 (Bucket, Object, Storage Classes, Lifecycle Policy, Versioning). | 11/05/2026 | 11/05/2026 | https://000005.awsstudygroup.com |
-| 3 | Tìm hiểu giải pháp quản lý cơ sở dữ liệu quan hệ Amazon RDS và kiến trúc Amazon Aurora. | 12/05/2026 | 12/05/2026 | https://000008.awsstudygroup.com |
-| 4 | Thực hành cấu hình S3 Bucket, kiểm soát quyền truy cập công khai và thiết lập vòng đời file. | 13/05/2026 | 13/05/2026 | https://000005.awsstudygroup.com |
-| 5 | Khởi tạo dịch vụ cơ sở dữ liệu Amazon RDS MySQL trong phân vùng mạng an toàn. | 14/05/2026 | 14/05/2026 | https://000008.awsstudygroup.com |
-| 6 | Tìm hiểu AWS Backup để tự động hóa kế hoạch sao lưu toàn diện cho tài nguyên. Tổng kết tuần 4. | 15/05/2026 | 15/05/2026 | https://aws.amazon.com/backup/ |
+| Thứ 2 | Tìm hiểu Amazon S3: tạo bucket, quản lý object, các lớp lưu trữ, thiết lập Lifecycle Policy và bật Versioning bảo vệ dữ liệu. | 11/05/2026 | 11/05/2026 | https://000005.awsstudygroup.com |
+| Thứ 3 | Nghiên cứu cơ sở dữ liệu quan hệ: tìm hiểu Amazon RDS (hỗ trợ nhiều công cụ) và kiến trúc tự động nhân bản của Amazon Aurora. | 12/05/2026 | 12/05/2026 | https://000008.awsstudygroup.com |
+| Thứ 4 | Thực hành cấu hình S3 Bucket: chặn truy cập công khai ngoài ý muốn (Block Public Access) và lập vòng đời xóa file tự động. | 13/05/2026 | 13/05/2026 | https://000005.awsstudygroup.com |
+| Thứ 5 | Triển khai một database instance Amazon RDS MySQL đặt trong nhóm private subnet cô lập. | 14/05/2026 | 14/05/2026 | https://000008.awsstudygroup.com |
+| Thứ 6 | Học cách thiết lập chính sách sao lưu tự động (Backup plan) cho tài nguyên thông qua dịch vụ AWS Backup. Tổng kết Tuần 4. | 15/05/2026 | 15/05/2026 | https://aws.amazon.com/backup/ |
 
-### Kết quả thu hoạch sau Tuần 4:
+### Kết quả thu hoạch thực tế sau Tuần 4:
 
-* Thao tác thuần thục việc lưu trữ dữ liệu trên S3, bật Versioning và vòng đời lưu trữ tối ưu chi phí.
-* Khởi tạo thành công RDS Instance phục vụ các ứng dụng quan hệ.
-* Nắm vững các mô hình sao lưu dự phòng dữ liệu qua AWS Backup.
+* Tải lên, tổ chức dữ liệu khoa học trên S3, bảo vệ lịch sử file qua Versioning và tối ưu chi phí bằng Lifecycle.
+* Cấu hình thành công cơ sở dữ liệu RDS MySQL độc lập hoạt động ổn định.
+* Biết cách thiết lập lịch trình sao lưu tự động cho hệ thống bằng AWS Backup.

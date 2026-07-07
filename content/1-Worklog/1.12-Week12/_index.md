@@ -1,30 +1,30 @@
 ---
-title: "Week 12 Worklog"
+title: "Week 12 Journal"
 date: 2026-07-06
 weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
 
-### Focus & Objectives of Week 12:
+### Key Focus & Objectives of Week 12:
 
-* Implement API Gateway endpoints integrated with VPC Link for private API ingress.
-* Create automated CI/CD pipeline triggers using GitHub Actions workflows.
-* Verify database backups on S3 and set up CloudWatch alarms with SNS warnings.
-* Synthesize results and finalize the internship report.
+* Implement secure API integrations using API Gateway and private VPC Links.
+* Construct automated CI/CD deployment pipelines using GitHub Actions workflows.
+* Deploy automated RDS database backups to S3 storage and configure system monitoring.
+* Consolidate results and finalize the internship report.
 
 ### Detailed Weekly Action Items:
-| No. | Task Description | Start | Completion | Reference Links |
+| Day | Activity Description | Start | End Date | Documentation |
 | --- | --- | --- | --- | --- |
-| 2 | Build HTTP API Gateway and connect it to private internal ALB via VPC Link. | 06/07/2026 | 06/07/2026 | Project Source |
-| 3 | Develop GitHub Actions workflows for continuous container builds and ECS deployments. | 07/07/2026 | 07/07/2026 | GitHub Actions Docs |
-| 4 | Configure automated RDS snapshot backups and export target files to S3 buckets. | 08/07/2026 | 08/07/2026 | https://aws.amazon.com/s3/ |
-| 5 | Establish CloudWatch logs stream, metric metrics and create SNS email alert triggers. | 09/07/2026 | 09/07/2026 | https://aws.amazon.com/cloudwatch/ |
-| 6 | Review end-to-end setups, write report and complete internship presentation slides. Done. | 10/07/2026 | 10/07/2026 | Internship Report |
+| Mon | Deploy HTTP API Gateway integrated with VPC Link connecting to private internal ALB. | 06/07/2026 | 06/07/2026 | Project Codebase |
+| Tue | Configure GitHub Actions workflow YAML files triggers for automated docker image compilation and ECS updates. | 07/07/2026 | 07/07/2026 | GitHub Actions Docs |
+| Wed | Configure automated RDS snapshot backup events and export target files to S3 buckets. | 08/07/2026 | 08/07/2026 | https://aws.amazon.com/s3/ |
+| Thu | Establish CloudWatch logs streams, metrics, alarms and bind SNS alert triggers to send email notifications. | 09/07/2026 | 09/07/2026 | https://aws.amazon.com/cloudwatch/ |
+| Fri | Verify end-to-end cloud infrastructure, write reports and finalize presentation materials. Done. | 10/07/2026 | 10/07/2026 | Internship Report |
 
-### Key Accomplishments - Week 12:
+### Key Accomplishments & Deliverables - Week 12:
 
-* Secured client-to-API network traffic using API Gateway and private VPC Links.
-* Built fully-functional automated deployment loops via GitHub Actions CI/CD workflows.
-* Established robust data recovery policies and warning systems using CloudWatch and SNS.
-* Finished all report materials and final presentations.
+* Isolated and secured backend API paths using API Gateway and VPC Links.
+* Designed and verified continuous deployment loops via GitHub Actions CI/CD workflows.
+* Protected database states using automated RDS backup configurations.
+* Completed all graduation reports and presentation slides.

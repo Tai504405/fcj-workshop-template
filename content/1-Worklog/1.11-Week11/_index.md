@@ -1,29 +1,29 @@
 ---
-title: "Week 11 Worklog"
+title: "Week 11 Journal"
 date: 2026-06-29
 weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
 
-### Focus & Objectives of Week 11:
+### Key Focus & Objectives of Week 11:
 
-* Deploy the containerized workloads onto Amazon Elastic Container Service (ECS) with AWS Fargate.
-* Configure Application Load Balancers (ALBs) to route client and API traffic.
-* Draft Task Definitions and Target Groups managing container states.
-* Verify service container health checks and resolve load balancer forwardings.
+* Deploy application containers to Amazon Elastic Container Service (ECS) with AWS Fargate.
+* Configure Application Load Balancers (ALBs) to distribute incoming application traffic.
+* Create Target Groups and define HTTP endpoints for container health checking.
+* Draft Task Definitions specifying compute metrics and variable bindings for services.
 
 ### Detailed Weekly Action Items:
-| No. | Task Description | Start | Completion | Reference Links |
+| Day | Activity Description | Start | End Date | Documentation |
 | --- | --- | --- | --- | --- |
-| 2 | Create the ECS Fargate Cluster (`globalmart-cluster`) on the AWS console. | 29/06/2026 | 29/06/2026 | Project Source |
-| 3 | Write ECS Task Definitions defining CPU allocations, memory, and container ports. | 30/06/2026 | 30/06/2026 | Project Source |
-| 4 | Deploy an internet-facing ALB for the frontend and an internal ALB for the backend APIs. | 01/07/2026 | 01/07/2026 | https://aws.amazon.com/elasticloadbalancing/ |
-| 5 | Configure Target Groups and health checks to ensure continuous routing paths. | 02/07/2026 | 02/07/2026 | Project Source |
-| 6 | Launch ECS Services to maintain tasks and link them with load balancer endpoints. Review Week 11. | 03/07/2026 | 03/07/2026 | Project Source |
+| Mon | Launch the ECS Fargate Cluster (`globalmart-cluster`) to host application workloads. | 29/06/2026 | 29/06/2026 | Project Codebase |
+| Tue | Draft ECS Task Definitions: allocate CPU/Memory metrics and configure database bindings. | 30/06/2026 | 30/06/2026 | Project Codebase |
+| Wed | Deploy internet-facing Public ALB for frontend ingress and private Internal ALB for backend APIs. | 01/07/2026 | 01/07/2026 | https://aws.amazon.com/elasticloadbalancing/ |
+| Thu | Establish Target Groups and configure health checks at `/actuator/health`. | 02/07/2026 | 02/07/2026 | Project Codebase |
+| Fri | Create ECS Services to run container tasks and bind them to load balancer listeners. Week 11 review. | 03/07/2026 | 03/07/2026 | Project Codebase |
 
-### Key Accomplishments - Week 11:
+### Key Accomplishments & Deliverables - Week 11:
 
-* Deployed scalable microservices on serverless container hosts.
-* Established ALBs for directing web ingress and API service networks.
-* Stabilized task deployments with custom health indicators.
+* Deployed and managed containerized services on serverless AWS Fargate hosts.
+* Balanced traffic distribution using Public and Internal ALBs.
+* Configured automatic container recycles via health check alarms.
